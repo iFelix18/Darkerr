@@ -1,0 +1,106 @@
+/*Darkerr by Felix
+	1.0 (17/05/2017) - First release*/
+
+.started #page{
+    background-color:transparent;
+    box-shadow:0 0 0 0 transparent;
+    color:white;
+}
+.table,.btn-default,.table-responsive{
+    background-color:transparent;
+    color:white;
+}
+.btn-default:hover,.btn-default:focus,.table-hover>tbody>tr:hover,.table-hover>thead>tr>th:hover,.dropdown-menu>li>a:hover,.checkbox.toggle.well,.form-control.x-profile,.form-control.col-md-2.x-series-type,.bootstrap-tagsinput,.form-control.x-ical-url,.form-control,.form-control.x-api-key{
+    background-color:#181818;
+    color:white;
+}
+.disabled,.disabled:hover,.progressbar-back-text,.x-icon.fa-spin-overlay,.fc-day-number.fc-wed.fc-today.fc-state-highlight,.btn.btn-icon-only.x-ical-copy.zeroclipboard-is-hover,.btn.btn-icon-only.no-router.x-ical-webcal,.modal-footer>.btn,.btn.btn-lg.btn-block.x-search-auto,.btn.btn-icon-only.dropdown-toggle{
+    color:black;
+}
+.dropdown-menu,.modal-body{
+    background-color:#333333;
+}
+.dropdown-menu>li>a,.fa-spin-overlay,.fa-spin-overlay:focus,.fa-spin-overlay:hover,.col-md-10.col-xs-10>a>h2,.col-md-12.col-xs-12>a>div,button.close,button.close:hover,i.icon-sonarr-form-info,.modal-footer>.btn.btn-primary.x-save,.modal-footer>.btn.btn-danger.pull-left.x-remove,.btn.btn-primary.x-ok,.modal-footer>.btn.btn-default.pull-left,.modal-footer>.btn.btn-default,legend,.icon-sonarr-add,.modal-footer>.btn.btn-danger.pull-left.x-delete{
+    color:white;
+}
+.series-posters .series-posters-item{
+    background-color:#333333;
+    box-shadow:0 0 10px 1px #000;
+}
+.modal-header{
+    background-color:#333333;
+    border-radius: 4.5px 4.5px 0px 0px;
+    border-bottom:0px;
+}
+.modal-footer{
+    background-color:#333333;
+    border-radius: 0px 0px 4.5px 4.5px;
+    border-top:0px;
+}
+.form-control.x-path.tt-hint,.form-control.x-path.tt-input{
+    background-color:#181818 !important;
+    color:white !important;
+}
+.btn.btn-primary.x-file-browser{
+    border-color:white;
+}
+.fc-widget-header{
+    background-color:#333333 !important;
+}
+.x-episode-summary:focus,.x-episode-history:focus,.x-episode-search:focus,.x-queue-tab.no-router:focus,.x-history-tab.no-router:focus,.x-blacklist-tab.no-router:focus,.fc-day.fc-widget-content.fc-wed.fc-today.fc-state-highlight{
+    background-color:#777777 !important;
+    color:white !important;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color:#777777;
+    color:white;
+}
+.backgrid-paginator ul .active span{
+    background-color:transparent;
+}
+.profile-item.thingy,.indexer-item.thingy,.download-client-item.thingy,.notification-item.thingy,.metadata-item{
+    background-color:#333333;
+    box-shadow:0 0 10px 1px #000;
+    color:white;
+}
+.center.well{
+    background-color:#777777;
+    border-color:transparent;
+}
+.qualities.collection-list.ui-sortable>li{
+    background-color:#777777;
+}
+.icon-sonarr-copy::before{
+    color:black;
+}
+/*navbar*/
+.visible-lg{
+    height:54px
+}
+.x-navbar-collapse{
+    margin-bottom:-10px; 
+}
+.navbar-nzbdrone{
+    padding-top:4px;
+    padding-bottom:4px;
+}
+.navbar-brand{
+    padding-top:10px !important;
+}
+.navbar{
+    margin-bottom:-16px;
+}
+ul.navbar-nav li a{
+    margin-top:4px; 
+    margin-bottom:4px; 
+    padding-top:4px;
+    padding-bottom:4px;
+    min-height:0px;
+}
+/*searchbar*/
+.search{
+    display:none;
+}
+.container:hover .search{
+    display:block;
+}
