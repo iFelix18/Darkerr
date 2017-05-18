@@ -2,6 +2,7 @@
     1.0 (17/05/2017) - First release
     1.1 (18/05/2017) - Fix series and movies detailed view
     1.2 (18/05/2017) - Color adjustment
+    1.3 (18/05/2017) - Fix "Discover new movies" view on Radarr
 */
 
 .started #page{
@@ -83,6 +84,11 @@
 }
 .navbar.navbar-nzbdrone{
     background-color:#272727;
+}
+.search-item.search-item-new{
+    background-color:#272727 !important;
+    color:white !important;
+    box-shadow:0 0 10px 1px #000 !important;
 }
 /*navbar*/
 .navbar-brand>.visible-lg{
