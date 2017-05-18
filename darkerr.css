@@ -3,6 +3,7 @@
     /*Darkerr by Felix
         1.0 (17/05/2017) - First release
         1.1 (18/05/2017) - Fix series and movies detailed view
+        1.2 (18/05/2017) - Color adjustment
     */
 
     .started #page{
@@ -77,11 +78,14 @@
     .icon-sonarr-copy::before{
         color:black;
     }
-    .series-season,.movie-tabs-card{
-        background-color:black;
+    .row.series-page-header,.series-season,.row.movie-page-header,.movie-tabs-card{
+        background-color:#272727;
         color:white;
         box-shadow:0 0 10px 1px #000;
     }
+	.navbar.navbar-nzbdrone{
+    	background-color:#272727;
+	}
     /*navbar*/
     .navbar-brand>.visible-lg{
         height:54px;
