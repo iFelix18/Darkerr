@@ -9,12 +9,12 @@ A darker theme for Sonarr &amp; Radarr
 * Go [userstyles.org](https://userstyles.org/styles/142759/darkerr-a-darker-theme-for-sonarr-radarr), and click on "Install Style" button.
 * Done! From now on it will automatically update.
 
-You do not use the default ports (8989 for Sonarr and 7878 for Radarr)? If so, just change the string in the settings:
-from
+You do not use the default ports (8989 for Sonarr and 7878 for Radarr)?
+If so, just change the string in the settings, from:
 ```
 ((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(8989|7878)+(.*)
 ```
-to
+to:
 ```
 ((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(your sonarr port|your radarr port)+(.*)
 ```
