@@ -1,122 +1,149 @@
-/*Darkerr by Felix
-    1.0 (17/05/2017) - First release
-    1.1 (18/05/2017) - Fix series and movies detailed view
-    1.2 (18/05/2017) - Color adjustment
-    1.3 (18/05/2017) - Fix "Discover new movies" view on Radarr
+/*COLORS
+white -> 			#D4D4D4
+white disable ->	#B9B9B9
+black -> 			#141414
+grey background -> 	#333333
 */
 
-.started #page{
-    background-color:transparent;
-    box-shadow:0 0 0 0 transparent;
-    color:white;
+
+/*remove backgrounds*/
+
+.started #page {
+    background-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
+    color: #D4D4D4;
 }
-.table,.btn-default,.table-responsive{
-    background-color:transparent;
-    color:white;
+
+/*labels and badges*/
+
+.label,
+.badge {
+    color: #141414 !important;
 }
-.btn-default:hover,.btn-default:focus,.table-hover>tbody>tr:hover,.table-hover>thead>tr>th:hover,.dropdown-menu>li>a:hover,.checkbox.toggle.well,.form-control.x-profile,.form-control.col-md-2.x-series-type,.bootstrap-tagsinput,.form-control.x-ical-url,.form-control,.form-control.x-api-key{
-    background-color:#181818;
-    color:white;
+.ended-banner,
+.cinemas-banner {
+    color: #141414 !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
 }
-.disabled,.disabled:hover,.progressbar-back-text,.x-icon.fa-spin-overlay,.fc-day-number.fc-wed.fc-today.fc-state-highlight,.btn.btn-icon-only.x-ical-copy.zeroclipboard-is-hover,.btn.btn-icon-only.no-router.x-ical-webcal,.modal-footer>.btn,.btn.btn-lg.btn-block.x-search-auto,.btn.btn-icon-only.dropdown-toggle{
-    color:black;
+
+/*toolbar buttons*/
+
+.btn.btn-default.btn-icon-only-xs,
+.btn.btn-default.dropdown-toggle,
+.btn.btn-default.btn-icon-only {
+    background-color: #333333;
+    border-color: #D4D4D4;
+    color: #D4D4D4;
 }
-.dropdown-menu,.modal-body{
-    background-color:#333333;
+.btn.btn-default.btn-icon-only-xs:hover,
+.btn.btn-default.dropdown-toggle:hover,
+.btn.btn-default.btn-icon-only:hover {
+    background-color: #141414;
+    color: #D4D4D4;
 }
-.dropdown-menu>li>a,.fa-spin-overlay,.fa-spin-overlay:focus,.fa-spin-overlay:hover,.col-md-10.col-xs-10>a>h2,.col-md-12.col-xs-12>a>div,button.close,button.close:hover,i.icon-sonarr-form-info,.modal-footer>.btn.btn-primary.x-save,.modal-footer>.btn.btn-danger.pull-left.x-remove,.btn.btn-primary.x-ok,.modal-footer>.btn.btn-default.pull-left,.modal-footer>.btn.btn-default,legend,.icon-sonarr-add,.modal-footer>.btn.btn-danger.pull-left.x-delete{
-    color:white;
+.btn.btn-default.btn-icon-only-xs.disabled,
+.btn-group.sorting-buttons.open > .btn.btn-default.dropdown-toggle,
+.btn.btn-default.btn-icon-only.active {
+    background-color: #B9B9B9;
+    color: #141414;
 }
-.series-posters .series-posters-item{
-    background-color:#333333;
-    box-shadow:0 0 10px 1px #000;
+.fc-prev-button.fc-button.fc-state-default.fc-corner-left,
+.fc-next-button.fc-button.fc-state-default.fc-corner-right,
+.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right,
+.fc-month-button.fc-button.fc-state-default.fc-corner-left,
+.fc-basicWeek-button.fc-button.fc-state-default,
+.fc-basicDay-button.fc-button.fc-state-default.fc-corner-right,
+.fc-listYear-button.fc-button.fc-state-default.fc-corner-right,
+.btn.btn-default.col-md-10.col-xs-8.add-series-import-btn.x-import,
+.btn.btn-default.col-md-2.col-xs-4.x-add-new,
+.btn.btn-default.col-md-3.col-xs-12.x-bulk-import,
+.btn.btn-default.col-md-4.col-xs-12.add-movies-import-btn.x-discover,
+.btn.btn-default.col-md-2.col-xs-12.x-add-new,
+.btn.btn-default.col-md-3.col-xs-12.x-add-lists {
+    background-image: none;
+    background-color: #333333;
+    color: #D4D4D4;
+    text-shadow: none;
+    border-color: #D4D4D4;
+    outline-style: none;
 }
-.modal-header{
-    background-color:#333333;
-    border-radius: 4.5px 4.5px 0px 0px;
-    border-bottom:0px;
+.fc-prev-button.fc-button.fc-state-default.fc-corner-left.fc-state-hover,
+.fc-next-button.fc-button.fc-state-default.fc-corner-right.fc-state-hover,
+.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right.fc-state-hover,
+.fc-month-button.fc-button.fc-state-default.fc-corner-left.fc-state-hover,
+.fc-basicWeek-button.fc-button.fc-state-default.fc-state-hover,
+.fc-basicDay-button.fc-button.fc-state-default.fc-corner-right.fc-state-hover,
+.fc-listYear-button.fc-button.fc-state-default.fc-corner-right.fc-state-hover,
+.btn.btn-default.col-md-10.col-xs-8.add-series-import-btn.x-import:hover,
+.btn.btn-default.col-md-2.col-xs-4.x-add-new:hover,
+.btn.btn-default.col-md-3.col-xs-12.x-bulk-import:hover,
+.btn.btn-default.col-md-4.col-xs-12.add-movies-import-btn.x-discover:hover,
+.btn.btn-default.col-md-2.col-xs-12.x-add-new:hover,
+.btn.btn-default.col-md-3.col-xs-12.x-add-lists:hover {
+    background-image: none;
+    background-color: #141414;
+    color: #D4D4D4;
+    outline-style: none;
 }
-.modal-footer{
-    background-color:#333333;
-    border-radius: 0px 0px 4.5px 4.5px;
-    border-top:0px;
+.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right.fc-state-disabled,
+.fc-month-button.fc-button.fc-state-default.fc-corner-left.fc-state-active,
+.fc-basicWeek-button.fc-button.fc-state-default.fc-state-active,
+.fc-basicDay-button.fc-button.fc-state-default.fc-corner-right.fc-state-active,
+.fc-listYear-button.fc-button.fc-state-default.fc-corner-right.fc-state-active,
+.btn.btn-default.col-md-10.col-xs-8.add-series-import-btn.x-import:focus,
+.btn.btn-default.col-md-2.col-xs-4.x-add-new:focus,
+.btn.btn-default.col-md-3.col-xs-12.x-bulk-import:focus,
+.btn.btn-default.col-md-4.col-xs-12.add-movies-import-btn.x-discover:focus,
+.btn.btn-default.col-md-2.col-xs-12.x-add-new:focus,
+.btn.btn-default.col-md-3.col-xs-12.x-add-lists:focus {
+    background-color: #B9B9B9;
+    color: #141414;
+    outline-style: none;
 }
-.form-control.x-path.tt-hint,.form-control.x-path.tt-input{
-    background-color:#181818 !important;
-    color:white !important;
+
+/*dropdown menus*/
+
+.dropdown-menu {
+    background-color: #333333;
 }
-.btn.btn-primary.x-file-browser{
-    border-color:white;
+.dropdown-menu > li > a:hover {
+    background-color: #141414;
 }
-.fc-widget-header{
-    background-color:#333333 !important;
+.sorting-title,
+.dropdown-menu > li > a,
+.icon-sonarr-sort-asc,
+.icon-sonarr-sort-desc {
+    color: #D4D4D4;
 }
-.x-episode-summary:focus,.x-episode-history:focus,.x-episode-search:focus,.x-queue-tab.no-router:focus,.x-history-tab.no-router:focus,.x-blacklist-tab.no-router:focus,.fc-day.fc-widget-content.fc-wed.fc-today.fc-state-highlight{
-    background-color:#777777 !important;
-    color:white !important;
+
+/*table view*/
+
+.table-hover > thead > tr > th:hover,
+.table-hover > tbody > tr:hover {
+    background-color: #141414;
+    color: #D4D4D4;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-    background-color:#777777;
-    color:white;
+.progressbar-back-text {
+    color: #141414;
 }
-.backgrid-paginator ul .active span{
-    background-color:transparent;
+
+/*overview list view*/
+
+.col-md-10.col-xs-10 > a > h2,
+.col-md-12.col-xs-12 > a > div {
+    color: #D4D4D4;
 }
-.profile-item.thingy,.indexer-item.thingy,.download-client-item.thingy,.notification-item.thingy,.metadata-item{
-    background-color:#333333;
-    box-shadow:0 0 10px 1px #000;
-    color:white;
+
+/*posters view*/
+
+.series-posters .series-posters-item {
+    background-color: #333333;
+    box-shadow: 0 0 10px 1px #000;
 }
-.center.well{
-    background-color:#777777;
-    border-color:transparent;
-}
-.qualities.collection-list.ui-sortable>li{
-    background-color:#777777;
-}
-.icon-sonarr-copy::before{
-    color:black;
-}
-.row.series-page-header,.series-season,.row.movie-page-header,.movie-tabs-card{
-    background-color:#272727;
-    color:white;
-    box-shadow:0 0 10px 1px #000;
-}
-.navbar.navbar-nzbdrone{
-    background-color:#272727;
-}
-.search-item.search-item-new{
-    background-color:#272727 !important;
-    color:white !important;
-    box-shadow:0 0 10px 1px #000 !important;
-}
-/*navbar*/
-.navbar-brand>.visible-lg{
-    height:54px;
-    padding-left:45px;
-    margin-top:-14px;
-}
-.x-navbar-collapse{
-    margin-bottom:-10px; 
-}
-.navbar-nzbdrone{
-    padding-top:4px;
-    padding-bottom:4px;
-}
-.navbar{
-    margin-bottom:-16px;
-}
-ul.navbar-nav li a{
-    margin-top:4px; 
-    margin-bottom:4px; 
-    padding-top:4px;
-    padding-bottom:4px;
-    min-height:0px;
-}
-/*searchbar*/
-.search{
-    display:none;
-}
-.container:hover .search{
-    display:block;
+.series-posters .series-poster-container .series-controls,
+.series-posters .series-poster-container .hidden-title {
+    background-color: #333333;
+    color: #D4D4D4;
+    opacity: 0.9;
 }
