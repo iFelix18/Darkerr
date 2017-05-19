@@ -1,0 +1,52 @@
+/*COLORS
+white -> 			#D4D4D4
+white disable ->	#B9B9B9
+black -> 			#141414
+grey background -> 	#333333
+*/
+
+
+/*remove backgrounds*/
+
+.started #page {
+    background-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
+    color: #D4D4D4;
+}
+
+/*toolbar buttons*/
+
+.btn.btn-default.btn-icon-only-xs,
+.btn.btn-default.dropdown-toggle,
+.btn.btn-default.btn-icon-only {
+    background-color: #333333;
+    border-color: #D4D4D4;
+    color: #D4D4D4;
+}
+.btn.btn-default.btn-icon-only-xs:hover,
+.btn.btn-default.dropdown-toggle:hover,
+.btn.btn-default.btn-icon-only:hover {
+    background-color: #141414;
+    color: #D4D4D4;
+}
+.btn.btn-default.btn-icon-only-xs.disabled,
+.btn-group.sorting-buttons.open > .btn.btn-default.dropdown-toggle,
+.btn.btn-default.btn-icon-only.active {
+    background-color: #B9B9B9;
+    color: #141414;
+}
+
+/*dropdown menu*/
+
+.dropdown-menu {
+    background-color: #333333;
+}
+.dropdown-menu > li > a:hover {
+    background-color: #141414;
+}
+.sorting-title,
+.dropdown-menu > li > a,
+.icon-sonarr-sort-asc,
+.icon-sonarr-sort-desc {
+    color: #D4D4D4;
+}
