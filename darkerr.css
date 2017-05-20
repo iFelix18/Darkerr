@@ -26,7 +26,8 @@ grey background -> 	#333333
     opacity: 1 !important;
     box-shadow: none !important;
 }
-.badge.badge-inverse {
+.badge.badge-inverse,
+.input-group-addon {
     background-color: #D4D4D4;
     color: #141414 !important;
 }
@@ -71,7 +72,10 @@ grey background -> 	#333333
 .active > .x-movie-files,
 .active > .x-episode-summary,
 .active > .x-episode-history,
-.active > .x-episode-search {
+.active > .x-episode-search,
+.active > .x-recommendations-tab.no-router,
+.active > .x-popular-tab.no-router,
+.active > .x-upcoming-tab.no-router {
     background-color: #B9B9B9 !important;
     color: #141414 !important;
 }
@@ -100,7 +104,10 @@ grey background -> 	#333333
 .active > .x-movie-files:hover,
 .active > .x-episode-summary:hover,
 .active > .x-episode-history:hover,
-.active > .x-episode-search:hover {
+.active > .x-episode-search:hover,
+.active > .x-recommendations-tab.no-router:hover,
+.active > .x-popular-tab.no-router:hover,
+.active > .x-upcoming-tab.no-router:hover {
     background-color: #B9B9B9 !important;
     color: #141414 !important;
 }
@@ -129,7 +136,10 @@ grey background -> 	#333333
 .x-movie-files:hover,
 .x-episode-summary:hover,
 .x-episode-history:hover,
-.x-episode-search:hover {
+.x-episode-search:hover,
+.x-recommendations-tab.no-router:hover,
+.x-popular-tab.no-router:hover,
+.x-upcoming-tab.no-router:hover {
     background-color: #141414 !important;
     color: #D4D4D4 !important;
 }
@@ -249,9 +259,13 @@ grey background -> 	#333333
 .form-control,
 .form-control.x-path.tt-input,
 .qualities.collection-list.ui-sortable li,
-.bootstrap-tagsinput {
+.bootstrap-tagsinput,
+.form-control.x-path.tt-hint,
+.form-control.x-movies-search {
     background-color: #B9B9B9 !important;
-    color: #141414 !important;
+    color: #D4D4D4 !important;
+    border: none !important;
+    box-shadow: none;
 }
 
 /*add indexers*/
@@ -438,7 +452,38 @@ legend {
     border-top-color: #D4D4D4;
 }
 
-/*---------------------------------------------------------------------------------*/
+/*add movies*/
+
+.form-control.x-movies-search {
+    background-color: #333333 !important;
+    color: #D4D4D4;
+    border-color: #D4D4D4;
+    box-shadow: none;
+}
+.search-item.search-item-new {
+    background-color: #333333 !important;
+    color: #D4D4D4 !important;
+    box-shadow: 0 0 10px 1px #000 !important;
+}
+
+/*searchbar*/
+
+.col-md-6.form-control.x-series-search.tt-input {
+    background-color: #333333 !important;
+    color: #D4D4D4 !important;
+    border: none;
+    box-shadow: none;
+}
+.tt-dropdown-menu > .tt-dataset-series div {
+    background-color: #333333 !important;
+    color: #D4D4D4 !important;
+}
+.tt-dropdown-menu > .tt-dataset-series div:hover {
+    background-color: #141414 !important;
+    color: #D4D4D4 !important;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #footer-region::after {
     content: "\A Darkerr Ver. 2.0\A by Felix";
