@@ -33,7 +33,11 @@ grey background -> 	#333333
 .icon-sonarr-form-info {
     color: #B9B9B9 !important;
 }
-.icon-sonarr-navbar-icon {
+.btn.btn-xs.btn-default.x-info > .icon-sonarr-form-info {
+    color: #333333 !important;
+}
+.icon-sonarr-navbar-icon,
+.icon-sonarr-add.x-icon {
     color: #D4D4D4 !important;
 }
 .icon-sonarr-add {
@@ -61,7 +65,13 @@ grey background -> 	#333333
 .active > .x-updates-tab.no-router,
 .active > .x-tasks-tab.no-router,
 .active > .x-backup-tab.no-router,
-.active > .x-logs-tab.no-router {
+.active > .x-logs-tab.no-router,
+.active > .x-movie-history,
+.active > .x-movie-search,
+.active > .x-movie-files,
+.active > .x-episode-summary,
+.active > .x-episode-history,
+.active > .x-episode-search {
     background-color: #B9B9B9 !important;
     color: #141414 !important;
 }
@@ -84,7 +94,13 @@ grey background -> 	#333333
 .active > .x-updates-tab.no-router:hover,
 .active > .x-tasks-tab.no-router:hover,
 .active > .x-backup-tab.no-router:hover,
-.active > .x-logs-tab.no-router:hover {
+.active > .x-logs-tab.no-router:hover,
+.active > .x-movie-history:hover,
+.active > .x-movie-search:hover,
+.active > .x-movie-files:hover,
+.active > .x-episode-summary:hover,
+.active > .x-episode-history:hover,
+.active > .x-episode-search:hover {
     background-color: #B9B9B9 !important;
     color: #141414 !important;
 }
@@ -107,9 +123,42 @@ grey background -> 	#333333
 .x-updates-tab.no-router:hover,
 .x-tasks-tab.no-router:hover,
 .x-backup-tab.no-router:hover,
-.x-logs-tab.no-router:hover {
+.x-logs-tab.no-router:hover,
+.x-movie-history:hover,
+.x-movie-search:hover,
+.x-movie-files:hover,
+.x-episode-summary:hover,
+.x-episode-history:hover,
+.x-episode-search:hover {
     background-color: #141414 !important;
     color: #D4D4D4 !important;
+}
+
+/*buttons*/
+
+.close,
+.close:hover,
+.close:focus {
+    color: #B9B9B9 !important;
+    opacity: 1;
+}
+.modal-footer > .btn,
+.btn.btn-lg.btn-block.x-search-auto {
+    color: #141414;
+}
+.btn.btn-lg.btn-block.x-search-auto:hover {
+    background-color: #B9B9B9;
+    color: #141414;
+}
+.modal-footer > .btn.btn-danger.pull-left.x-remove,
+.modal-footer > .btn.btn-primary.x-save,
+.btn.btn-danger.x-mark-as-failed {
+    color: #D4D4D4;
+}
+.btn.btn-default.pull-left,
+.btn.btn-default {
+    background-color: #B9B9B9;
+    color: #141414;
 }
 
 /*toolbar buttons*/
@@ -187,18 +236,50 @@ grey background -> 	#333333
     outline-style: none;
 }
 
+/*toggle and text field*/
+
+.checkbox.toggle.well {
+    background-color: #141414;
+}
+.checkbox.toggle.well span {
+    color: #141414;
+}
+.form-control.naming-format,
+.form-control.x-multi-episode-style,
+.form-control,
+.form-control.x-path.tt-input,
+.qualities.collection-list.ui-sortable li,
+.bootstrap-tagsinput {
+    background-color: #B9B9B9 !important;
+    color: #141414 !important;
+}
+
+/*add indexers*/
+
+.add-thingy {
+    background-color: #333333;
+    color: #D4D4D4;
+    box-shadow: 0 0 10px 1px #000;
+}
+
 /*dropdown menus*/
 
 .dropdown-menu {
     background-color: #333333;
 }
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:hover,
+.save-and-add.x-save-and-add:hover {
     background-color: #141414;
 }
 .sorting-title,
 .dropdown-menu > li > a,
 .icon-sonarr-sort-asc,
-.icon-sonarr-sort-desc {
+.icon-sonarr-sort-desc,
+.save-and-add.x-save-and-add {
+    color: #D4D4D4 !important;
+}
+select option {
+    background-color: #333333;
     color: #D4D4D4;
 }
 
@@ -319,4 +400,47 @@ legend {
 .center.well {
     background-color: #B9B9B9;
     border-color: transparent;
+}
+
+/*detailed view*/
+
+.backdrop .navbar-nzbdrone,
+.row.series-page-header,
+.row.movie-page-header,
+.series-season,
+.movie-tabs-card {
+    background-color: #333333;
+    color: #D4D4D4;
+    opacity: 0.95;
+    box-shadow: 0 0 10px 1px #000;
+}
+.modal-body {
+    background-color: #333333;
+    color: #D4D4D4;
+}
+
+/*series/movies edit view*/
+
+.modal-header {
+    background-color: #333333;
+    color: #D4D4D4;
+    border-radius: 4.5px 4.5px 0px 0px;
+    border-bottom-color: #D4D4D4;
+}
+.modal-body.edit-series-modal {
+    background-color: #333333;
+    color: #D4D4D4;
+}
+.modal-footer {
+    background-color: #333333;
+    color: #D4D4D4;
+    border-radius: 0px 0px 4.5px 4.5px;
+    border-top-color: #D4D4D4;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+#footer-region::after {
+    content: "\A Darkerr Ver. 2.0\A by Felix";
+    white-space: pre;
 }
