@@ -14,7 +14,7 @@ grey background -> 	#333333
     color: #D4D4D4;
 }
 
-/*labels and badges*/
+/*labels badges icons*/
 
 .label,
 .badge {
@@ -25,6 +25,91 @@ grey background -> 	#333333
     color: #141414 !important;
     opacity: 1 !important;
     box-shadow: none !important;
+}
+.badge.badge-inverse {
+    background-color: #D4D4D4;
+    color: #141414 !important;
+}
+.icon-sonarr-form-info {
+    color: #B9B9B9 !important;
+}
+.icon-sonarr-navbar-icon {
+    color: #D4D4D4 !important;
+}
+.icon-sonarr-add {
+    color: #333333;
+}
+
+/*tabs*/
+
+.active > .x-queue-tab.no-router,
+.active > .x-history-tab.no-router,
+.active > .x-blacklist-tab.no-router,
+.active > .x-missing-tab.no-router,
+.active > .x-cutoff-tab.no-router,
+.active > .x-media-management-tab.no-router,
+.active > .x-profiles-tab.no-router,
+.active > .x-quality-tab.no-router,
+.active > .x-indexers-tab.no-router,
+.active > .x-download-client-tab.no-router,
+.active > .x-net-import-tab.no-router,
+.active > .x-notifications-tab.no-router,
+.active > .x-metadata-tab.no-router,
+.active > .x-general-tab.no-router,
+.active > .x-ui-tab.no-router,
+.active > .x-status-tab.no-router,
+.active > .x-updates-tab.no-router,
+.active > .x-tasks-tab.no-router,
+.active > .x-backup-tab.no-router,
+.active > .x-logs-tab.no-router {
+    background-color: #B9B9B9 !important;
+    color: #141414 !important;
+}
+.active > .x-queue-tab.no-router:hover,
+.active > .x-history-tab.no-router:hover,
+.active > .x-blacklist-tab.no-router:hover,
+.active > .x-missing-tab.no-router:hover,
+.active > .x-cutoff-tab.no-router:hover,
+.active > .x-media-management-tab.no-router:hover,
+.active > .x-profiles-tab.no-router:hover,
+.active > .x-quality-tab.no-router:hover,
+.active > .x-indexers-tab.no-router:hover,
+.active > .x-download-client-tab.no-router:hover,
+.active > .x-net-import-tab.no-router:hover,
+.active > .x-notifications-tab.no-router:hover,
+.active > .x-metadata-tab.no-router:hover,
+.active > .x-general-tab.no-router:hover,
+.active > .x-ui-tab.no-router:hover,
+.active > .x-status-tab.no-router:hover,
+.active > .x-updates-tab.no-router:hover,
+.active > .x-tasks-tab.no-router:hover,
+.active > .x-backup-tab.no-router:hover,
+.active > .x-logs-tab.no-router:hover {
+    background-color: #B9B9B9 !important;
+    color: #141414 !important;
+}
+.x-queue-tab.no-router:hover,
+.x-history-tab.no-router:hover,
+.x-blacklist-tab.no-router:hover,
+.x-missing-tab.no-router:hover,
+.x-cutoff-tab.no-router:hover,
+.x-media-management-tab.no-router:hover,
+.x-profiles-tab.no-router:hover,
+.x-quality-tab.no-router:hover,
+.x-indexers-tab.no-router:hover,
+.x-download-client-tab.no-router:hover,
+.x-net-import-tab.no-router:hover,
+.x-notifications-tab.no-router:hover,
+.x-metadata-tab.no-router:hover,
+.x-general-tab.no-router:hover,
+.x-ui-tab.no-router:hover,
+.x-status-tab.no-router:hover,
+.x-updates-tab.no-router:hover,
+.x-tasks-tab.no-router:hover,
+.x-backup-tab.no-router:hover,
+.x-logs-tab.no-router:hover {
+    background-color: #141414 !important;
+    color: #D4D4D4 !important;
 }
 
 /*toolbar buttons*/
@@ -146,4 +231,92 @@ grey background -> 	#333333
     background-color: #333333;
     color: #D4D4D4;
     opacity: 0.9;
+}
+
+/*calendar upcoming*/
+
+.event p,
+.event .date h4 {
+    color: #D4D4D4;
+}
+
+/*calendar*/
+
+.calendar th {
+    background-color: #333333;
+    color: #D4D4D4;
+    border-color: #D4D4D4;
+}
+.calendar th:hover {
+    background-color: #141414;
+}
+.fc-day-number.fc-mon.fc-today.fc-state-highlight,
+.fc-day-number.fc-tue.fc-today.fc-state-highlight,
+.fc-day-number.fc-wed.fc-today.fc-state-highlight,
+.fc-day-number.fc-thu.fc-today.fc-state-highlight,
+.fc-day-number.fc-fri.fc-today.fc-state-highlight,
+.fc-day-number.fc-sat.fc-today.fc-state-highlight,
+.fc-day-number.fc-sun.fc-today.fc-state-highlight,
+.fc-day-top.fc-mon.fc-today.fc-state-highlight,
+.fc-day-top.fc-tue.fc-today.fc-state-highlight,
+.fc-day-top.fc-wed.fc-today.fc-state-highlight,
+.fc-day-top.fc-thu.fc-today.fc-state-highlight,
+.fc-day-top.fc-fri.fc-today.fc-state-highlight,
+.fc-day-top.fc-sat.fc-today.fc-state-highlight,
+.fc-day-top.fc-sun.fc-today.fc-state-highlight {
+    color: #141414;
+    border-color: #D4D4D4;
+}
+.fc-day.fc-widget-content.fc-mon.fc-today.fc-state-highlight,
+.fc-day.fc-widget-content.fc-tue.fc-today.fc-state-highlight,
+.fc-day.fc-widget-content.fc-wed.fc-today.fc-state-highlight,
+.fc-day.fc-widget-content.fc-thu.fc-today.fc-state-highlight,
+.fc-day.fc-widget-content.fc-fri.fc-today.fc-state-highlight,
+.fc-day.fc-widget-content.fc-sat.fc-today.fc-state-highlight,
+.fc-day.fc-widget-content.fc-sun.fc-today.fc-state-highlight {
+    background-color: #B9B9B9;
+}
+.fc-list-heading td {
+    background-color: #333333 !important;
+    color: #D4D4D4;
+}
+.fc-event-dot {
+    background-color: #333333;
+}
+.fc-list-item.success.past,
+.fc-list-item.premiere.past,
+.fc-list-item.success,
+.fc-list-item.primary,
+.fc-list-item.premiere {
+    color: #141414;
+}
+.fc-unthemed .fc-list-empty {
+    background-color: transparent;
+    color: #D4D4D4;
+}
+
+/*wanted*/
+
+.cinemas-banner {
+    color: #D4D4D4 !important;
+}
+
+/*settings*/
+
+legend {
+    color: #D4D4D4;
+}
+.profile-item.thingy,
+.indexer-item.thingy,
+.download-client-item.thingy,
+.list-item.thingy,
+.notification-item.thingy,
+.metadata-item {
+    background-color: #333333;
+    color: #D4D4D4;
+    box-shadow: 0 0 10px 1px #000;
+}
+.center.well {
+    background-color: #B9B9B9;
+    border-color: transparent;
 }
