@@ -38,10 +38,14 @@ grey background -> 	#333333
     color: #333333 !important;
 }
 .icon-sonarr-navbar-icon,
-.icon-sonarr-add.x-icon {
+.icon-sonarr-add.x-icon,
+.fa.fa-search {
     color: #D4D4D4 !important;
 }
 .icon-sonarr-add {
+    color: #333333;
+}
+.icon-sonarr-add::before {
     color: #333333;
 }
 
@@ -110,6 +114,9 @@ grey background -> 	#333333
 .active > .x-upcoming-tab.no-router:hover {
     background-color: #B9B9B9 !important;
     color: #141414 !important;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
 }
 .x-queue-tab.no-router:hover,
 .x-history-tab.no-router:hover,
@@ -142,6 +149,9 @@ grey background -> 	#333333
 .x-upcoming-tab.no-router:hover {
     background-color: #141414 !important;
     color: #D4D4D4 !important;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
 }
 
 /*buttons*/
@@ -263,7 +273,7 @@ grey background -> 	#333333
 .form-control.x-path.tt-hint,
 .form-control.x-movies-search {
     background-color: #B9B9B9 !important;
-    color: #D4D4D4 !important;
+    color: #141414 !important;
     border: none !important;
     box-shadow: none;
 }
@@ -452,8 +462,9 @@ legend {
     border-top-color: #D4D4D4;
 }
 
-/*add movies*/
+/*add series/movies*/
 
+.form-control.x-series-search,
 .form-control.x-movies-search {
     background-color: #333333 !important;
     color: #D4D4D4;
@@ -468,24 +479,27 @@ legend {
 
 /*searchbar*/
 
+.col-md-6.form-control.x-series-search.tt-hint,
 .col-md-6.form-control.x-series-search.tt-input {
     background-color: #333333 !important;
     color: #D4D4D4 !important;
     border: none;
     box-shadow: none;
 }
-.tt-dropdown-menu > .tt-dataset-series div {
-    background-color: #333333 !important;
+.col-md-6.form-control.x-series-search::-webkit-input-placeholder {
+    color: #D4D4D4;
+}
+.tt-suggestion.tt-cursor {
+    background-color: #141414 !important;
     color: #D4D4D4 !important;
 }
-.tt-dropdown-menu > .tt-dataset-series div:hover {
-    background-color: #141414 !important;
+.no-movies-found {
     color: #D4D4D4 !important;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #footer-region::after {
-    content: "\A Darkerr Ver. 2.0\A by Felix";
+    content: "\A Darkerr Ver. 2.0";
     white-space: pre;
 }
