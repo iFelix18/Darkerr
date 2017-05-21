@@ -1,6 +1,7 @@
 # Darkerr
 A darker theme for Sonarr &amp; Radarr
-
+# Menu
+* [Installation](https://github.com/iFelix18/Darkerr/blob/master/README.md#installation)
 # Installation
 * Download one of these add-ons for your browser
   * Stylus (recommended): [Chrome](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/), or [Opera](https://github.com/schomery/stylish-chrome/).
@@ -12,10 +13,10 @@ A darker theme for Sonarr &amp; Radarr
 You do not use the default ports (8989 for Sonarr and 7878 for Radarr)?
 If so, just change the string in the settings, from:
 ```
-((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(8989|7878)+(.*)
+((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(8989|7878|sonarr|radarr)+(.*)
 ```
 to:
 ```
-((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(your sonarr port|your radarr port)+(.*)
+((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(your sonarr port|your radarr port|sonarr|radarr)+(.*)
 ```
 (Note: for each update, this change must be done again)
