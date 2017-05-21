@@ -1,12 +1,9 @@
-/*COLORS
-white -> 			#D4D4D4
-white disable ->	#B9B9B9
-black -> 			#141414
-grey background -> 	#333333
+/*  Darkerr 2.0 by Felix
+        2.0 (21/05/2017)
 */
 
 
-/*remove backgrounds*/
+/*backgrounds*/
 
 .started #page {
     background-color: transparent;
@@ -46,7 +43,10 @@ grey background -> 	#333333
     color: #333333;
 }
 .icon-sonarr-add::before {
-    color: #333333;
+    color: #D4D4D4;
+}
+.btn.btn-icon-only.dropdown-toggle > .icon-sonarr-add::before {
+    color: #333333 !important;
 }
 
 /*tabs*/
@@ -275,7 +275,7 @@ grey background -> 	#333333
     background-color: #B9B9B9 !important;
     color: #141414 !important;
     border: none !important;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 /*add indexers*/
@@ -304,6 +304,12 @@ grey background -> 	#333333
 }
 select option {
     background-color: #333333;
+    color: #D4D4D4;
+}
+
+/*tooltip*/
+
+.tooltip-inner {
     color: #D4D4D4;
 }
 
@@ -477,8 +483,45 @@ legend {
     box-shadow: 0 0 10px 1px #000 !important;
 }
 
+/*page number*/
+
+.backgrid-paginator ul .active span {
+    background-color: transparent;
+    color: #D4D4D4
+}
+
+/*navbar*/
+
+.navbar-brand > .visible-lg {
+    height: 56px;
+}
+.navbar > .container-fluid .navbar-brand {
+    margin-left: 50px;
+    margin-top: 15px;
+    padding-top: 4px;
+}
+.navbar-nzbdrone li a:hover {
+    background-color: #141414;
+}
+.navbar {
+    margin-bottom: -20px;
+}
+ul.navbar-nav li a {
+    margin-top: 15px;
+    margin-bottom: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    min-height: 0px;
+}
+
 /*searchbar*/
 
+.search {
+    display: none;
+}
+.container:hover .search {
+    display: block;
+}
 .col-md-6.form-control.x-series-search.tt-hint,
 .col-md-6.form-control.x-series-search.tt-input {
     background-color: #333333 !important;
