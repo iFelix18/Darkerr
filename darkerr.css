@@ -7,6 +7,7 @@
         2.0 (21/05/2017) - Rewritten, color adjustment, various fix
 */
 
+
 /*backgrounds*/
 
 .started #page {
@@ -520,11 +521,8 @@ ul.navbar-nav li a {
 
 /*searchbar*/
 
-.search {
-    display: none;
-}
-.container:hover .search {
-    display: block;
+.col-md-12.search {
+    margin-top: -20px;
 }
 .col-md-6.form-control.x-series-search.tt-hint,
 .col-md-6.form-control.x-series-search.tt-input {
