@@ -45,7 +45,7 @@ to:
 # Screenshot
  <p align="center">
   Detailed view:
-  <img src="http://i.imgur.com/WBOMolA.jpg" alt="detailed view"/>
+  <img src="https://i.imgur.com/0wXfwwD.jpg" alt="detailed view"/>
  </p>
  <p align="center">
   Overview list:
