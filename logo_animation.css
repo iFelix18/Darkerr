@@ -1,0 +1,6 @@
+.navbar-brand > .visible-lg {
+    transition: all 0.9s ease;
+}
+.navbar-brand > .visible-lg:hover {
+    transform: rotate(360deg);
+}
