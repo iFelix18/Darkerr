@@ -25,13 +25,13 @@ to:
 (Note: for each update, this change must be done again)
 # Optional additional themes
 * # Hide the searchbar
-<p align="center">
-  <img src="http://i.imgur.com/6sdDzxq.gif"/>
-</p>
-<p>Download <a href="https://userstyles.org/styles/142942/darkerr-searchbar-theme-for-sonarr-radarr">here</a>.</p>
+  <p align="center">
+    <img src="http://i.imgur.com/6sdDzxq.gif"/>
+  </p>
+  <p>Download <a href="https://userstyles.org/styles/142942/darkerr-searchbar-theme-for-sonarr-radarr">here</a>.</p>
 
 * # Animate the logo
-<p align="center">
-  <img src="http://i.imgur.com/2Ie6BFm.gif"/>
-</p>
-<p>Download <a href="https://userstyles.org/styles/142943/darkerr-logo-theme-for-sonarr-radarr">here</a>.</p>
+  <p align="center">
+    <img src="http://i.imgur.com/2Ie6BFm.gif"/>
+  </p>
+  <p>Download <a href="https://userstyles.org/styles/142943/darkerr-logo-theme-for-sonarr-radarr">here</a>.</p>
