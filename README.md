@@ -1,10 +1,17 @@
 # Darkerr
 A darker theme for Sonarr &amp; Radarr
+<p align="center">
+ <a href="https://github.com/iFelix18/Darkerr/blob/master/README.md#screenshot">
+  <img src="http://i.imgur.com/F7kNYv8.jpg" alt="Darkerr"/>
+ </a>
+ </p>
+
 # Menu
 * [Installation](https://github.com/iFelix18/Darkerr/blob/master/README.md#installation)
 * [Optional additional themes:](https://github.com/iFelix18/Darkerr/blob/master/README.md#optional-additional-themes)
   * [Hide the searchbar](https://github.com/iFelix18/Darkerr/blob/master/README.md#hide-the-searchbar)
   * [Animate the logo](https://github.com/iFelix18/Darkerr/blob/master/README.md#animate-the-logo)
+* [Screenshot](https://github.com/iFelix18/Darkerr/blob/master/README.md#screenshot)
 # Installation
 * Download one of these add-ons for your browser
   * Stylus (recommended): [Chrome](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/), or [Opera](https://github.com/schomery/stylish-chrome/).
@@ -26,12 +33,19 @@ to:
 # Optional additional themes
 * # Hide the searchbar
   <p align="center">
-    <img src="http://i.imgur.com/6sdDzxq.gif"/>
+    <img src="http://i.imgur.com/6sdDzxq.gif" alt="searchbar"/>
   </p>
   <p>Download <a href="https://userstyles.org/styles/142942/darkerr-searchbar-theme-for-sonarr-radarr">here</a>.</p>
 
 * # Animate the logo
   <p align="center">
-    <img src="http://i.imgur.com/2Ie6BFm.gif"/>
+    <img src="http://i.imgur.com/2Ie6BFm.gif" alt="logo"/>
   </p>
   <p>Download <a href="https://userstyles.org/styles/142943/darkerr-logo-theme-for-sonarr-radarr">here</a>.</p>
+# Screenshot
+ <p align="center">
+  <img src="http://i.imgur.com/WBOMolA.jpg" alt="detailed view"/>
+ </p>
+ <p align="center">
+  <img src="http://i.imgur.com/jacNz7G.jpg" alt="overview List"/>
+ </p>
