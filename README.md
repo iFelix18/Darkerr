@@ -2,9 +2,9 @@
 A darker theme for Sonarr &amp; Radarr
 <p align="center">
  <a href="https://github.com/iFelix18/Darkerr/blob/master/README.md#screenshot">
-  <img src="http://i.imgur.com/F7kNYv8.jpg" alt="Darkerr"/>
+  <img src="http://i.imgur.com/F7kNYv8.jpg" title="Click to see more screenshots" alt="Darkerr"/>
  </a>
- </p>
+</p>
 
 # Menu
 * [Installation](https://github.com/iFelix18/Darkerr/blob/master/README.md#installation)
@@ -44,8 +44,10 @@ to:
   <p>Download <a href="https://userstyles.org/styles/142943/darkerr-logo-theme-for-sonarr-radarr">here</a>.</p>
 # Screenshot
  <p align="center">
+  Detailed view:
   <img src="http://i.imgur.com/WBOMolA.jpg" alt="detailed view"/>
  </p>
  <p align="center">
-  <img src="http://i.imgur.com/jacNz7G.jpg" alt="overview List"/>
+  Overview list:
+  <img src="http://i.imgur.com/jacNz7G.jpg" alt="overview list"/>
  </p>
