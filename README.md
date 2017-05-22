@@ -2,6 +2,9 @@
 A darker theme for Sonarr &amp; Radarr
 # Menu
 * [Installation](https://github.com/iFelix18/Darkerr/blob/master/README.md#installation)
+* [Optional additional themes:](https://github.com/iFelix18/Darkerr/blob/master/README.md#optional-additional-themes)
+  * [Hide the searchbar](https://github.com/iFelix18/Darkerr/blob/master/README.md#hide-the-searchbar)
+  * [Animate the logo](https://github.com/iFelix18/Darkerr/blob/master/README.md#animate-the-logo)
 # Installation
 * Download one of these add-ons for your browser
   * Stylus (recommended): [Chrome](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/), or [Opera](https://github.com/schomery/stylish-chrome/).
@@ -20,3 +23,15 @@ to:
 ((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(your sonarr port|your radarr port|sonarr|radarr)+(.*)
 ```
 (Note: for each update, this change must be done again)
+# Optional additional themes
+* # Hide the searchbar
+<p align="center">
+  <img src="http://i.imgur.com/6sdDzxq.gif"/>
+</p>
+<p>Download <a href="https://userstyles.org/styles/142942/darkerr-searchbar-theme-for-sonarr-radarr">here</a>.</p>
+
+* # Animate the logo
+<p align="center">
+  <img src="http://i.imgur.com/2Ie6BFm.gif"/>
+</p>
+<p>Download <a href="https://userstyles.org/styles/142943/darkerr-logo-theme-for-sonarr-radarr">here</a>.</p>
