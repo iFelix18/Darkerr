@@ -546,6 +546,6 @@ ul.navbar-nav li a {
 /*------------------------------------------------*/
 
 #footer-region::after {
-    content: "\A Darkerr Ver. 2.0";
+    content: "\A Darkerr Ver. 2.1";
     white-space: pre;
 }
