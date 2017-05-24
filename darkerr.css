@@ -172,7 +172,8 @@
 .btn.btn-lg.btn-block.x-search-auto {
     color: #141414;
 }
-.btn.btn-lg.btn-block.x-search-auto:hover {
+.btn.btn-lg.btn-block.x-search-auto:hover,
+.btn.x-search-back {
     background-color: #B9B9B9;
     color: #141414;
 }
@@ -185,6 +186,7 @@
 .btn.btn-default {
     background-color: #B9B9B9;
     color: #141414;
+    border-color: #B9B9B9;
 }
 
 /*toolbar buttons*/
