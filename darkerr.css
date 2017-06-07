@@ -7,6 +7,7 @@
         2.0 (21/05/2017) - Rewritten, color adjustment, various fix
         2.1 (22/05/2017) - Search bar is always visible now
         2.2 (24/05/2017) - Fix buttons in search view
+        2.3 (07/06/2017) - Fix
 */
 
 
@@ -554,6 +555,6 @@ ul.navbar-nav li a {
 /*------------------------------------------------*/
 
 #footer-region::after {
-    content: "\A Darkerr Ver. 2.2";
+    content: "\A Darkerr Ver. 2.3";
     white-space: pre;
 }
