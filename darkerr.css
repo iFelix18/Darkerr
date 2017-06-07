@@ -546,6 +546,11 @@ ul.navbar-nav li a {
     color: #D4D4D4 !important;
 }
 
+/*manual import*/
+.manual-import-modal .manual-import-error {
+    background-color: transparent;
+}
+
 /*------------------------------------------------*/
 
 #footer-region::after {
