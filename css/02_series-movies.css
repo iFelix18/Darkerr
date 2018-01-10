@@ -1,0 +1,193 @@
+@-moz-document regexp("((.*?:8989)|(.*?\\/sonarr))"),
+regexp("(.*?\\/sonarr\\/)"),
+regexp("((.*?:7878)|(.*?\\/radarr))"),
+regexp("(.*?\\/radarr\\/)") {
+    /* SERIES/MOVIES */
+    /* backgrounds */
+    .started #page {
+        background-color: transparent;
+        color: var(--color-White);
+        box-shadow: none;
+        max-width: 1210px;
+    }
+
+    /* posters */
+    .series-posters .series-posters-item {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .series-posters .series-poster-container .series-controls,
+    .series-posters .series-poster-container .hidden-title {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        opacity: .9;
+    }
+    .series-posters .series-poster-container .ended-banner,
+    .series-posters .series-poster-container .cinemas-banner {
+        color: var(--color-White);
+        box-shadow: none;
+        opacity: .9;
+    }
+
+    /* overview list */
+    .series-item > div.row > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a > h2,
+    .movie-item > div.row > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a > h2,
+    .series-item > div.row > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a > div:nth-child(1),
+    .movie-item > div.row > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a > div:nth-child(1) {
+        color: var(--color-White);
+    }
+    .progress {
+        color: var(--color-Grey);
+    }
+
+    /* table */
+    th.sortable:hover,
+    .table-hover > tbody > tr:hover {
+        background-color: var(--color-Grey);
+    }
+
+    /* buttons */
+    .btn-group.btn-group-collapse > .btn-default,
+    .btn-group.sorting-buttons > .btn-default,
+    .toolbar-group.x-toolbar-right-2 > .btn-group > .btn-default,
+    .toolbar-group.x-toolbar-right-1 > .btn-group > .btn-default {
+        background-color: transparent;
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .btn-group.btn-group-collapse > .btn-default:hover,
+    .btn-group.sorting-buttons > .btn-default:hover,
+    .toolbar-group.x-toolbar-right-2 > .btn-group > .btn-default:hover,
+    .toolbar-group.x-toolbar-right-1 > .btn-group > .btn-default:hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .btn-group.sorting-buttons.open > .btn-default,
+    .btn-group.sorting-buttons.open > .btn.btn-default.dropdown-toggle,
+    .toolbar-group.x-toolbar-right-2 > .btn-group > .btn-default.active,
+    .toolbar-group.x-toolbar-right-1 > .btn-group > .btn-default.active {
+        background-color: var(--color-White);
+        color: var(--color-Grey);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .dropdown-menu {
+        background-color: var(--color-DarkBG);
+    }
+    .dropdown-menu > li > a {
+        color: var(--color-White);
+    }
+    .dropdown-menu > li > a:hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+    }
+
+    /* paginator */
+    .backgrid-paginator > ul > li > i {
+        color: var(--color-White);
+    }
+    .backgrid-paginator > ul > li.disabled > i {
+        color: var(--color-Grey);
+    }
+    .backgrid-paginator > ul > li.active > span {
+        background-color: transparent;
+        color: var(--color-White);
+    }
+
+    /* editor & file browser*/
+    .modal-content {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    button.close {
+        color: var(--color-White);
+        text-shadow: none;
+        opacity: 1;
+        outline-style: none;
+    }
+    button.close:hover {
+        color: var(--color-Grey);
+        text-shadow: none;
+        opacity: 1;
+        outline-style: none;
+    }
+    #modal-region > .modal-dialog > .modal-content > .modal-footer > button:nth-child(3),
+    .modal-content > .modal-footer > button:nth-child(2) {
+        background-color: transparent;
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    #modal-region > .modal-dialog > .modal-content > .modal-footer > button:nth-child(3):hover,
+    .modal-content > .modal-footer > button:nth-child(2):hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .btn.btn-primary.x-file-browser,
+    .btn.btn-primary.x-file-browser:hover,
+    .btn.btn-primary.x-file-browser:active,
+    .btn.btn-danger.pull-left.x-remove,
+    .btn.btn-danger.pull-left.x-remove:hover,
+    .btn.btn-danger.pull-left.x-remove:active,
+    .btn.btn-primary.x-save,
+    .btn.btn-primary.x-save:hover,
+    .btn.btn-primary.x-save:active,
+    .btn.btn-primary.x-ok,
+    .btn.btn-primary.x-ok:hover,
+    .btn.btn-primary.x-ok:active {
+        outline-style: none;
+    }
+
+    /* toggles */
+    .checkbox.toggle.well {
+        background-color: var(--color-Grey);
+        border: 1px solid var(--color-Grey);
+    }
+    .toggle p span {
+        color: var(--color-White);
+    }
+    .form-control.x-minimumavailability,
+    .form-control.x-profile,
+    .form-control.col-md-2.x-series-type {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border: 1px solid var(--color-Grey);
+        box-shadow: none;
+    }
+    .edit-series-modal .twitter-typeahead .form-control[disabled] {
+        background-color: var(--color-Grey);
+    }
+    .edit-series-modal .twitter-typeahead .form-control {
+        color: var(--color-White);
+        border: 1px solid var(--color-Grey);
+        box-shadow: none;
+    }
+    .bootstrap-tagsinput {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border: 1px solid var(--color-Grey);
+    }
+    div.form-group > span.twitter-typeahead > input.form-control.x-path.tt-hint {
+        background-color: var(--color-Grey);
+    }
+    div.form-group > span.twitter-typeahead > input.form-control.x-path.tt-input {
+        color: var(--color-White);
+        border: 1px solid var(--color-Grey);
+        box-shadow: none;
+    }
+
+    /*______________________________________*/
+    @media screen and (max-width: 767px) {
+        .table-responsive {
+            border: none;
+        }
+        .series-posters .series-posters-item {
+            margin: 0px;
+        }
+    }
+}

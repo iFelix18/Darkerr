@@ -1,0 +1,166 @@
+@-moz-document regexp("((.*?:8989)|(.*?\\/sonarr)).*(\\/series).*"),
+regexp("((.*?:7878)|(.*?\\/radarr)).*(\\/movies).*") {
+    /* MOVIES & SERIES DETAILS */
+    /* backgrounds */
+    .backdrop .navbar-nzbdrone,
+    .series-page-header,
+    .movie-page-header,
+    .series-season,
+    .movie-tabs-card {
+        opacity: 0.98;
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+        box-shadow: none;
+    }
+
+    /* table */
+    th.sortable:hover,
+    .table-hover > tbody > tr:hover {
+        background-color: var(--color-Grey);
+    }
+
+    /* tabs */
+    .nav-tabs > li > a {
+        color: var(--color-White);
+        border: 1px solid transparent;
+    }
+    .nav-tabs > li > a:hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border: 1px solid var(--color-White);
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover {
+        background-color: var(--color-White);
+        color: var(--color-DarkBG);
+        border: 1px solid var(--color-White);
+    }
+
+    /* badges */
+    .badge-inverse,
+    .quality-cell .badge {
+        background-color: transparent;
+        border: 1px solid var(--color-White);
+        color: var(--color-White);
+    }
+
+    /* popover */
+    .popover.in {
+        opacity: .9;
+    }
+    .popover {
+        background-color: #000;
+        color: #fff;
+    }
+    .popover > .popover-title {
+        background-color: #000;
+        color: #fff;
+        border: none;
+    }
+    .popover.left > .arrow,
+    .popover.left > .arrow:after {
+        border-left-color: #000;
+    }
+
+    /* detail/edit */
+    .modal-content {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    button.close {
+        color: var(--color-White);
+        text-shadow: none;
+        opacity: 1;
+        outline-style: none;
+    }
+    button.close:hover {
+        color: var(--color-Grey);
+        text-shadow: none;
+        opacity: 1;
+        outline-style: none;
+    }
+    .checkbox.toggle.well {
+        background-color: var(--color-Grey);
+        border: 1px solid var(--color-Grey);
+    }
+    .form-control.x-minimumavailability,
+    .form-control.x-profile,
+    .form-control.x-series-type,
+    .form-control.x-select {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border: 1px solid var(--color-Grey);
+        box-shadow: none;
+    }
+    div.input-group > span.twitter-typeahead > input.form-control.x-path.tt-hint {
+        background-color: var(--color-Grey);
+    }
+    div.input-group > span.twitter-typeahead > input.form-control.x-path.tt-input {
+        color: var(--color-White);
+        border: 1px solid var(--color-Grey);
+        box-shadow: none;
+    }
+    .bootstrap-tagsinput {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border: 1px solid var(--color-Grey);
+        box-shadow: none;
+    }
+    div.form-group > span.twitter-typeahead > input.form-control.x-path.tt-hint {
+        background-color: var(--color-Grey);
+    }
+    div.form-group > span.twitter-typeahead > input.form-control.x-path.tt-input {
+        color: var(--color-White);
+        border: 1px solid var(--color-Grey);
+        box-shadow: none;
+    }
+    .modal-dialog > .modal-content > .modal-footer > button:nth-child(3),
+    .modal-dialog > .modal-content > .modal-footer > button:nth-child(2),
+    .edit-season-modal > .modal-footer > button:nth-child(2),
+    .checkbox-button .btn,
+    .rename-preview-modal > .modal-footer > button:nth-child(2),
+    .episode-detail-modal > .modal-footer > button {
+        background-color: transparent;
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .modal-dialog > .modal-content > .modal-footer > button:nth-child(3):hover,
+    .modal-dialog > .modal-content > .modal-footer > button:nth-child(2):hover,
+    .edit-season-modal > .modal-footer > button:nth-child(2):hover,
+    .checkbox-button .btn:hover,
+    .rename-preview-modal > .modal-footer > button:nth-child(2):hover,
+    .episode-detail-modal > .modal-footer > button:hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .btn.btn-primary.x-ok {
+        background-color: #337ab7 !important;
+        border-color: #2e6da4 !important;
+    }
+    .btn.btn-primary.x-ok:hover,
+    .btn.btn-primary.x-ok:active {
+        background-color: #2e6da4 !important;
+        border-color: #2e6da4 !important;
+    }
+    .btn.btn-primary,
+    .btn.btn-primary:hover,
+    .btn.btn-primary:active,
+    .btn.btn-danger.pull-left.x-remove,
+    .btn.btn-danger.pull-left.x-remove:hover,
+    .btn.btn-danger.pull-left.x-remove:active,
+    .btn.btn-primary.x-save,
+    .btn.btn-primary.x-save:hover,
+    .btn.btn-primary.x-save:active,
+    .btn.btn-primary.x-ok,
+    .btn.btn-primary.x-ok:hover,
+    .btn.btn-primary.x-ok:active {
+        outline-style: none;
+    }
+    .btn.btn-lg.btn-block.x-search-auto {
+        color: var(--color-Grey);
+    }
+}
