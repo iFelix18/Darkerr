@@ -1,0 +1,227 @@
+@-moz-document regexp("((.*?:8989)|(.*?\\/sonarr)).*(\\/calendar)"),
+regexp("((.*?:7878)|(.*?\\/radarr)).*(\\/calendar)") {
+    /* CALENDAR */
+    /* backgrounds */
+    .started #page {
+        background-color: transparent;
+        color: var(--color-White);
+        box-shadow: none;
+        max-width: 1429px;
+    }
+
+    /* upcoming */
+    .event .date h4 {
+        color: var(--color-White);
+    }
+
+    /* month */
+    .calendar th {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    .fc-day.fc-today.fc-state-highlight,
+    .fc-day-number.fc-today.fc-state-highlight,
+    .fc-day-top.fc-today.fc-state-highlight {
+        background-color: var(--color-White);
+        color: var(--color-DarkBG);
+    }
+
+    /* list */
+    .fc-unthemed .fc-list-heading td {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+
+    /* buttons */
+    .btn.btn-default.btn-icon-only-xs,
+    .toolbar-group.x-toolbar-right-1 > .btn-group > .btn-default {
+        background-color: transparent;
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .btn.btn-default.btn-icon-only-xs:hover,
+    .toolbar-group.x-toolbar-right-1 > .btn-group > .btn-default:hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .toolbar-group.x-toolbar-right-1 > .btn-group > .btn-default.active {
+        background-color: var(--color-White);
+        color: var(--color-Grey);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .fc-prev-button.fc-button.fc-state-default.fc-corner-left,
+    .fc-next-button.fc-button.fc-state-default.fc-corner-right,
+    button.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right {
+        background-color: transparent;
+        background-image: none;
+        color: var(--color-White);
+        text-shadow: none;
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .fc-prev-button.fc-button.fc-state-default.fc-corner-left:hover,
+    .fc-next-button.fc-button.fc-state-default.fc-corner-right:hover,
+    button.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right:hover {
+        background-color: var(--color-Grey);
+        background-image: none;
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    button.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right.fc-state-disabled {
+        background-color: transparent;
+        color: var(--color-Grey);
+        text-shadow: none;
+        border-color: var(--color-Grey);
+        outline-style: none;
+    }
+    .fc-right > .fc-button-group > button {
+        background-color: transparent;
+        background-image: none;
+        border-color: var(--color-White);
+        color: var(--color-White);
+        text-shadow: none;
+        box-shadow: none;
+    }
+    .fc-right > .fc-button-group > button:not(.fc-state-active):hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .fc-right > .fc-button-group > .fc-state-active {
+        background-color: var(--color-White);
+        color: var(--color-Grey);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+
+    /* calendar feed */
+    .modal-content {
+        background-color: var(--color-DarkBG);
+        color: var(--color-White);
+    }
+    button.close {
+        color: var(--color-White);
+        text-shadow: none;
+        opacity: 1;
+        outline-style: none;
+    }
+    button.close:hover {
+        color: var(--color-Grey);
+        text-shadow: none;
+        opacity: 1;
+        outline-style: none;
+    }
+    .input-group.ical-url > .input-group-btn > button {
+        color: var(--color-Grey);
+    }
+    #modal-region > .modal-dialog > .modal-content > .modal-footer > button:nth-child(1) {
+        background-color: transparent;
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    #modal-region > .modal-dialog > .modal-content > .modal-footer > button:nth-child(1):hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+
+    /* toggles */
+    .checkbox.toggle.well {
+        background-color: var(--color-Grey);
+        border: 1px solid var(--color-Grey);
+    }
+    .toggle p span {
+        color: var(--color-White);
+    }
+    .form-horizontal > div > div > .bootstrap-tagsinput,
+    .form-horizontal > div > div > .input-group.ical-url > .form-control.x-ical-url {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border: 1px solid var(--color-Grey);
+        box-shadow: none;
+    }
+
+    /* episode detail */
+    .nav-tabs > li > a {
+        color: var(--color-White);
+        border: 1px solid var(--color-White);
+    }
+    .nav-tabs > li > a:hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border: 1px solid var(--color-White);
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover {
+        background-color: var(--color-White);
+        color: var(--color-Grey);
+        border: 1px solid var(--color-White);
+    }
+    .modal-footer > .btn.btn-default {
+        background-color: transparent;
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .modal-footer > .btn.btn-default:hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .table.table-hover.table-condensed > thead > tr > th:hover,
+    .table.table-hover.table-condensed > tbody > tr:hover {
+        background-color: var(--color-Grey);
+    }
+    #episode-release-grid > .table.table-hover > thead > tr > th:hover,
+    #episode-release-grid > .table.table-hover > tbody > tr:hover {
+        background-color: var(--color-Grey);
+    }
+    #episode-search-region > div > button:nth-child(2) {
+        background-color: transparent;
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    #episode-search-region > div > button:nth-child(2):hover {
+        background-color: var(--color-Grey);
+        color: var(--color-White);
+        border-color: var(--color-White);
+        outline-style: none;
+    }
+    .btn.btn-lg.btn-block.x-search-auto {
+        color: var(--color-Grey);
+        outline-style: none;
+    }
+    .btn.btn-lg.btn-block.x-search-manual {
+        color: var(--color-White);
+        outline-style: none;
+    }
+
+    /* popover */
+    .popover.in {
+        opacity: .9;
+    }
+    .popover {
+        background-color: #000;
+        color: #fff;
+    }
+    .popover > .popover-title {
+        background-color: #000;
+        color: #fff;
+        border: none;
+    }
+    .popover.left > .arrow,
+    .popover.left > .arrow:after {
+        border-left-color: #000;
+    }
+}
