@@ -8,6 +8,7 @@ A darker theme for Sonarr &amp; Radarr
 
 # Menu
 * [Installation](https://github.com/iFelix18/Darkerr/blob/master/README.md#installation)
+  * [Server-side installation (with nginx)](https://github.com/iFelix18/Darkerr/blob/master/README.md#server-side-installation)
 * [Optional additional themes:](https://github.com/iFelix18/Darkerr/blob/master/README.md#optional-additional-themes)
   * [Hide the searchbar](https://github.com/iFelix18/Darkerr/blob/master/README.md#hide-the-searchbar)
   * [Animate the logo](https://github.com/iFelix18/Darkerr/blob/master/README.md#animate-the-logo)
@@ -30,6 +31,30 @@ to:
 ((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(your sonarr port|your radarr port|sonarr|radarr)+(.*)
 ```
 (Note: for each update, this change must be done again)
+
+* # Server-side installation (with nginx)
+  * Add these lines to your Sonarr/Radarr location blocks in nginx.conf:
+    ```
+    proxy_set_header Accept-Encoding "";
+    sub_filter
+     '</head>'
+     '<link rel="stylesheet" type="text/css" href="//rawgit.com/iFelix18/Darkerr/master/darkerr.css">
+     </head>';
+    sub_filter_once on;
+    ```
+    or with optional additional themes:
+    ```
+    proxy_set_header Accept-Encoding "";
+    sub_filter
+     '</head>'
+     '<link rel="stylesheet" type="text/css" href="//rawgit.com/iFelix18/Darkerr/master/darkerr.css">
+      <link rel="stylesheet" type="text/css" href="//rawgit.com/iFelix18/Darkerr/master/logo_animation.css">
+      <link rel="stylesheet" type="text/css" href="//rawgit.com/iFelix18/Darkerr/master/hidden_searchbar.css">
+     </head>';
+    sub_filter_once on;
+    ```
+  * Restart nginx. Done!
+  
 # Optional additional themes
 * # Hide the searchbar
   <p align="center">
@@ -42,6 +67,7 @@ to:
     <img src="http://i.imgur.com/2Ie6BFm.gif" alt="logo"/>
   </p>
   <p>Download <a href="https://userstyles.org/styles/142943/darkerr-logo-theme-for-sonarr-radarr">here</a>.</p>
+
 # Screenshot
  <p align="center">
   Detailed view:
