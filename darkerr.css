@@ -1,161 +1,456 @@
 /*  Darkerr 2.0 by Felix
-        1.0 (17/05/2017) - First release
-        1.1 (18/05/2017) - Fix series and movies detailed view
-        1.2 (18/05/2017) - Color adjustment
-        1.3 (18/05/2017) - Fix "Discover new movies" view on Radarr
-        1.4 (19/05/2017) - Fix regular expression
+        2.5 () - Color adjustment, various fix
+        2.3 (07/06/2017) - Fix
+        2.2 (24/05/2017) - Fix buttons in search view
+        2.1 (22/05/2017) - Search bar is always visible now
         2.0 (21/05/2017) - Rewritten, color adjustment, various fix
+        1.4 (19/05/2017) - Fix regular expression
+        1.3 (18/05/2017) - Fix "Discover new movies" view on Radarr
+        1.2 (18/05/2017) - Color adjustment
+        1.1 (18/05/2017) - Fix series and movies detailed view
+        1.0 (17/05/2017) - First release
 */
 
-/*backgrounds*/
+/*-------------------------------------------*/
+
+/* COLORS */
+
+:root {
+    --color-DarkBG: #272727;
+    --color-White: #D4D4D4;
+    --color-Grey: #444444;
+}
+
+/* VERSION */
+
+#footer-region::after {
+    content: "\A Darkerr Ver. 2.5";
+    white-space: pre;
+}
+
+/* SCROLLBARS */
+
+::-webkit-scrollbar-corner {
+    background-color: #333333;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #555555;
+}
+
+/* SEARCH */
+
+.col-md-6.form-control.x-series-search.tt-hint,
+.col-md-6.form-control.x-series-search.tt-input {
+    background-color: #333333 !important;
+    color: var(--color-White) !important;
+    border: none;
+    box-shadow: none;
+}
+
+.col-md-6.form-control.x-series-search::-webkit-input-placeholder {
+    color: var(--color-White);
+}
+
+.tt-suggestion.tt-cursor {
+    background-color: var(--color-White) !important;
+    color: var(--color-Grey) !important;
+}
+
+.no-movies-found .tt-suggestion.tt-cursor {
+    background-color: #333333 !important;
+    color: var(--color-White) !important;
+}
+
+/*-------------------------------------------*/
+
+/* BACKGROUNDS */
+
+body {
+    background: var(--color-DarkBG);
+    background-color: var(--color-DarkBG);
+}
 
 .started #page {
     background-color: transparent;
-    box-shadow: 0 0 0 0 transparent;
-    color: #D4D4D4;
+    color: var(--color-White);
+    box-shadow: none;
+    max-width: 1210px;
 }
 
-/*labels badges icons*/
+/* posters */
 
-.label,
-.badge {
-    color: #141414 !important;
+.series-posters .series-posters-item,
+.series-posters .movie-posters-item {
+    background-color: transparent;
+    box-shadow: none;
 }
-.ended-banner,
-.cinemas-banner {
-    color: #141414 !important;
-    opacity: 1 !important;
-    box-shadow: none !important;
+
+.series-posters .series-poster-container .series-controls,
+.series-posters .series-poster-container .hidden-title,
+.series-posters .movie-poster-container .movie-controls,
+.series-posters .movie-poster-container .hidden-title {
+    background-color: var(--color-DarkBG);
+    color: var(--color-White);
+    opacity: .9;
 }
-.badge.badge-inverse,
-.input-group-addon {
-    background-color: #D4D4D4;
-    color: #141414 !important;
+
+.series-posters .series-poster-container .ended-banner,
+.series-posters .movie-poster-container .cinemas-banner {
+    color: var(--color-White);
+    box-shadow: none;
+    opacity: .9;
 }
-.icon-sonarr-form-info {
-    color: #B9B9B9 !important;
+
+/* overview list */
+
+.series-item > div.row > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a > h2,
+.movie-item > div.row > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a > h2,
+.series-item > div.row > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a > div:nth-child(1),
+.movie-item > div.row > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a > div:nth-child(1) {
+    color: var(--color-White);
 }
-.btn.btn-xs.btn-default.x-info > .icon-sonarr-form-info {
-    color: #333333 !important;
+
+.progress {
+    color: var(--color-Grey);
 }
-.icon-sonarr-navbar-icon,
-.icon-sonarr-add.x-icon,
-.fa.fa-search {
-    color: #D4D4D4 !important;
+
+/* table */
+
+th.sortable:hover,
+.table-hover > tbody > tr:hover {
+    background-color: var(--color-Grey);
 }
-.icon-sonarr-add {
-    color: #333333;
+
+/* paginator */
+
+.backgrid-paginator > ul > li > i {
+    color: var(--color-White);
 }
-.icon-sonarr-add::before {
-    color: #D4D4D4;
+
+.backgrid-paginator > ul > li.disabled > i {
+    color: var(--color-Grey);
 }
-.btn.btn-icon-only.dropdown-toggle > .icon-sonarr-add::before {
-    color: #333333 !important;
+
+.backgrid-paginator > ul > li.active > span {
+    background-color: transparent;
+    color: var(--color-White);
+}
+
+/* popover */
+
+.popover.in {
+    opacity: .9;
+}
+
+.popover {
+    background-color: #000;
+    color: #fff;
+}
+
+.popover > .popover-title {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.popover.left > .arrow,
+.popover.left > .arrow:after {
+    border-left-color: #000;
+}
+
+/* details */
+
+.backdrop .navbar-nzbdrone,
+.series-page-header,
+.movie-page-header,
+.series-season,
+.movie-tabs-card {
+    opacity: 0.98;
+    background-color: var(--color-DarkBG);
+    color: var(--color-White);
+    box-shadow: none;
+}
+
+/* calendar upcoming */
+
+.event .date h4 {
+    color: var(--color-White);
+}
+
+/* calendar month */
+
+.calendar th {
+    background-color: var(--color-DarkBG);
+    color: var(--color-White);
+}
+
+.fc-day.fc-today.fc-state-highlight,
+.fc-day-number.fc-today.fc-state-highlight,
+.fc-day-top.fc-today.fc-state-highlight {
+    background-color: var(--color-White);
+    color: var(--color-DarkBG);
+}
+
+/* calendar list */
+
+.fc-unthemed .fc-list-heading td {
+    background-color: var(--color-DarkBG);
+    color: var(--color-White);
+}
+
+/* settings texts */
+
+legend {
+    color: var(--color-White);
+}
+
+/* addseries-addmovies */
+
+#add-series-screen .new-series .search-item,
+#add-movies-screen .new-movies .search-item {
+    background-color: transparent;
+    color: var(--color-White);
+    box-shadow: none;
+}
+
+div.form-group > label {
+    font-weight: 500;
+}
+
+#add-series-screen .add-series-search > input.form-control.x-series-search,
+#add-movies-screen .add-movies-search > input.form-control.x-movies-search {
+    background-color: #333333 !important;
+    color: var(--color-White) !important;
+    border: none;
+    box-shadow: none;
+}
+
+/*-------------------------------------------*/
+
+/* BUTTONS */
+
+.btn-default {
+    color: var(--color-White);
+    background-color: var(--color-DarkBG);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.fc-state-default {
+    color: var(--color-White);
+    background-color: var(--color-DarkBG);
+    border-color: var(--color-White);
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+}
+
+.fc-state-hover {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border-color: var(--color-White);
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+}
+
+.fc-state-active {
+    color: var(--color-DarkBG);
+    background-color: var(--color-White);
+    border-color: var(--color-White);
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+}
+
+.fc-state-disabled {
+    color: var(--color-DarkBG);
+    background-color: var(--color-DarkBG);
+    border-color: var(--color-DarkBG);
+    outline-style: none;
+    background-image: none;
+    text-shadow: none;
+}
+
+.btn-default:hover {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.btn-default.active,
+.btn-default.active:hover {
+    color: var(--color-DarkBG);
+    background-color: var(--color-White);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.btn-default.disabled,
+.btn-default.disabled:hover {
+    color: var(--color-Grey);
+    background-color: var(--color-DarkBG);
+    border-color: var(--color-Grey);
+    outline-style: none;
+}
+
+.btn-default:active:hover {
+    color: var(--color-Grey);
+    background-color: var(--color-DarkBG);
+    border-color: var(--color-Grey);
+    outline-style: none;
+}
+
+.btn-default.focus.active {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.input-group-btn > button.btn.btn-icon-only.dropdown-toggle,
+.btn.btn-icon-only.x-copy-api-key.hidden-xs {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+}
+
+.input-group-btn > button.btn.btn-icon-only.dropdown-toggle:hover {
+    color: var(--color-Grey);
+    background-color: var(--color-White);
+}
+
+/* checkbox */
+
+.well {
+    background-color: var(--color-Grey);
+    border: 1px solid var(--color-Grey);
+}
+
+.toggle p span {
+    color: var(--color-Grey);
+}
+
+.toggle input:checked ~ p span:nth-child(1) {
+    color: var(--color-White);
+}
+
+.toggle input:not(:checked) ~ p span:nth-child(2) {
+    color: var(--color-White);
+}
+
+/*form*/
+
+.form-control {
+    color: var(--color-White);
+    background-color: var(--color-Grey) !important;
+    border: 1px solid var(--color-Grey);
+}
+
+.form-control:focus {
+    border-color: var(--color-Grey);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px var(--color-Grey);
+}
+
+/*dropdown menu*/
+
+.open > .dropdown-toggle.btn-default:focus {
+    color: var(--color-DarkBG);
+    background-color: var(--color-White);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.dropdown-menu {
+    background-color: var(--color-DarkBG);
+    border-color: var(--color-White);
+}
+
+.dropdown-menu > li > a {
+    color: var(--color-White);
+}
+
+.dropdown-menu > li > a:hover {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
 }
 
 /*tabs*/
 
-.active > .x-queue-tab.no-router,
-.active > .x-history-tab.no-router,
-.active > .x-blacklist-tab.no-router,
-.active > .x-missing-tab.no-router,
-.active > .x-cutoff-tab.no-router,
-.active > .x-media-management-tab.no-router,
-.active > .x-profiles-tab.no-router,
-.active > .x-quality-tab.no-router,
-.active > .x-indexers-tab.no-router,
-.active > .x-download-client-tab.no-router,
-.active > .x-net-import-tab.no-router,
-.active > .x-notifications-tab.no-router,
-.active > .x-metadata-tab.no-router,
-.active > .x-general-tab.no-router,
-.active > .x-ui-tab.no-router,
-.active > .x-status-tab.no-router,
-.active > .x-updates-tab.no-router,
-.active > .x-tasks-tab.no-router,
-.active > .x-backup-tab.no-router,
-.active > .x-logs-tab.no-router,
-.active > .x-movie-history,
-.active > .x-movie-search,
-.active > .x-movie-files,
-.active > .x-episode-summary,
-.active > .x-episode-history,
-.active > .x-episode-search,
-.active > .x-recommendations-tab.no-router,
-.active > .x-popular-tab.no-router,
-.active > .x-upcoming-tab.no-router {
-    background-color: #B9B9B9 !important;
-    color: #141414 !important;
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border: 1px solid var(--color-White);
 }
-.active > .x-queue-tab.no-router:hover,
-.active > .x-history-tab.no-router:hover,
-.active > .x-blacklist-tab.no-router:hover,
-.active > .x-missing-tab.no-router:hover,
-.active > .x-cutoff-tab.no-router:hover,
-.active > .x-media-management-tab.no-router:hover,
-.active > .x-profiles-tab.no-router:hover,
-.active > .x-quality-tab.no-router:hover,
-.active > .x-indexers-tab.no-router:hover,
-.active > .x-download-client-tab.no-router:hover,
-.active > .x-net-import-tab.no-router:hover,
-.active > .x-notifications-tab.no-router:hover,
-.active > .x-metadata-tab.no-router:hover,
-.active > .x-general-tab.no-router:hover,
-.active > .x-ui-tab.no-router:hover,
-.active > .x-status-tab.no-router:hover,
-.active > .x-updates-tab.no-router:hover,
-.active > .x-tasks-tab.no-router:hover,
-.active > .x-backup-tab.no-router:hover,
-.active > .x-logs-tab.no-router:hover,
-.active > .x-movie-history:hover,
-.active > .x-movie-search:hover,
-.active > .x-movie-files:hover,
-.active > .x-episode-summary:hover,
-.active > .x-episode-history:hover,
-.active > .x-episode-search:hover,
-.active > .x-recommendations-tab.no-router:hover,
-.active > .x-popular-tab.no-router:hover,
-.active > .x-upcoming-tab.no-router:hover {
-    background-color: #B9B9B9 !important;
-    color: #141414 !important;
-    border-top-color: transparent !important;
-    border-left-color: transparent !important;
-    border-right-color: transparent !important;
+
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:hover {
+    color: var(--color-White);
+    background-color: var(--color-DarkBG);
+    border: 1px solid var(--color-White);
 }
-.x-queue-tab.no-router:hover,
-.x-history-tab.no-router:hover,
-.x-blacklist-tab.no-router:hover,
-.x-missing-tab.no-router:hover,
-.x-cutoff-tab.no-router:hover,
-.x-media-management-tab.no-router:hover,
-.x-profiles-tab.no-router:hover,
-.x-quality-tab.no-router:hover,
-.x-indexers-tab.no-router:hover,
-.x-download-client-tab.no-router:hover,
-.x-net-import-tab.no-router:hover,
-.x-notifications-tab.no-router:hover,
-.x-metadata-tab.no-router:hover,
-.x-general-tab.no-router:hover,
-.x-ui-tab.no-router:hover,
-.x-status-tab.no-router:hover,
-.x-updates-tab.no-router:hover,
-.x-tasks-tab.no-router:hover,
-.x-backup-tab.no-router:hover,
-.x-logs-tab.no-router:hover,
-.x-movie-history:hover,
-.x-movie-search:hover,
-.x-movie-files:hover,
-.x-episode-summary:hover,
-.x-episode-history:hover,
-.x-episode-search:hover,
-.x-recommendations-tab.no-router:hover,
-.x-popular-tab.no-router:hover,
-.x-upcoming-tab.no-router:hover {
-    background-color: #141414 !important;
-    color: #D4D4D4 !important;
-    border-top-color: transparent !important;
-    border-left-color: transparent !important;
-    border-right-color: transparent !important;
+
+/*labels*/
+
+.badge-inverse {
+    color: var(--color-DarkBG);
+}
+
+/*thingy*/
+
+.thingy {
+    background-color: var(--color-Grey);
+    color: var(--color-White);
+    box-shadow: none;
+    border: 1px solid var(--color-Grey);
+}
+
+.add-card .center {
+    background-color: var(--color-Grey);
+}
+
+.metadata-item {
+    background-color: var(--color-Grey);
+    color: var(--color-White);
+    box-shadow: none;
+}
+
+/*-------------------------------------------*/
+
+/*MODALS*/
+
+/*backgrounds*/
+
+.modal-content {
+    background-color: var(--color-DarkBG);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--color-Grey);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--color-Grey);
+}
+
+/*modal*/
+
+.bootstrap-tagsinput {
+    background-color: var(--color-Grey);
+    border: 1px solid var(--color-Grey);
+    color: var(--color-White);
 }
 
 /*buttons*/
@@ -163,390 +458,106 @@
 .close,
 .close:hover,
 .close:focus {
-    color: #B9B9B9 !important;
+    color: var(--color-White) !important;
     opacity: 1;
 }
-.modal-footer > .btn,
-.btn.btn-lg.btn-block.x-search-auto {
-    color: #141414;
-}
-.btn.btn-lg.btn-block.x-search-auto:hover {
-    background-color: #B9B9B9;
-    color: #141414;
-}
-.modal-footer > .btn.btn-danger.pull-left.x-remove,
-.modal-footer > .btn.btn-primary.x-save,
-.btn.btn-danger.x-mark-as-failed {
-    color: #D4D4D4;
-}
-.btn.btn-default.pull-left,
-.btn.btn-default {
-    background-color: #B9B9B9;
-    color: #141414;
+
+.modal-footer > .btn {
+    color: var(--color-White);
+    background-color: var(--color-DarkBG);
+    border: 1px solid var(--color-White);
 }
 
-/*toolbar buttons*/
-
-.btn.btn-default.btn-icon-only-xs,
-.btn.btn-default.dropdown-toggle,
-.btn.btn-default.btn-icon-only {
-    background-color: #333333;
-    border-color: #D4D4D4;
-    color: #D4D4D4;
-}
-.btn.btn-default.btn-icon-only-xs:hover,
-.btn.btn-default.dropdown-toggle:hover,
-.btn.btn-default.btn-icon-only:hover {
-    background-color: #141414;
-    color: #D4D4D4;
-}
-.btn.btn-default.btn-icon-only-xs.disabled,
-.btn-group.sorting-buttons.open > .btn.btn-default.dropdown-toggle,
-.btn.btn-default.btn-icon-only.active {
-    background-color: #B9B9B9;
-    color: #141414;
-}
-.fc-prev-button.fc-button.fc-state-default.fc-corner-left,
-.fc-next-button.fc-button.fc-state-default.fc-corner-right,
-.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right,
-.fc-month-button.fc-button.fc-state-default.fc-corner-left,
-.fc-basicWeek-button.fc-button.fc-state-default,
-.fc-basicDay-button.fc-button.fc-state-default.fc-corner-right,
-.fc-listYear-button.fc-button.fc-state-default.fc-corner-right,
-.btn.btn-default.col-md-10.col-xs-8.add-series-import-btn.x-import,
-.btn.btn-default.col-md-2.col-xs-4.x-add-new,
-.btn.btn-default.col-md-3.col-xs-12.x-bulk-import,
-.btn.btn-default.col-md-4.col-xs-12.add-movies-import-btn.x-discover,
-.btn.btn-default.col-md-2.col-xs-12.x-add-new,
-.btn.btn-default.col-md-3.col-xs-12.x-add-lists {
-    background-image: none;
-    background-color: #333333;
-    color: #D4D4D4;
-    text-shadow: none;
-    border-color: #D4D4D4;
-    outline-style: none;
-}
-.fc-prev-button.fc-button.fc-state-default.fc-corner-left.fc-state-hover,
-.fc-next-button.fc-button.fc-state-default.fc-corner-right.fc-state-hover,
-.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right.fc-state-hover,
-.fc-month-button.fc-button.fc-state-default.fc-corner-left.fc-state-hover,
-.fc-basicWeek-button.fc-button.fc-state-default.fc-state-hover,
-.fc-basicDay-button.fc-button.fc-state-default.fc-corner-right.fc-state-hover,
-.fc-listYear-button.fc-button.fc-state-default.fc-corner-right.fc-state-hover,
-.btn.btn-default.col-md-10.col-xs-8.add-series-import-btn.x-import:hover,
-.btn.btn-default.col-md-2.col-xs-4.x-add-new:hover,
-.btn.btn-default.col-md-3.col-xs-12.x-bulk-import:hover,
-.btn.btn-default.col-md-4.col-xs-12.add-movies-import-btn.x-discover:hover,
-.btn.btn-default.col-md-2.col-xs-12.x-add-new:hover,
-.btn.btn-default.col-md-3.col-xs-12.x-add-lists:hover {
-    background-image: none;
-    background-color: #141414;
-    color: #D4D4D4;
-    outline-style: none;
-}
-.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right.fc-state-disabled,
-.fc-month-button.fc-button.fc-state-default.fc-corner-left.fc-state-active,
-.fc-basicWeek-button.fc-button.fc-state-default.fc-state-active,
-.fc-basicDay-button.fc-button.fc-state-default.fc-corner-right.fc-state-active,
-.fc-listYear-button.fc-button.fc-state-default.fc-corner-right.fc-state-active,
-.btn.btn-default.col-md-10.col-xs-8.add-series-import-btn.x-import:focus,
-.btn.btn-default.col-md-2.col-xs-4.x-add-new:focus,
-.btn.btn-default.col-md-3.col-xs-12.x-bulk-import:focus,
-.btn.btn-default.col-md-4.col-xs-12.add-movies-import-btn.x-discover:focus,
-.btn.btn-default.col-md-2.col-xs-12.x-add-new:focus,
-.btn.btn-default.col-md-3.col-xs-12.x-add-lists:focus {
-    background-color: #B9B9B9;
-    color: #141414;
-    outline-style: none;
+.modal-footer > .btn:hover {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border: 1px solid var(--color-White);
 }
 
-/*toggle and text field*/
-
-.checkbox.toggle.well {
-    background-color: #141414;
-}
-.checkbox.toggle.well span {
-    color: #141414;
-}
-.form-control.naming-format,
-.form-control.x-multi-episode-style,
-.form-control,
-.form-control.x-path.tt-input,
-.qualities.collection-list.ui-sortable li,
-.bootstrap-tagsinput,
-.form-control.x-path.tt-hint,
-.form-control.x-movies-search {
-    background-color: #B9B9B9 !important;
-    color: #141414 !important;
-    border: none !important;
-    box-shadow: none !important;
+.modal-footer > .btn-danger {
+    color: var(--color-White);
+    background-color: #c9302c !important;
+    border-color: #ac2925 !important;
 }
 
-/*add indexers*/
+.modal-footer > .btn-danger:hover {
+    color: var(--color-White);
+    background-color: var(--color-Grey) !important;
+    border-color: var(--color-White) !important;
+}
+
+.modal-footer > .btn-primary {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.btn.btn-icon-only.x-ical-copy,
+.btn.btn-icon-only.no-router.x-ical-webcal {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+}
+
+.btn.btn-icon-only.x-ical-copy:hover,
+.btn.btn-icon-only.x-ical-copy.zeroclipboard-is-hover,
+.btn.btn-icon-only.no-router.x-ical-webcal:hover {
+    color: var(--color-Grey);
+    background-color: var(--color-White);
+}
+
+ul.qualities li {
+    border: 1px solid var(--color-Grey);
+    background: var(--color-Grey);
+}
+
+ul.qualities li .select-handle,
+ul.qualities li.selected .quality-label {
+    color: var(--color-White);
+}
+
+ul.qualities li .quality-label {
+    color: var(--color-White);
+}
+
+ul.qualities li:hover {
+    border-color: var(--color-White);
+    background: var(--color-White);
+}
+
+ul.qualities li:hover .quality-label,
+ul.qualities li:hover .select-handle,
+ul.qualities li.selected:hover .select-handle {
+    color: var(--color-DarkBG);
+}
+
+/*add thingy*/
 
 .add-thingy {
-    background-color: #333333;
-    color: #D4D4D4;
-    box-shadow: 0 0 10px 1px #000;
-}
-
-/*dropdown menus*/
-
-.dropdown-menu {
-    background-color: #333333;
-}
-.dropdown-menu > li > a:hover,
-.save-and-add.x-save-and-add:hover {
-    background-color: #141414;
-}
-.sorting-title,
-.dropdown-menu > li > a,
-.icon-sonarr-sort-asc,
-.icon-sonarr-sort-desc,
-.save-and-add.x-save-and-add {
-    color: #D4D4D4 !important;
-}
-select option {
-    background-color: #333333;
-    color: #D4D4D4;
-}
-
-/*tooltip*/
-
-.tooltip-inner {
-    color: #D4D4D4;
-}
-
-/*table view*/
-
-.table-hover > thead > tr > th:hover,
-.table-hover > tbody > tr:hover {
-    background-color: #141414;
-    color: #D4D4D4;
-}
-.progressbar-back-text {
-    color: #141414;
-}
-
-/*overview list view*/
-
-.col-md-10.col-xs-10 > a > h2,
-.col-md-12.col-xs-12 > a > div {
-    color: #D4D4D4;
-}
-
-/*posters view*/
-
-.series-posters .series-posters-item {
-    background-color: #333333;
-    box-shadow: 0 0 10px 1px #000;
-}
-.series-posters .series-poster-container .series-controls,
-.series-posters .series-poster-container .hidden-title {
-    background-color: #333333;
-    color: #D4D4D4;
-    opacity: 0.9;
-}
-
-/*calendar upcoming*/
-
-.event p,
-.event .date h4 {
-    color: #D4D4D4;
-}
-
-/*calendar*/
-
-.calendar th {
-    background-color: #333333;
-    color: #D4D4D4;
-    border-color: #D4D4D4;
-}
-.calendar th:hover {
-    background-color: #141414;
-}
-.fc-day-number.fc-mon.fc-today.fc-state-highlight,
-.fc-day-number.fc-tue.fc-today.fc-state-highlight,
-.fc-day-number.fc-wed.fc-today.fc-state-highlight,
-.fc-day-number.fc-thu.fc-today.fc-state-highlight,
-.fc-day-number.fc-fri.fc-today.fc-state-highlight,
-.fc-day-number.fc-sat.fc-today.fc-state-highlight,
-.fc-day-number.fc-sun.fc-today.fc-state-highlight,
-.fc-day-top.fc-mon.fc-today.fc-state-highlight,
-.fc-day-top.fc-tue.fc-today.fc-state-highlight,
-.fc-day-top.fc-wed.fc-today.fc-state-highlight,
-.fc-day-top.fc-thu.fc-today.fc-state-highlight,
-.fc-day-top.fc-fri.fc-today.fc-state-highlight,
-.fc-day-top.fc-sat.fc-today.fc-state-highlight,
-.fc-day-top.fc-sun.fc-today.fc-state-highlight {
-    color: #141414;
-    border-color: #D4D4D4;
-}
-.fc-day.fc-widget-content.fc-mon.fc-today.fc-state-highlight,
-.fc-day.fc-widget-content.fc-tue.fc-today.fc-state-highlight,
-.fc-day.fc-widget-content.fc-wed.fc-today.fc-state-highlight,
-.fc-day.fc-widget-content.fc-thu.fc-today.fc-state-highlight,
-.fc-day.fc-widget-content.fc-fri.fc-today.fc-state-highlight,
-.fc-day.fc-widget-content.fc-sat.fc-today.fc-state-highlight,
-.fc-day.fc-widget-content.fc-sun.fc-today.fc-state-highlight {
-    background-color: #B9B9B9;
-}
-.fc-list-heading td {
-    background-color: #333333 !important;
-    color: #D4D4D4;
-}
-.fc-event-dot {
-    background-color: #333333;
-}
-.fc-list-item.success.past,
-.fc-list-item.premiere.past,
-.fc-list-item.success,
-.fc-list-item.primary,
-.fc-list-item.premiere {
-    color: #141414;
-}
-.fc-unthemed .fc-list-empty {
-    background-color: transparent;
-    color: #D4D4D4;
-}
-
-/*wanted*/
-
-.cinemas-banner {
-    color: #D4D4D4 !important;
-}
-
-/*settings*/
-
-legend {
-    color: #D4D4D4;
-}
-.profile-item.thingy,
-.indexer-item.thingy,
-.download-client-item.thingy,
-.list-item.thingy,
-.notification-item.thingy,
-.metadata-item {
-    background-color: #333333;
-    color: #D4D4D4;
-    box-shadow: 0 0 10px 1px #000;
-}
-.center.well {
-    background-color: #B9B9B9;
-    border-color: transparent;
-}
-
-/*detailed view*/
-
-.backdrop .navbar-nzbdrone,
-.row.series-page-header,
-.row.movie-page-header,
-.series-season,
-.movie-tabs-card {
-    background-color: #333333;
-    color: #D4D4D4;
-    opacity: 0.95;
-    box-shadow: 0 0 10px 1px #000;
-}
-.modal-body {
-    background-color: #333333;
-    color: #D4D4D4;
-}
-
-/*series/movies edit view*/
-
-.modal-header {
-    background-color: #333333;
-    color: #D4D4D4;
-    border-radius: 4.5px 4.5px 0px 0px;
-    border-bottom-color: #D4D4D4;
-}
-.modal-body.edit-series-modal {
-    background-color: #333333;
-    color: #D4D4D4;
-}
-.modal-footer {
-    background-color: #333333;
-    color: #D4D4D4;
-    border-radius: 0px 0px 4.5px 4.5px;
-    border-top-color: #D4D4D4;
-}
-
-/*add series/movies*/
-
-.form-control.x-series-search,
-.form-control.x-movies-search {
-    background-color: #333333 !important;
-    color: #D4D4D4;
-    border-color: #D4D4D4;
+    background-color: var(--color-Grey);
+    color: var(--color-White);
     box-shadow: none;
 }
-.search-item.search-item-new {
-    background-color: #333333 !important;
-    color: #D4D4D4 !important;
-    box-shadow: 0 0 10px 1px #000 !important;
+
+.add-thingy > div > .btn-default {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border-color: var(--color-White);
+    outline-style: none;
 }
 
-/*page number*/
-
-.backgrid-paginator ul .active span {
-    background-color: transparent;
-    color: #D4D4D4
+.add-thingy > div > .btn-default:hover {
+    color: var(--color-DarkBG);
+    background-color: var(--color-White);
+    border-color: var(--color-White);
+    outline-style: none;
 }
 
-/*navbar*/
-
-.navbar-brand > .visible-lg {
-    height: 56px;
-}
-.navbar > .container-fluid .navbar-brand {
-    margin-left: 50px;
-    margin-top: 15px;
-    padding-top: 4px;
-}
-.navbar-nzbdrone li a:hover {
-    background-color: #141414;
-}
-.navbar {
-    margin-bottom: -20px;
-}
-ul.navbar-nav li a {
-    margin-top: 15px;
-    margin-bottom: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    min-height: 0px;
+.btn.btn-lg.btn-block.x-search-auto {
+    color: var(--color-DarkBG);
 }
 
-/*searchbar*/
-
-.search {
-    display: none;
-}
-.container:hover .search {
-    display: block;
-}
-.col-md-6.form-control.x-series-search.tt-hint,
-.col-md-6.form-control.x-series-search.tt-input {
-    background-color: #333333 !important;
-    color: #D4D4D4 !important;
-    border: none;
-    box-shadow: none;
-}
-.col-md-6.form-control.x-series-search::-webkit-input-placeholder {
-    color: #D4D4D4;
-}
-.tt-suggestion.tt-cursor {
-    background-color: #141414 !important;
-    color: #D4D4D4 !important;
-}
-.no-movies-found {
-    color: #D4D4D4 !important;
+.popover.right > .arrow:after {
+    border-right-color: #000;
 }
 
-/*------------------------------------------------*/
-
-#footer-region::after {
-    content: "\A Darkerr Ver. 2.0";
-    white-space: pre;
-}
+/*-------------------------------------------*/
