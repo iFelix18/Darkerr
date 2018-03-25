@@ -584,4 +584,11 @@ ul.qualities li.selected:hover .select-handle {
     color: var(--color-DarkBG);
 }
 
+/* already exists text */
+
+#add-series-screen .search-item a,
+#add-movies-screen .search-item a {
+    color: var(--color-White);
+}
+
 /*-------------------------------------------*/
