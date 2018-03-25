@@ -1,5 +1,5 @@
 /*  Darkerr 2.0 by Felix
-        2.5 () - Color adjustment, various fix
+        2.5 () - 
         2.3 (07/06/2017) - Fix
         2.2 (24/05/2017) - Fix buttons in search view
         2.1 (22/05/2017) - Search bar is always visible now
@@ -86,6 +86,61 @@ body {
     max-width: 1210px;
 }
 
+.modal-content {
+    background-color: var(--color-DarkBG);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--color-Grey);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--color-Grey);
+}
+
+/* details */
+
+.backdrop .navbar-nzbdrone,
+.series-page-header,
+.movie-page-header,
+.series-season,
+.movie-tabs-card {
+    opacity: 0.98;
+    background-color: var(--color-DarkBG);
+    color: var(--color-White);
+    box-shadow: none;
+}
+
+/* popover */
+
+.popover.in {
+    opacity: .9;
+}
+
+.popover {
+    background-color: #000;
+    color: #fff;
+}
+
+.popover > .popover-title {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.popover.left > .arrow,
+.popover.left > .arrow:after {
+    border-left-color: #000;
+}
+
+.popover.right > .arrow:after {
+    border-right-color: #000;
+}
+
+/*-------------------------------------------*/
+
+/* HOME */
+
 /* posters */
 
 .series-posters .series-posters-item,
@@ -104,7 +159,8 @@ body {
 }
 
 .series-posters .series-poster-container .ended-banner,
-.series-posters .movie-poster-container .cinemas-banner {
+.series-posters .movie-poster-container .cinemas-banner,
+.series-posters .movie-poster-container .announced-banner {
     color: var(--color-White);
     box-shadow: none;
     opacity: .9;
@@ -145,40 +201,9 @@ th.sortable:hover,
     color: var(--color-White);
 }
 
-/* popover */
+/*-------------------------------------------*/
 
-.popover.in {
-    opacity: .9;
-}
-
-.popover {
-    background-color: #000;
-    color: #fff;
-}
-
-.popover > .popover-title {
-    background-color: #000;
-    color: #fff;
-    border: none;
-}
-
-.popover.left > .arrow,
-.popover.left > .arrow:after {
-    border-left-color: #000;
-}
-
-/* details */
-
-.backdrop .navbar-nzbdrone,
-.series-page-header,
-.movie-page-header,
-.series-season,
-.movie-tabs-card {
-    opacity: 0.98;
-    background-color: var(--color-DarkBG);
-    color: var(--color-White);
-    box-shadow: none;
-}
+/* CALENDAR */
 
 /* calendar upcoming */
 
@@ -207,13 +232,9 @@ th.sortable:hover,
     color: var(--color-White);
 }
 
-/* settings texts */
+/*-------------------------------------------*/
 
-legend {
-    color: var(--color-White);
-}
-
-/* addseries-addmovies */
+/* ADD SERIES/MOVIES */
 
 #add-series-screen .new-series .search-item,
 #add-movies-screen .new-movies .search-item {
@@ -232,6 +253,65 @@ div.form-group > label {
     color: var(--color-White) !important;
     border: none;
     box-shadow: none;
+}
+
+.input-group.input-group-lg.add-series-search > .input-group-addon,
+.input-group.input-group-lg.add-movies-search > .input-group-addon {
+    color: var(--color-White);
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+
+/*-------------------------------------------*/
+
+/* SETTINGS */
+
+/* settings texts */
+
+legend {
+    color: var(--color-White);
+}
+
+/*thingy*/
+
+.thingy {
+    background-color: var(--color-Grey);
+    color: var(--color-White);
+    box-shadow: none;
+    border: 1px solid var(--color-Grey);
+}
+
+.add-card .center {
+    background-color: var(--color-Grey);
+    border: 1px solid var(--color-Grey);
+}
+
+.metadata-item {
+    background-color: var(--color-Grey);
+    color: var(--color-White);
+    box-shadow: none;
+}
+
+/*add thingy*/
+
+.add-thingy {
+    background-color: var(--color-Grey);
+    color: var(--color-White);
+    box-shadow: none;
+}
+
+.add-thingy > div > .btn-default {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.add-thingy > div > .btn-default:hover {
+    color: var(--color-DarkBG);
+    background-color: var(--color-White);
+    border-color: var(--color-White);
+    outline-style: none;
 }
 
 /*-------------------------------------------*/
@@ -329,7 +409,49 @@ div.form-group > label {
     background-color: var(--color-White);
 }
 
-/* checkbox */
+.modal-footer > button:not([class*="btn-primary"]):not([class*="btn-danger"]) {
+    color: var(--color-White);
+    background-color: var(--color-DarkBG);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.modal-footer > button:hover:not([class*="btn-primary"]):not([class*="btn-danger"]) {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.modal-footer > button:active:not([class*="btn-primary"]):not([class*="btn-danger"]) {
+    color: var(--color-DarkBG);
+    background-color: var(--color-White);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.btn.btn-icon-only.x-ical-copy,
+.btn.btn-icon-only.no-router.x-ical-webcal {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+}
+
+.btn.btn-icon-only.x-ical-copy:hover,
+.btn.btn-icon-only.x-ical-copy.zeroclipboard-is-hover,
+.btn.btn-icon-only.no-router.x-ical-webcal:hover {
+    color: var(--color-Grey);
+    background-color: var(--color-White);
+}
+
+/* outline */
+
+.btn {
+    outline: 0 !important;
+}
+
+/*-------------------------------------------*/
+
+/* CHECKBOX */
 
 .well {
     background-color: var(--color-Grey);
@@ -348,7 +470,7 @@ div.form-group > label {
     color: var(--color-White);
 }
 
-/*form*/
+/* FORM */
 
 .form-control {
     color: var(--color-White);
@@ -362,7 +484,34 @@ div.form-group > label {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px var(--color-Grey);
 }
 
-/*dropdown menu*/
+.bootstrap-tagsinput {
+    background-color: var(--color-Grey);
+    border: 1px solid var(--color-Grey);
+    color: var(--color-White);
+}
+
+/*-------------------------------------------*/
+
+/* TABS */
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border: 1px solid var(--color-White);
+}
+
+.nav-tabs > li > a:focus,
+.nav-tabs > li > a:hover {
+    color: var(--color-White);
+    background-color: var(--color-DarkBG);
+    border: 1px solid var(--color-White);
+}
+
+/*-------------------------------------------*/
+
+/* DROPDOWN MENU */
 
 .open > .dropdown-toggle.btn-default:focus {
     color: var(--color-DarkBG);
@@ -385,75 +534,15 @@ div.form-group > label {
     background-color: var(--color-Grey);
 }
 
-/*tabs*/
+/*-------------------------------------------*/
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover {
-    color: var(--color-White);
-    background-color: var(--color-Grey);
-    border: 1px solid var(--color-White);
-}
+/* automatic search text */
 
-.nav-tabs > li > a:focus,
-.nav-tabs > li > a:hover {
-    color: var(--color-White);
-    background-color: var(--color-DarkBG);
-    border: 1px solid var(--color-White);
-}
-
-/*labels*/
-
-.badge-inverse {
+.btn.btn-lg.btn-block.x-search-auto {
     color: var(--color-DarkBG);
 }
 
-/*thingy*/
-
-.thingy {
-    background-color: var(--color-Grey);
-    color: var(--color-White);
-    box-shadow: none;
-    border: 1px solid var(--color-Grey);
-}
-
-.add-card .center {
-    background-color: var(--color-Grey);
-}
-
-.metadata-item {
-    background-color: var(--color-Grey);
-    color: var(--color-White);
-    box-shadow: none;
-}
-
-/*-------------------------------------------*/
-
-/*MODALS*/
-
-/*backgrounds*/
-
-.modal-content {
-    background-color: var(--color-DarkBG);
-}
-
-.modal-header {
-    border-bottom: 1px solid var(--color-Grey);
-}
-
-.modal-footer {
-    border-top: 1px solid var(--color-Grey);
-}
-
-/*modal*/
-
-.bootstrap-tagsinput {
-    background-color: var(--color-Grey);
-    border: 1px solid var(--color-Grey);
-    color: var(--color-White);
-}
-
-/*buttons*/
+/* close */
 
 .close,
 .close:hover,
@@ -462,48 +551,13 @@ div.form-group > label {
     opacity: 1;
 }
 
-.modal-footer > .btn {
-    color: var(--color-White);
-    background-color: var(--color-DarkBG);
-    border: 1px solid var(--color-White);
+/*labels*/
+
+.badge-inverse {
+    color: var(--color-DarkBG);
 }
 
-.modal-footer > .btn:hover {
-    color: var(--color-White);
-    background-color: var(--color-Grey);
-    border: 1px solid var(--color-White);
-}
-
-.modal-footer > .btn-danger {
-    color: var(--color-White);
-    background-color: #c9302c !important;
-    border-color: #ac2925 !important;
-}
-
-.modal-footer > .btn-danger:hover {
-    color: var(--color-White);
-    background-color: var(--color-Grey) !important;
-    border-color: var(--color-White) !important;
-}
-
-.modal-footer > .btn-primary {
-    color: #fff;
-    background-color: #286090;
-    border-color: #204d74;
-}
-
-.btn.btn-icon-only.x-ical-copy,
-.btn.btn-icon-only.no-router.x-ical-webcal {
-    color: var(--color-White);
-    background-color: var(--color-Grey);
-}
-
-.btn.btn-icon-only.x-ical-copy:hover,
-.btn.btn-icon-only.x-ical-copy.zeroclipboard-is-hover,
-.btn.btn-icon-only.no-router.x-ical-webcal:hover {
-    color: var(--color-Grey);
-    background-color: var(--color-White);
-}
+/* qualiies */
 
 ul.qualities li {
     border: 1px solid var(--color-Grey);
@@ -528,36 +582,6 @@ ul.qualities li:hover .quality-label,
 ul.qualities li:hover .select-handle,
 ul.qualities li.selected:hover .select-handle {
     color: var(--color-DarkBG);
-}
-
-/*add thingy*/
-
-.add-thingy {
-    background-color: var(--color-Grey);
-    color: var(--color-White);
-    box-shadow: none;
-}
-
-.add-thingy > div > .btn-default {
-    color: var(--color-White);
-    background-color: var(--color-Grey);
-    border-color: var(--color-White);
-    outline-style: none;
-}
-
-.add-thingy > div > .btn-default:hover {
-    color: var(--color-DarkBG);
-    background-color: var(--color-White);
-    border-color: var(--color-White);
-    outline-style: none;
-}
-
-.btn.btn-lg.btn-block.x-search-auto {
-    color: var(--color-DarkBG);
-}
-
-.popover.right > .arrow:after {
-    border-right-color: #000;
 }
 
 /*-------------------------------------------*/
