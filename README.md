@@ -2,7 +2,7 @@
 A darker theme for Sonarr &amp; Radarr
 <p align="center">
  <a href="https://github.com/iFelix18/Darkerr/blob/master/README.md#screenshot">
-  <img src="http://i.imgur.com/F7kNYv8.jpg" title="Click to see more screenshots" alt="Darkerr"/>
+  <img src="https://i.imgur.com/sz99ZPq.jpg" title="Click to see more screenshots" alt="Darkerr"/>
  </a>
 </p>
 
@@ -56,6 +56,8 @@ to:
   * Restart nginx. Done!
   
 # Optional additional themes
+<details>
+ 
 * # Hide the searchbar
   <p align="center">
     <img src="http://i.imgur.com/6sdDzxq.gif" alt="searchbar"/>
@@ -67,13 +69,16 @@ to:
     <img src="http://i.imgur.com/2Ie6BFm.gif" alt="logo"/>
   </p>
   <p>Download <a href="https://userstyles.org/styles/142943/darkerr-logo-theme-for-sonarr-radarr">here</a>.</p>
+</details>
 
 # Screenshot
+<details>
  <p align="center">
   Detailed view:
-  <img src="https://i.imgur.com/0wXfwwD.jpg" alt="detailed view"/>
+  <img src="https://i.imgur.com/aHxTA5c.jpg" alt="detailed view"/>
  </p>
  <p align="center">
   Overview list:
-  <img src="http://i.imgur.com/jacNz7G.jpg" alt="overview list"/>
+  <img src="https://i.imgur.com/DHDo6uS.jpg" alt="overview list"/>
  </p>
+</details> 
