@@ -1,5 +1,5 @@
 /*  Darkerr 2.0 by Felix
-        2.5 () - 
+        2.5 (30/03/2018) - Color adjustment, improvements with Radarr, various fixes 
         2.3 (07/06/2017) - Fix
         2.2 (24/05/2017) - Fix buttons in search view
         2.1 (22/05/2017) - Search bar is always visible now
@@ -589,6 +589,14 @@ ul.qualities li.selected:hover .select-handle {
 #add-series-screen .search-item a,
 #add-movies-screen .search-item a {
     color: var(--color-White);
+}
+
+/* logs */
+
+.nav.nav-pills.nav-stacked > li:not([class*="active"]) > a:focus,
+.nav.nav-pills.nav-stacked > li:not([class*="active"]) > a:hover {
+    color: var(--color-DarkBG);
+    background-color: var(--color-White);
 }
 
 /* titles */
