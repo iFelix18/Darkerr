@@ -1,5 +1,5 @@
 /*  Darkerr 2.0 by Felix
-        2.6 () -
+        2.6 (23/05/2018) - Fix, adjustment
         2.5 (30/03/2018) - Color adjustment, improvements with Radarr, various fixes 
         2.3 (07/06/2017) - Fix
         2.2 (24/05/2017) - Fix buttons in search view
@@ -25,7 +25,7 @@
 /* VERSION */
 
 #footer-region::after {
-    content: "\A Darkerr Ver. 2.5";
+    content: "\A Darkerr Ver. 2.6";
     white-space: pre;
 }
 
@@ -301,14 +301,16 @@ legend {
     box-shadow: none;
 }
 
-.add-thingy > div > .btn-default {
+.add-thingy > div > .btn-default,
+.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle {
     color: var(--color-White);
     background-color: var(--color-Grey);
     border-color: var(--color-White);
     outline-style: none;
 }
 
-.add-thingy > div > .btn-default:hover {
+.add-thingy > div > .btn-default:hover,
+.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:hover {
     color: var(--color-DarkBG);
     background-color: var(--color-White);
     border-color: var(--color-White);
