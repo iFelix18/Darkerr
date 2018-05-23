@@ -1,4 +1,5 @@
 /*  Darkerr 2.0 by Felix
+        2.6 (23/05/2018) - Fix, adjustment
         2.5 (30/03/2018) - Color adjustment, improvements with Radarr, various fixes 
         2.3 (07/06/2017) - Fix
         2.2 (24/05/2017) - Fix buttons in search view
@@ -24,7 +25,7 @@
 /* VERSION */
 
 #footer-region::after {
-    content: "\A Darkerr Ver. 2.5";
+    content: "\A Darkerr Ver. 2.6";
     white-space: pre;
 }
 
@@ -300,14 +301,16 @@ legend {
     box-shadow: none;
 }
 
-.add-thingy > div > .btn-default {
+.add-thingy > div > .btn-default,
+.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle {
     color: var(--color-White);
     background-color: var(--color-Grey);
     border-color: var(--color-White);
     outline-style: none;
 }
 
-.add-thingy > div > .btn-default:hover {
+.add-thingy > div > .btn-default:hover,
+.add-thingy > div > div > .btn.btn-xs.btn-default.dropdown-toggle:hover {
     color: var(--color-DarkBG);
     background-color: var(--color-White);
     border-color: var(--color-White);
@@ -441,6 +444,20 @@ legend {
 .btn.btn-icon-only.no-router.x-ical-webcal:hover {
     color: var(--color-Grey);
     background-color: var(--color-White);
+}
+
+.btn.x-search-back {
+    color: var(--color-White);
+    background-color: var(--color-DarkBG);
+    border-color: var(--color-White);
+    outline-style: none;
+}
+
+.btn.x-search-back:hover {
+    color: var(--color-White);
+    background-color: var(--color-Grey);
+    border-color: var(--color-White);
+    outline-style: none;
 }
 
 /* outline */
@@ -597,6 +614,22 @@ ul.qualities li.selected:hover .select-handle {
 .nav.nav-pills.nav-stacked > li:not([class*="active"]) > a:hover {
     color: var(--color-DarkBG);
     background-color: var(--color-White);
+}
+
+pre {
+    color: #20C20E;
+    background-color: black;
+    border: 1px solid black;
+}
+
+pre::selection {
+    color: black;
+    background: #20C20E;
+}
+
+pre::-moz-selection {
+    color: black;
+    background: #20C20E;
 }
 
 /* titles */
