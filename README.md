@@ -1,4 +1,4 @@
-# Darkerr
+# Darkerr [![Version](https://img.shields.io/badge/version-2.6-ED1C24.svg)](https://github.com/iFelix18/Darkerr/blob/master/README.md#installation) [![GitHub stars](https://img.shields.io/github/stars/iFelix18/Darkerr.svg)](https://github.com/iFelix18/Darkerr/stargazers) [![GitHub issues](https://img.shields.io/github/issues/iFelix18/Darkerr.svg)](https://github.com/iFelix18/Darkerr/issues) [![GitHub license](https://img.shields.io/github/license/iFelix18/Darkerr.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 A darker theme for Sonarr &amp; Radarr
 <p align="center">
  <a href="https://github.com/iFelix18/Darkerr/blob/master/README.md#screenshot">
