@@ -1,0 +1,12 @@
+{
+  "name": "darkerr",
+  "version": "3.0.0-beta1",
+  "description": "A darker theme for Sonarr, Radarr & Lidarr",
+  "license": "CC-BY-SA-4.0",
+  "repository": "https://github.com/iFelix18/Darkerr/",
+  "homepage": "https://git.io/Darkerr",
+  "devDependencies": {
+    "stylelint": "^9.5.0",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}

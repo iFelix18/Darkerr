@@ -1,0 +1,22 @@
+{
+    "files.insertFinalNewline": true,
+    "editor.formatOnSave": true,
+    "liveSassCompile.settings.showOutputWindow": false,
+    "liveSassCompile.settings.autoprefix": [
+        "> 0.2%",
+        "last 2 versions"
+    ],
+    "liveSassCompile.settings.formats": [{
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/"
+    }],
+    "liveSassCompile.settings.generateMap": false,
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "stylelint.enable": true,
+    "stylelint.configOverrides": {
+        "extends": "./.stylelintrc"
+    },
+}
