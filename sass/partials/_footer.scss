@@ -1,0 +1,27 @@
+/* --- FOOTER --- */
+//backgroun & text
+.PageContentFooter-contentFooter-1t6xx {
+    background-color: $GreyBG !important;
+    color: $White !important;
+
+    //select
+    .Input-input-dS7Oc {
+        border-color: $White !important;
+        background-color: $Grey !important;
+        box-shadow: none !important;
+        color: $White !important;
+    }
+
+    //button
+    .Button-default-1X0nf {
+        background-color: $Grey !important;
+        border-color: $Grey !important;
+        color: $White !important;
+
+        //hover
+        &:hover {
+            background-color: darken($Grey, 2%) !important;
+            border-color: darken($Grey, 2%) !important;
+        }
+    }
+}

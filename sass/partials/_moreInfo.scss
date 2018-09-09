@@ -1,0 +1,50 @@
+/* --- MORE INFO --- */
+@media (min-width: 768px) {
+    .FieldSet-fieldSet-8lin9:nth-child(4) {
+        .DescriptionList-descriptionList-2MSh3 {
+            .DescriptionListItemTitle-title-EA460:nth-child(1) {
+                &:after {
+                    white-space: pre !important;
+                    content: "\A Darkerr Home page" !important;
+                }
+            }
+        }
+    }
+
+    .FieldSet-fieldSet-8lin9:nth-child(4) {
+        .DescriptionList-descriptionList-2MSh3 {
+            .DescriptionListItemDescription-description-pR3_W:nth-child(2) {
+                &:after {
+                    white-space: pre !important;
+                    content: "\A git.io/Darkerr" !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .FieldSet-fieldSet-8lin9:nth-child(4) {
+        .DescriptionList-descriptionList-2MSh3 {
+            .DescriptionListItemDescription-description-pR3_W:nth-child(2) {
+                &:after {
+                    white-space: pre !important;
+                    content: "\A Darkerr Home page" !important;
+                    font-weight: bold !important;
+                }
+            }
+        }
+    }
+
+    .FieldSet-fieldSet-8lin9:nth-child(4) {
+        .DescriptionList-descriptionList-2MSh3 {
+            .DescriptionListItemTitle-title-EA460:nth-child(3) {
+                &:before {
+                    white-space: pre !important;
+                    content: "git.io/Darkerr \A" !important;
+                    font-weight: normal !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+/* --- OVERVIEW --- */
+//text
+.SeriesIndexOverviews-grid-1T9n5 {
+    color: $White !important;
+
+    .SeriesIndexOverview-link-1Qz39 {
+        color: $White !important;
+    }
+}
+
+.ArtistIndexOverviews-grid-3mMTX {
+    color: $White !important;
+
+    .ArtistIndexOverview-link-2d_A3 {
+        color: $White !important;
+    }
+}
+
+//item hover
+.SeriesIndexOverview-container-2zNbo {
+    &:hover {
+        .SeriesIndexOverview-content-3ZT3A {
+            background-color: $Grey !important;
+
+            //icon
+            .IconButton-button-20Niq {
+                &:hover {
+                    color: darken($White, 33%) !important;
+                }
+            }
+        }
+    }
+}
+
+.ArtistIndexOverview-container-3_iEh {
+    &:hover {
+        .ArtistIndexOverview-content-3zZhb {
+            background-color: $Grey !important;
+
+            //icon
+            .IconButton-button-20Niq {
+                &:hover {
+                    color: darken($White, 33%) !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+/* --- VERSION --- */
+//sonarr
+@media (min-width: 768px) {
+    .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3>span:nth-child(1)> {
+        .DescriptionListItemTitle-title-EA460:after {
+            white-space: pre !important;
+            content: "\A Darkerr Version" !important;
+        }
+
+        .DescriptionListItemDescription-description-pR3_W:after {
+            white-space: pre !important;
+            content: "\A 3.0.0-beta1" !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3>span {
+        &:nth-child(1)>.DescriptionListItemDescription-description-pR3_W:after {
+            white-space: pre !important;
+            content: "\A Darkerr Version" !important;
+            font-weight: bold !important;
+        }
+
+        &:nth-child(2)>.DescriptionListItemTitle-title-EA460:before {
+            white-space: pre !important;
+            content: "3.0.0-beta1 \A" !important;
+            font-weight: normal !important;
+        }
+    }
+}
+
+//lidarr
+@media (min-width: 768px) {
+    .PageContentBody-innerContentBody-2X99r> {
+        .FieldSet-fieldSet-8lin9:nth-child(3)>.DescriptionList-descriptionList-2MSh3>span:nth-child(1)> {
+            .DescriptionListItemTitle-title-EA460 {
+                &:after {
+                    white-space: pre !important;
+                    content: "\A Darkerr Version" !important;
+                }
+            }
+
+            .DescriptionListItemDescription-description-pR3_W {
+                &:after {
+                    white-space: pre !important;
+                    content: "\A 3.0.0-beta1" !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .PageContentBody-innerContentBody-2X99r> {
+        .FieldSet-fieldSet-8lin9:nth-child(3)>.DescriptionList-descriptionList-2MSh3>span:nth-child(1)> {
+            .DescriptionListItemDescription-description-pR3_W {
+                &:after {
+                    white-space: pre !important;
+                    content: "\A Darkerr Version" !important;
+                    font-weight: bold !important;
+                }
+            }
+        }
+
+        .FieldSet-fieldSet-8lin9:nth-child(3)>.DescriptionList-descriptionList-2MSh3>span:nth-child(2)> {
+            .DescriptionListItemTitle-title-EA460 {
+                &:before {
+                    white-space: pre !important;
+                    content: "3.0.0-beta1 \A" !important;
+                    font-weight: normal !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+/* --- DETAILS --- */
+//label
+.SeriesDetails-detailsLabel-CSpGH,
+.ArtistDetails-detailsLabel-2jcHp {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+//details panel
+.SeriesDetailsSeason-season-1YnGm,
+.ArtistDetailsSeason-albumType-23-Z4 {
+    background-color: $DarkBG !important;
+    border-color: $DarkBG !important;
+}
+
+.SeriesDetailsSeason-collapseButtonContainer-3XxzX,
+.ArtistDetailsSeason-collapseButtonContainer-3EuJ8 {
+    background-color: $DarkBG !important;
+    border-color: $DarkBG !important;
+}
+
+//lidarr
+.AlbumDetails-detailsLabel-2WQ8W {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.AlbumDetails-contentContainer-38dqq {
+    .AlbumDetailsMedium-medium-3pu-U {
+        background-color: $DarkBG !important;
+        border-color: $DarkBG !important;
+
+        //FIX
+        .Table-table-2HwFb {
+            tbody {
+                tr {
+                    border-top: solid 1px $White !important;
+                }
+            }
+        }
+
+        .AlbumDetailsMedium-collapseButtonContainer-2MSYO {
+            background-color: $DarkBG !important;
+            border-color: $DarkBG !important;
+        }
+    }
+}

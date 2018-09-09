@@ -1,0 +1,33 @@
+/* --- TABLE --- */
+//text
+.SeriesIndexTable-tableContainer-9judv,
+.ArtistIndexTable-tableContainer-1ETSi {
+    color: $White !important;
+
+    .IconButton-button-20Niq {
+        &:hover {
+            color: darken($White, 33%) !important;
+        }
+    }
+
+    //progress
+    .ProgressBar-container-1VTgk {
+        background-color: $GreyBG !important;
+    }
+}
+
+//itwm hover
+.VirtualTableRow-row-2osBd {
+    &:hover {
+        background-color: $Grey !important;
+    }
+}
+
+//lidarr link hover
+.ArtistIndexRow-sortName-3b0ex {
+    .Link-to-1jNxQ {
+        &:hover {
+            color: darken($color: #0b8750, $amount: 5) !important;
+        }
+    }
+}

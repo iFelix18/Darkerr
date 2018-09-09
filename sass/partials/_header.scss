@@ -1,0 +1,12 @@
+/* --- HEADER --- */
+//background
+.PageHeader-header-1lnFT {
+    background-color: $DarkBG !important;
+}
+
+//menu icon hover
+.PageHeaderActionsMenu-menuButton-2VX4Y {
+    &:hover {
+        color: darken($White, 33%) !important;
+    }
+}

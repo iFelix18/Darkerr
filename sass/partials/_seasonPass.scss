@@ -1,0 +1,32 @@
+/* --- SEASEON PASS --- */
+//table
+.SeasonPassSeason-season-3Lc-4 {
+    border-color: $White !important;
+    background-color: $GreyBG !important;
+}
+
+.SeasonPassSeason-episodes-3v_IV {
+    background-color: $GreyBG !important;
+    color: $White !important;
+}
+
+//icon
+.MonitorToggleButton-toggleButton-3WdIP {
+    &:hover {
+        color: darken($White, 33%) !important;
+    }
+}
+
+//FIX
+.SeasonPassRow-seasons-3ULdb {
+    display: table-cell !important;
+    flex-wrap: wrap !important;
+
+    div {
+        display: inline-block !important;
+
+        div {
+            display: inline-block !important;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+/* --- MENU --- */
+//background
+.MenuContent-menuContent-e2UAN {
+    background-color: $Grey !important;
+}
+
+//items
+.MenuItem-menuItem-211VP {
+    background-color: transparent !important;
+
+    //item hover
+    &:hover {
+        background-color: darken($Grey, 5%) !important;
+    }
+}
+
+//separator
+.MenuItemSeparator-separator-4jQHU {
+    background-color: darken($Grey, 5%) !important;
+}

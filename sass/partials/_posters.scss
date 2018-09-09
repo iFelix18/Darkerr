@@ -1,0 +1,24 @@
+/* --- POSTERS --- */
+//title
+.SeriesIndexPoster-title-1LWvk,
+.ArtistIndexPoster-title-3bXfu {
+    background-color: transparent !important;
+    color: $White !important;
+}
+
+//next airing
+.SeriesIndexPoster-nextAiring-2dTrg {
+    background-color: transparent !important;
+    color: $White !important;
+}
+
+//actions
+.SeriesIndexPoster-content-9X0A1,
+.ArtistIndexPoster-content-1lHSG {
+    &:hover {
+        .Label-default-2zdw6 {
+            background-color: $Grey !important;
+            opacity: 1 !important;
+        }
+    }
+}

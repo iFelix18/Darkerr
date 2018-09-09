@@ -1,0 +1,57 @@
+/* --- ADD NEW --- */
+//icons
+.AddNewSeries-searchIconContainer-3iiEV,
+.AddNewArtist-searchIconContainer-3iE_u {
+    background-color: $Grey !important;
+    border-color: $Grey !important;
+    color: $White !important;
+}
+
+.AddNewSeries-clearLookupButton-2kg6j,
+.AddNewArtist-clearLookupButton-2ym1- {
+    background-color: $Grey !important;
+    border-color: $Grey !important;
+    color: $White !important;
+}
+
+//search
+.AddNewSeries-searchInput-xzOeA,
+.AddNewArtist-searchInput-1jwLQ {
+    background-color: $Grey !important;
+    border-color: $Grey !important;
+    color: $White !important;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+//help text
+.AddNewSeries-message-1AIqn,
+.AddNewArtist-message-c33sh {
+    color: $White !important;
+}
+
+.AddNewArtist-message-c33sh {
+    .Link-to-1jNxQ {
+        &:hover {
+            color: darken($color: #0b8750, $amount: 5) !important;
+        }
+    }
+}
+
+//result
+.AddNewSeriesSearchResult-searchResult-30ozE,
+.AddNewArtistSearchResult-searchResult-3_U8e {
+    background-color: transparent !important;
+    color: $White !important;
+
+    &:hover {
+        background-color: $Grey !important;
+    }
+
+    .Label-default-2zdw6 {
+        border-color: transparent !important;
+        background-color: transparent !important;
+    }
+}

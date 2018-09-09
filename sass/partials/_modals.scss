@@ -1,0 +1,69 @@
+/* --- MODALS --- */
+//background
+.ModalContent-modalContent-1B9AX {
+    background-color: $GreyBG !important;
+
+    //borders
+    .ModalHeader-modalHeader-P3MTG {
+        border-bottom-color: $Grey !important;
+    }
+
+    .ModalFooter-modalFooter-3izCM {
+        border-top-color: $Grey !important;
+
+        //buttons
+        .Button-default-1X0nf {
+            background-color: $Grey !important;
+            border-color: $Grey !important;
+            color: $White !important;
+
+            //hover
+            &:hover {
+                background-color: lighten($Grey, 5%) !important;
+                border-color: lighten($Grey, 5%) !important;
+            }
+        }
+    }
+
+    //options
+    .TableOptionsColumn-column-2z0me {
+        background-color: $Grey !important;
+        border-color: $Grey !important;
+
+        .CheckInput-input-3l3IR {
+            &:not(.CheckInput-primaryIsChecked-1hv3I) {
+                background-color: $GreyBG !important;
+            }
+        }
+    }
+
+    //tag
+    .TagInputInput-inputContainer-1SHrF {
+        .TagInput-input-2UK6_ {
+            background-color: $Grey !important;
+        }
+    }
+
+    //tab
+    .EpisodeDetailsModalContent-tab-3I6HD {
+        &:hover {
+            border-color: $Grey !important;
+            border-radius: 0 0 5px 5px !important;
+        }
+    }
+
+    .EpisodeDetailsModalContent-selectedTab-7Bu7j {
+        border-color: $Grey !important;
+        background-color: $Grey !important;
+        color: $White !important;
+    }
+
+    //lidarr link
+    .InteractiveAlbumSearchRow-title-gJxg0 {
+        .Link-to-1jNxQ {
+            &:hover {
+                color: darken($color: #0b8750, $amount: 5) !important;
+            }
+        }
+    }
+}

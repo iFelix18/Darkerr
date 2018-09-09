@@ -1,0 +1,24 @@
+/* --- MASS EDITOR --- */
+.Table-table-2HwFb {
+    thead {
+        color: $White !important;
+    }
+
+    tbody {
+        tr {
+            color: $White !important;
+
+            &:hover {
+                background-color: $Grey !important;
+            }
+        }
+
+        td {
+            a[href*=artist] {
+                &:hover {
+                    color: darken($color: #0b8750, $amount: 5) !important;
+                }
+            }
+        }
+    }
+}
