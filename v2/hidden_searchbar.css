@@ -1,0 +1,11 @@
+.search {
+    opacity: 0;
+    height: 0;
+    padding: 0 8px;
+    transition: all .3s ease .15s;
+}
+.container:hover .search {
+    opacity: 1;
+    height: 50px;
+    padding: 8px;
+}
