@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkerr
-@version        3.0.0-beta1
+@version        3.0.0-beta2
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Sonarr, Radarr & Lidarr
 @author         Felix
@@ -9,7 +9,7 @@
 @updateURL      https://rawgit.com/iFelix18/Darkerr/develop/darkerr.user.css
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
-@-moz-document regexp("((http(s?)):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(8989|8686|sonarr|lidarr)+(.*)") {
+@-moz-document regexp("((http(s?)):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(8989|8686)+(.*)") {
     @import "partials/_variables.scss";
     @import "partials/_version.scss";
     @import "partials/_moreInfo.scss";
