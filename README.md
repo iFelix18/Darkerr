@@ -3,8 +3,8 @@
 
 ## Menu
 * [Installation]
-    * [Server-side installation (with nginx)]
-    * [Browser-side installation (with Stylus)]
+    * [Server-side installation] (for, eg,  _"http://<span></span>localhost/sonarr"_)
+    * [Browser-side installation] (for, eg,  _"http://<span></span>localhost/8989"_)
 * [Screenshots]
 
 ## Installation
@@ -23,9 +23,23 @@
 
 * ### Browser-side installation
     * Download this add-on for your browser
-        * Stylus: [Firefox][5], [Chrome][6],  or [Opera][7].
+        * Stylus: [Firefox][6], [Chrome][7],  or [Opera][8].
     * Click [here][2] to install directly with Stylus.
-    * Done! From now on it will automatically update.
+    * Done! From now on it will automatically update.</br></br>
+
+    You do not use the default ports (8989 for Sonarr, 7878 for Radarr and 8686 for Lidarr)?
+    <details><summary>Answer</summary>
+    
+    If so, just change this string via Stylus, from:
+    ```regex
+    ((http(s?)):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(8989|7878|8686)+(.*)
+    ```
+    to:
+    ```regex
+    ((http(s?)):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(your custom Sonarr port|your custom Radarr port|your custom Lidarr port)+(.*)
+    ```
+    (Note: for each update of Darkerr, this change must be done again)
+    </details>
 
 ## Screenshots
 <details><summary>Show</summary>
@@ -47,10 +61,10 @@
 [Lidarr]: https://github.com/lidarr/Lidarr
 
 [Installation]: README.md#installation
-[Server-side installation (with nginx)]: README.md#server-side-installation
-[Browser-side installation (with Stylus)]: README.md#browser-side-installation
+[Server-side installation]: README.md#server-side-installation
+[Browser-side installation]: README.md#browser-side-installation
 [Screenshots]: README.md#screenshots
 
-[5]: https://addons.mozilla.org/firefox/addon/styl-us/
-[6]: https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne
-[7]: https://addons.opera.com/extensions/details/stylus/
+[6]: https://addons.mozilla.org/firefox/addon/styl-us/
+[7]: https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne
+[8]: https://addons.opera.com/extensions/details/stylus/
