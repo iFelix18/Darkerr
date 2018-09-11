@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkerr
-@version        3.0.0-beta2
+@version        3.0.0-beta3
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Sonarr, Radarr & Lidarr
 @author         Felix
@@ -18,7 +18,7 @@
     }
     .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3 > span:nth-child(1) > .DescriptionListItemDescription-description-pR3_W:after {
       white-space: pre !important;
-      content: "\A 3.0.0-beta2" !important;
+      content: "\A 3.0.0-beta3" !important;
     }
   }
   @media (max-width: 767px) {
@@ -29,7 +29,7 @@
     }
     .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3 > span:nth-child(2) > .DescriptionListItemTitle-title-EA460:before {
       white-space: pre !important;
-      content: "3.0.0-beta2 \A" !important;
+      content: "3.0.0-beta3 \A" !important;
       font-weight: normal !important;
     }
   }
@@ -40,7 +40,7 @@
     }
     .PageContentBody-innerContentBody-2X99r > .FieldSet-fieldSet-8lin9:nth-child(3) > .DescriptionList-descriptionList-2MSh3 > span:nth-child(1) > .DescriptionListItemDescription-description-pR3_W:after {
       white-space: pre !important;
-      content: "\A 3.0.0-beta2" !important;
+      content: "\A 3.0.0-beta3" !important;
     }
   }
   @media (max-width: 767px) {
@@ -51,7 +51,7 @@
     }
     .PageContentBody-innerContentBody-2X99r > .FieldSet-fieldSet-8lin9:nth-child(3) > .DescriptionList-descriptionList-2MSh3 > span:nth-child(2) > .DescriptionListItemTitle-title-EA460:before {
       white-space: pre !important;
-      content: "3.0.0-beta2 \A" !important;
+      content: "3.0.0-beta3 \A" !important;
       font-weight: normal !important;
     }
   }
@@ -86,10 +86,10 @@
     color: #FFF !important;
   }
   .panel .panel-header {
-    background-color: #1F1F1F !important;
+    background-color: #1A1A1A !important;
   }
   .panel .panel-body {
-    background-color: #1F1F1F !important;
+    background-color: #1A1A1A !important;
   }
   .panel .panel-body .form-input {
     background-color: #303030 !important;
@@ -644,6 +644,19 @@
   .ModalContent-modalContent-1B9AX .TableOptionsColumn-column-2z0me .CheckInput-input-3l3IR:not(.CheckInput-primaryIsChecked-1hv3I) {
     background-color: #1F1F1F !important;
   }
+  .ModalContent-modalContent-1B9AX .QualityProfileItem-qualityProfileItem-2Xr42 {
+    background-color: #1F1F1F !important;
+    border-color: #FFF !important;
+  }
+  .ModalContent-modalContent-1B9AX .QualityProfileItemGroup-qualityProfileItemGroup-3SvgI {
+    background-color: #1F1F1F !important;
+    border-color: #FFF !important;
+  }
+  .ModalContent-modalContent-1B9AX .QualityProfileItemGroup-qualityProfileItemGroup-3SvgI .Label-default-2zdw6 {
+    background-color: #303030 !important;
+    border-color: #303030 !important;
+    font-weight: normal !important;
+  }
   .ModalContent-modalContent-1B9AX .TagInputInput-inputContainer-1SHrF .TagInput-input-2UK6_ {
     background-color: #303030 !important;
   }
@@ -658,5 +671,34 @@
   }
   .ModalContent-modalContent-1B9AX .InteractiveAlbumSearchRow-title-gJxg0 .Link-to-1jNxQ:hover {
     color: #096f42 !important;
+  }
+  /* --- POPOVER --- */
+  .Tooltip-tooltipContainer-3agNf .Tooltip-bottom-f-k_i.Tooltip-inverse-2afKH {
+    border-bottom-color: #1F1F1F !important;
+  }
+  .Tooltip-tooltipContainer-3agNf .Tooltip-tooltip-1uk0d.Tooltip-inverse-2afKH {
+    background-color: #1F1F1F !important;
+  }
+  .Tooltip-tooltipContainer-3agNf .Label-info-1Wa42 {
+    border-color: transparent !important;
+    background-color: transparent !important;
+    font-weight: normal !important;
+  }
+  .Tooltip-tooltipContainer-3agNf .Label-info-1Wa42:hover {
+    border-color: #303030 !important;
+    background-color: #303030 !important;
+  }
+  .Popover-popoverContainer-3ERD_ .Popover-popover-18SiF {
+    background-color: #1A1A1A !important;
+  }
+  .Popover-popoverContainer-3ERD_ .Popover-popover-18SiF .Popover-left-2cO3y {
+    border-left-color: #1A1A1A !important;
+  }
+  .Popover-popoverContainer-3ERD_ .Popover-popover-18SiF .Popover-left-2cO3y:after {
+    border-left-color: #1A1A1A !important;
+  }
+  .Popover-popoverContainer-3ERD_ .Popover-popover-18SiF .Popover-title-2t205 {
+    border-bottom-color: #303030 !important;
+    background-color: #1A1A1A !important;
   }
 }

@@ -45,7 +45,7 @@
 <details><summary>Show</summary>
 </details>
 
-[version]: https://img.shields.io/badge/version-3.0.0--beta2-ED1C24.svg?longCache=true&style=flat-square
+[version]: https://img.shields.io/badge/version-3.0.0--beta3-ED1C24.svg?longCache=true&style=flat-square
 [1]: #
 [stylus]: https://img.shields.io/badge/install%20directly%20with-Stylus-00adad.svg?longCache=true&style=flat-square "Click here!"
 [2]: https://rawgit.com/iFelix18/Darkerr/develop/darkerr.user.css

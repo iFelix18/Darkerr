@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkerr
-@version        3.0.0-beta2
+@version        3.0.0-beta3
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Sonarr, Radarr & Lidarr
 @author         Felix
@@ -37,4 +37,5 @@
     @import "partials/_system.scss";
     @import "partials/_details.scss";
     @import "partials/_modals.scss";
+    @import "partials/_popover.scss";
 }

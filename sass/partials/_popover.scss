@@ -1,0 +1,45 @@
+/* --- POPOVER --- */
+.Tooltip-tooltipContainer-3agNf {
+
+    //background
+    .Tooltip-bottom-f-k_i.Tooltip-inverse-2afKH {
+        border-bottom-color: $GreyBG !important;
+    }
+
+    .Tooltip-tooltip-1uk0d.Tooltip-inverse-2afKH {
+        background-color: $GreyBG !important;
+    }
+
+    //links
+    .Label-info-1Wa42 {
+        border-color: transparent !important;
+        background-color: transparent !important;
+        font-weight: normal !important;
+
+        &:hover {
+            border-color: $Grey !important;
+            background-color: $Grey !important;
+        }
+    }
+}
+
+.Popover-popoverContainer-3ERD_ {
+
+    //background
+    .Popover-popover-18SiF {
+        background-color: $DarkBG !important;
+
+        .Popover-left-2cO3y {
+            border-left-color: $DarkBG !important;
+
+            &:after {
+                border-left-color: $DarkBG !important;
+            }
+        }
+
+        .Popover-title-2t205 {
+            border-bottom-color: $Grey !important;
+            background-color: $DarkBG !important;
+        }
+    }
+}
