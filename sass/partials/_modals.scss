@@ -85,3 +85,20 @@
         }
     }
 }
+
+//dropdown menu
+.EnhancedSelectInput-options-rq1zN {
+    background-color: $Grey !important;
+    border-color: $Grey !important;
+
+    //hover
+    .EnhancedSelectInputOption-option-24eyb {
+        &:hover {
+            background-color: darken($Grey, 5%) !important;
+        }
+    }
+
+    .EnhancedSelectInputOption-isSelected-3Tobc {
+        background-color: darken($Grey, 5%) !important;
+    }
+}

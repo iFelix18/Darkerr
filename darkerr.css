@@ -1,4 +1,4 @@
-/*  Darkerr 3.0.0-beta3 by Felix
+/*  Darkerr 3.0.0-beta4 by Felix
 
         A darker theme for Sonarr, Radarr & Lidarr
 
@@ -14,7 +14,7 @@
   }
   .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3 > span:nth-child(1) > .DescriptionListItemDescription-description-pR3_W:after {
     white-space: pre !important;
-    content: "\A 3.0.0-beta3" !important;
+    content: "\A 3.0.0-beta4" !important;
   }
 }
 
@@ -26,7 +26,7 @@
   }
   .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3 > span:nth-child(2) > .DescriptionListItemTitle-title-EA460:before {
     white-space: pre !important;
-    content: "3.0.0-beta3 \A" !important;
+    content: "3.0.0-beta4 \A" !important;
     font-weight: normal !important;
   }
 }
@@ -38,7 +38,7 @@
   }
   .PageContentBody-innerContentBody-2X99r > .FieldSet-fieldSet-8lin9:nth-child(3) > .DescriptionList-descriptionList-2MSh3 > span:nth-child(1) > .DescriptionListItemDescription-description-pR3_W:after {
     white-space: pre !important;
-    content: "\A 3.0.0-beta3" !important;
+    content: "\A 3.0.0-beta4" !important;
   }
 }
 
@@ -50,7 +50,7 @@
   }
   .PageContentBody-innerContentBody-2X99r > .FieldSet-fieldSet-8lin9:nth-child(3) > .DescriptionList-descriptionList-2MSh3 > span:nth-child(2) > .DescriptionListItemTitle-title-EA460:before {
     white-space: pre !important;
-    content: "3.0.0-beta3 \A" !important;
+    content: "3.0.0-beta4 \A" !important;
     font-weight: normal !important;
   }
 }
@@ -847,6 +847,19 @@ body {
   color: #096f42 !important;
 }
 
+.EnhancedSelectInput-options-rq1zN {
+  background-color: #303030 !important;
+  border-color: #303030 !important;
+}
+
+.EnhancedSelectInput-options-rq1zN .EnhancedSelectInputOption-option-24eyb:hover {
+  background-color: #232323 !important;
+}
+
+.EnhancedSelectInput-options-rq1zN .EnhancedSelectInputOption-isSelected-3Tobc {
+  background-color: #232323 !important;
+}
+
 /* --- POPOVER --- */
 .Tooltip-tooltipContainer-3agNf .Tooltip-bottom-f-k_i.Tooltip-inverse-2afKH {
   border-bottom-color: #1F1F1F !important;
@@ -877,6 +890,14 @@ body {
 
 .Popover-popoverContainer-3ERD_ .Popover-popover-18SiF .Popover-left-2cO3y:after {
   border-left-color: #1A1A1A !important;
+}
+
+.Popover-popoverContainer-3ERD_ .Popover-popover-18SiF .Popover-right-1kWfR {
+  border-right-color: #1A1A1A !important;
+}
+
+.Popover-popoverContainer-3ERD_ .Popover-popover-18SiF .Popover-right-1kWfR:after {
+  border-right-color: #1A1A1A !important;
 }
 
 .Popover-popoverContainer-3ERD_ .Popover-popover-18SiF .Popover-title-2t205 {
