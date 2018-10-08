@@ -76,6 +76,116 @@
             background-color: $Grey !important;
             box-shadow: none !important;
             color: $White !important;
+
+            >div {
+                >.Label-default-2zdw6 {
+                    background-color: transparent !important;
+                    border-color: transparent !important;
+                }
+            }
+        }
+    }
+}
+
+//import select
+.ImportSeriesSelectSeries-contentContainer-3JxMd {
+
+    //background
+    .ImportSeriesSelectSeries-content-2AQQa {
+        background-color: $GreyBG !important;
+
+        //search
+        .ImportSeriesSelectSeries-searchContainer-3mJ5Q {
+
+            .ImportSeriesSelectSeries-searchIconContainer-WJlHu {
+                background-color: $Grey !important;
+                border-color: $DarkBG !important;
+                color: $White !important;
+            }
+
+            .ImportSeriesSelectSeries-searchInput-2vt01 {
+                background-color: $Grey !important;
+                border-left-color: $Grey !important;
+                border-top-color: $DarkBG !important;
+                border-right-color: $Grey !important;
+                border-bottom-color: $DarkBG !important;
+                color: $White !important;
+
+                &:focus {
+                    border-left-color: $White !important;
+                    border-top-color: $White !important;
+                    border-right-color: $White !important;
+                    border-bottom-color: $White !important;
+                }
+            }
+
+            .Button-default-1X0nf {
+                background-color: $Grey !important;
+                border-color: $DarkBG !important;
+                color: $White !important;
+            }
+        }
+
+        //result
+        .ImportSeriesSearchResult-series-wStU8 {
+            &:hover {
+                background-color: $Grey !important;
+            }
+
+            //label
+            .ImportSeriesTitle-titleContainer-ylYyw {
+                .Label-default-2zdw6 {
+                    background-color: transparent !important;
+                    border-color: transparent !important;
+                }
+            }
+        }
+    }
+}
+
+.ImportArtistSelectArtist-contentContainer-2UlsC {
+
+    //background
+    .ImportArtistSelectArtist-content-15Mcv {
+        background-color: $GreyBG !important;
+
+        //search
+        .ImportArtistSelectArtist-searchContainer-3yQcu {
+
+            .ImportArtistSelectArtist-searchIconContainer-27n_z {
+                background-color: $Grey !important;
+                border-color: $DarkBG !important;
+                color: $White !important;
+            }
+
+            .ImportArtistSelectArtist-searchInput-X1Fom {
+                background-color: $Grey !important;
+                border-left-color: $Grey !important;
+                border-top-color: $DarkBG !important;
+                border-right-color: $Grey !important;
+                border-bottom-color: $DarkBG !important;
+                color: $White !important;
+
+                &:focus {
+                    border-left-color: $White !important;
+                    border-top-color: $White !important;
+                    border-right-color: $White !important;
+                    border-bottom-color: $White !important;
+                }
+            }
+
+            .Button-default-1X0nf {
+                background-color: $Grey !important;
+                border-color: $DarkBG !important;
+                color: $White !important;
+            }
+        }
+
+        //result
+        .ImportArtistSearchResult-artist-IVs0T {
+            &:hover {
+                background-color: $Grey !important;
+            }
         }
     }
 }

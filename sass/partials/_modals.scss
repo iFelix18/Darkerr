@@ -56,9 +56,28 @@
     }
 
     //tag
-    .TagInputInput-inputContainer-1SHrF {
-        .TagInput-input-2UK6_ {
+    .TagInput-inputContainer-3dApq {
+        &.TagInput-isFocused-tZ4gk {
+            border-color: $White !important;
+            box-shadow: none !important;
+        }
+
+        .TagInputInput-inputContainer-1SHrF {
+            .TagInput-input-2UK6_ {
+                background-color: $Grey !important;
+                color: $White !important;
+            }
+        }
+
+        .TagInput-suggestionsContainer-1vjHY {
             background-color: $Grey !important;
+            border-color: $Grey !important;
+
+            .TagInput-suggestion-3jRkQ {
+                &:hover {
+                    background-color: darken($Grey, 5%) !important;
+                }
+            }
         }
     }
 
@@ -82,6 +101,19 @@
             &:hover {
                 color: darken($color: #0b8750, $amount: 5) !important;
             }
+        }
+    }
+
+    //custom filters
+    .CustomFilter-customFilter-1oZ5p {
+        &:hover {
+            background-color: $Grey !important;
+        }
+    }
+
+    .FilterBuilderRow-filterRow-MAylC {
+        &:hover {
+            background-color: $GreyBG !important;
         }
     }
 }
