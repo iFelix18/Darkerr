@@ -116,6 +116,20 @@
             background-color: $GreyBG !important;
         }
     }
+
+    //file browser
+    .PathInput-pathInputContainerOpen-27B9M {
+        .PathInput-pathContainer-4ZpPW {
+            background-color: $Grey !important;
+            border-color: darken($Grey, 5%) !important;
+
+            .PathInput-pathListItem-2KzqS {
+                &:hover {
+                    background-color: darken($Grey, 5%) !important;
+                }
+            }
+        }
+    }
 }
 
 //dropdown menu

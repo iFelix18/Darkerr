@@ -1,4 +1,4 @@
-/*  Darkerr 3.0.0-beta5 by Felix
+/*  Darkerr 3.0.0-beta6 by Felix
 
         A darker theme for Sonarr, Radarr & Lidarr
 
@@ -14,7 +14,7 @@
   }
   .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3 > span:nth-child(1) > .DescriptionListItemDescription-description-pR3_W:after {
     white-space: pre !important;
-    content: "\A 3.0.0-beta5" !important;
+    content: "\A 3.0.0-beta6" !important;
   }
 }
 
@@ -26,7 +26,7 @@
   }
   .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3 > span:nth-child(2) > .DescriptionListItemTitle-title-EA460:before {
     white-space: pre !important;
-    content: "3.0.0-beta5 \A" !important;
+    content: "3.0.0-beta6 \A" !important;
     font-weight: normal !important;
   }
 }
@@ -38,7 +38,7 @@
   }
   .PageContentBody-innerContentBody-2X99r > .FieldSet-fieldSet-8lin9:nth-child(3) > .DescriptionList-descriptionList-2MSh3 > span:nth-child(1) > .DescriptionListItemDescription-description-pR3_W:after {
     white-space: pre !important;
-    content: "\A 3.0.0-beta5" !important;
+    content: "\A 3.0.0-beta6" !important;
   }
 }
 
@@ -50,7 +50,7 @@
   }
   .PageContentBody-innerContentBody-2X99r > .FieldSet-fieldSet-8lin9:nth-child(3) > .DescriptionList-descriptionList-2MSh3 > span:nth-child(2) > .DescriptionListItemTitle-title-EA460:before {
     white-space: pre !important;
-    content: "3.0.0-beta5 \A" !important;
+    content: "3.0.0-beta6 \A" !important;
     font-weight: normal !important;
   }
 }
@@ -954,6 +954,15 @@ body {
   background-color: #1F1F1F !important;
 }
 
+.ModalContent-modalContent-1B9AX .PathInput-pathInputContainerOpen-27B9M .PathInput-pathContainer-4ZpPW {
+  background-color: #303030 !important;
+  border-color: #232323 !important;
+}
+
+.ModalContent-modalContent-1B9AX .PathInput-pathInputContainerOpen-27B9M .PathInput-pathContainer-4ZpPW .PathInput-pathListItem-2KzqS:hover {
+  background-color: #232323 !important;
+}
+
 .EnhancedSelectInput-options-rq1zN {
   background-color: #303030 !important;
   border-color: #303030 !important;
@@ -1010,4 +1019,9 @@ body {
 .Popover-popoverContainer-3ERD_ .Popover-popover-18SiF .Popover-title-2t205 {
   border-bottom-color: #303030 !important;
   background-color: #1A1A1A !important;
+}
+
+/* --- LOADING --- */
+.LoadingIndicator-ripple-1264V {
+  border-color: #FFF !important;
 }
