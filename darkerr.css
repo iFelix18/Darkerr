@@ -1,4 +1,4 @@
-/*  Darkerr 3.0.0-beta6 by Felix
+/*  Darkerr 3.0.0-beta7 by Felix
 
         A darker theme for Sonarr, Radarr & Lidarr
 
@@ -14,7 +14,7 @@
   }
   .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3 > span:nth-child(1) > .DescriptionListItemDescription-description-pR3_W:after {
     white-space: pre !important;
-    content: "\A 3.0.0-beta6" !important;
+    content: "\A 3.0.0-beta7" !important;
   }
 }
 
@@ -26,7 +26,7 @@
   }
   .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3 > span:nth-child(2) > .DescriptionListItemTitle-title-EA460:before {
     white-space: pre !important;
-    content: "3.0.0-beta6 \A" !important;
+    content: "3.0.0-beta7 \A" !important;
     font-weight: normal !important;
   }
 }
@@ -38,7 +38,7 @@
   }
   .PageContentBody-innerContentBody-2X99r > .FieldSet-fieldSet-8lin9:nth-child(3) > .DescriptionList-descriptionList-2MSh3 > span:nth-child(1) > .DescriptionListItemDescription-description-pR3_W:after {
     white-space: pre !important;
-    content: "\A 3.0.0-beta6" !important;
+    content: "\A 3.0.0-beta7" !important;
   }
 }
 
@@ -50,7 +50,7 @@
   }
   .PageContentBody-innerContentBody-2X99r > .FieldSet-fieldSet-8lin9:nth-child(3) > .DescriptionList-descriptionList-2MSh3 > span:nth-child(2) > .DescriptionListItemTitle-title-EA460:before {
     white-space: pre !important;
-    content: "3.0.0-beta6 \A" !important;
+    content: "3.0.0-beta7 \A" !important;
     font-weight: normal !important;
   }
 }
