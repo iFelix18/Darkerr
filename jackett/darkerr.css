@@ -1,4 +1,4 @@
-/*  Darkerr for Jackett 1.0.0-beta1 by Felix
+/*  Darkerr for Jackett 1.0.0-beta3 by Felix
 
         A darker theme for Jackett
 
@@ -9,7 +9,7 @@
 /* --- VERSION --- */
 #footer:after {
   white-space: pre !important;
-  content: "\A Darkerr for Jackett Version 1.0.0-beta1" !important;
+  content: "\A Darkerr for Jackett Version 1.0.0-beta3" !important;
 }
 
 /* --- BACKGROUNDS --- */
@@ -95,4 +95,9 @@ table tfoot td {
 
 #configured-indexer-datatable_filter input:focus {
   border-color: #FFF !important;
+}
+
+/* --- MODALS --- */
+.modal-content {
+  background-color: #1F1F1F !important;
 }

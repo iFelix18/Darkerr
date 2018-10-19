@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkerr for Jackett
-@version        1.0.0-beta2
+@version        1.0.0-beta3
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Jackett
 @author         Felix
@@ -16,5 +16,6 @@
     @import "partials/_logo.scss";
     @import "partials/_texts.scss";
     @import "partials/_table.scss";
-    @import "partials/_forms.scss";
+    @import "partials/_input.scss";
+    @import "partials/_modals.scss";
 }

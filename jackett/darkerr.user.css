@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkerr for Jackett
-@version        1.0.0-beta2
+@version        1.0.0-beta3
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Jackett
 @author         Felix
@@ -13,7 +13,7 @@
   /* --- VERSION --- */
   #footer:after {
     white-space: pre !important;
-    content: "\A Darkerr for Jackett Version 1.0.0-beta2" !important;
+    content: "\A Darkerr for Jackett Version 1.0.0-beta3" !important;
   }
   /* --- BACKGROUNDS --- */
   html {
@@ -79,5 +79,9 @@
   }
   #configured-indexer-datatable_filter input:focus {
     border-color: #FFF !important;
+  }
+  /* --- MODALS --- */
+  .modal-content {
+    background-color: #1F1F1F !important;
   }
 }
