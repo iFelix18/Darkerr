@@ -1,19 +1,19 @@
 /* ==UserStyle==
 @name           Darkerr for Jackett
-@version        1.0.0-beta1
+@version        1.0.0-beta2
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Jackett
 @author         Felix
 @homepageURL    https://git.io/Darkerr
 @supportURL     https://github.com/iFelix18/Darkerr/issues
-@updateURL      https://rawgit.com/iFelix18/Darkerr/develop/Jackett/darkerr.user.css
+@updateURL      https://raw.githubusercontent.com/iFelix18/Darkerr/develop/jackett/darkerr.user.css
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
 @-moz-document url-prefix("http://192.168.1.10/jackett/") {
   /* --- VERSION --- */
   #footer:after {
     white-space: pre !important;
-    content: "\A Darkerr for Jackett Version 1.0.0-beta1" !important;
+    content: "\A Darkerr for Jackett Version 1.0.0-beta2" !important;
   }
   /* --- BACKGROUNDS --- */
   html {
