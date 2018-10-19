@@ -14,7 +14,7 @@
     proxy_set_header Accept-Encoding "";
     sub_filter
         '</head>'
-        '<link rel="stylesheet" type="text/css" href="https://rawgit.com/iFelix18/Darkerr/develop/darkerr.css">
+        '<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/iFelix18/Darkerr/develop/darkerr.css">
         </head>';
     sub_filter_once on;
     ```
@@ -45,10 +45,10 @@
 <details><summary>Show</summary>
 </details>
 
-[version]: https://img.shields.io/badge/version-3.0.0--beta6-ED1C24.svg?longCache=true&style=flat-square
+[version]: https://img.shields.io/badge/version-3.0.0--beta7-ED1C24.svg?longCache=true&style=flat-square
 [1]: #
 [stylus]: https://img.shields.io/badge/install%20directly%20with-Stylus-00adad.svg?longCache=true&style=flat-square "Click here!"
-[2]: https://rawgit.com/iFelix18/Darkerr/develop/darkerr.user.css
+[2]: https://raw.githubusercontent.com/iFelix18/Darkerr/develop/darkerr.user.css
 [stars]: https://img.shields.io/github/stars/iFelix18/Darkerr.svg?longCache=true&style=flat-square
 [3]: https://github.com/iFelix18/Darkerr/stargazers
 [issues]: https://img.shields.io/github/issues/iFelix18/Darkerr.svg?longCache=true&style=flat-square
