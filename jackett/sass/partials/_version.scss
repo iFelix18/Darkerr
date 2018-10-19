@@ -1,0 +1,7 @@
+/* --- VERSION --- */
+#footer {
+    &:after {
+        white-space: pre !important;
+        content: "\A Darkerr for Jackett Version 1.0.0-beta1" !important;
+    }
+}

@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name           Darkerr for Jackett
+@version        1.0.0-beta1
+@namespace      https://github.com/iFelix18/
+@description    A darker theme for Jackett
+@author         Felix
+@homepageURL    https://git.io/Darkerr
+@supportURL     https://github.com/iFelix18/Darkerr/issues
+@updateURL      https://rawgit.com/iFelix18/Darkerr/develop/Jackett/darkerr.user.css
+@license        CC-BY-SA-4.0
+==/UserStyle== */
+@-moz-document url-prefix("http://192.168.1.10/jackett/") {
+    @import "partials/_variables.scss";
+    @import "partials/_version.scss";
+    @import "partials/_backgrounds.scss";
+    @import "partials/_logo.scss";
+    @import "partials/_texts.scss";
+    @import "partials/_table.scss";
+    @import "partials/_forms.scss";
+}
