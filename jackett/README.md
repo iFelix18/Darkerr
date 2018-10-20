@@ -14,7 +14,7 @@
     proxy_set_header Accept-Encoding "";
     sub_filter
         '</head>'
-        '<link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/develop/jackett/darkerr.css">
+        '<link rel="stylesheet" type="text/css" href="//raw.githack.com/iFelix18/Darkerr/develop/jackett/darkerr.css">
          </head>';
     sub_filter_once on;
     ```

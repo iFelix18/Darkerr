@@ -22,7 +22,7 @@ Please, update to Sonarr v3 and to Radarr v1 and use [Darkerr v3]
     proxy_set_header Accept-Encoding "";
     sub_filter
       '</head>'
-      '<link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/darkerr.css">
+      '<link rel="stylesheet" type="text/css" href="//raw.githack.com/iFelix18/Darkerr/master/v2/darkerr.css">
        </head>';
     sub_filter_once on;
     ```
@@ -48,8 +48,8 @@ Please, update to Sonarr v3 and to Radarr v1 and use [Darkerr v3]
     proxy_set_header Accept-Encoding "";
       sub_filter
         '</head>'
-        '<link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/darkerr.css">
-    +    <link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/logo_animation.css">
+        '<link rel="stylesheet" type="text/css" href="//raw.githack.com/iFelix18/Darkerr/master/v2/darkerr.css">
+    +    <link rel="stylesheet" type="text/css" href="//raw.githack.com/iFelix18/Darkerr/master/v2/logo_animation.css">
          </head>';
       sub_filter_once on;
     ```
@@ -66,8 +66,8 @@ Please, update to Sonarr v3 and to Radarr v1 and use [Darkerr v3]
     proxy_set_header Accept-Encoding "";
       sub_filter
         '</head>'
-        '<link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/darkerr.css">
-    +    <link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/hidden_searchbar.css">
+        '<link rel="stylesheet" type="text/css" href="//raw.githack.com/iFelix18/Darkerr/master/v2/darkerr.css">
+    +    <link rel="stylesheet" type="text/css" href="//raw.githack.com/iFelix18/Darkerr/master/v2/hidden_searchbar.css">
          </head>';
       sub_filter_once on;
     ```
