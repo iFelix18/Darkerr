@@ -14,7 +14,10 @@
     }
 }
 
-#configured-indexer-datatable_length {
+#configured-indexer-datatable_length,
+#unconfigured-indexer-datatable_length,
+#jackett-search-results-datatable_length,
+#jackett-releases-datatable_length {
     select {
         background-color: $Grey !important;
         border: solid 1px $Grey !important;
@@ -25,7 +28,10 @@
     }
 }
 
-#configured-indexer-datatable_filter {
+#configured-indexer-datatable_filter,
+#unconfigured-indexer-datatable_filter,
+#jackett-search-results-datatable_filter,
+#jackett-releases-datatable_filter {
     input {
         background-color: $Grey !important;
         border: solid 1px $Grey !important;
@@ -33,5 +39,14 @@
         &:focus {
             border-color: $White !important;
         }
+    }
+}
+
+#searchquery {
+    background-color: $Grey !important;
+    border: solid 1px $Grey !important;
+
+    &:focus {
+        border-color: $White !important;
     }
 }

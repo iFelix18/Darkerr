@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Darkerr for Jackett
-@version        1.0.0-beta3
+@version        1.0.0-beta4
 @namespace      https://github.com/iFelix18/
 @description    A darker theme for Jackett
 @author         Felix
@@ -9,11 +9,11 @@
 @updateURL      https://raw.githubusercontent.com/iFelix18/Darkerr/develop/jackett/darkerr.user.css
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
-@-moz-document url-prefix("http://192.168.1.10/jackett/") {
+@-moz-document regexp("((http(s?)):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(9117)+(.*)") {
   /* --- VERSION --- */
   #footer:after {
     white-space: pre !important;
-    content: "\A Darkerr for Jackett Version 1.0.0-beta3" !important;
+    content: "\A Darkerr for Jackett Version 1.0.0-beta4" !important;
   }
   /* --- BACKGROUNDS --- */
   html {
@@ -66,22 +66,61 @@
     border-color: #FFF !important;
     box-shadow: none !important;
   }
-  #configured-indexer-datatable_length select {
+  #configured-indexer-datatable_length select,
+  #unconfigured-indexer-datatable_length select,
+  #jackett-search-results-datatable_length select,
+  #jackett-releases-datatable_length select {
     background-color: #303030 !important;
     border: solid 1px #303030 !important;
   }
-  #configured-indexer-datatable_length select:focus {
+  #configured-indexer-datatable_length select:focus,
+  #unconfigured-indexer-datatable_length select:focus,
+  #jackett-search-results-datatable_length select:focus,
+  #jackett-releases-datatable_length select:focus {
     border-color: #FFF !important;
   }
-  #configured-indexer-datatable_filter input {
+  #configured-indexer-datatable_filter input,
+  #unconfigured-indexer-datatable_filter input,
+  #jackett-search-results-datatable_filter input,
+  #jackett-releases-datatable_filter input {
     background-color: #303030 !important;
     border: solid 1px #303030 !important;
   }
-  #configured-indexer-datatable_filter input:focus {
+  #configured-indexer-datatable_filter input:focus,
+  #unconfigured-indexer-datatable_filter input:focus,
+  #jackett-search-results-datatable_filter input:focus,
+  #jackett-releases-datatable_filter input:focus {
+    border-color: #FFF !important;
+  }
+  #searchquery {
+    background-color: #303030 !important;
+    border: solid 1px #303030 !important;
+  }
+  #searchquery:focus {
     border-color: #FFF !important;
   }
   /* --- MODALS --- */
   .modal-content {
     background-color: #1F1F1F !important;
+  }
+  /* --- BUTTONS --- */
+  .btn-default {
+    background-color: #303030 !important;
+    border-color: #303030 !important;
+  }
+  .btn-default:hover {
+    background-color: #2b2b2b !important;
+    border-color: #2b2b2b !important;
+  }
+  .close {
+    opacity: .8 !important;
+  }
+  .close:hover {
+    opacity: .4 !important;
+  }
+  /* --- INFO --- */
+  .alert-info {
+    background-color: #303030 !important;
+    border-color: #303030 !important;
   }
 }

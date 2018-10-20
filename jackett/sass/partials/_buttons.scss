@@ -1,0 +1,18 @@
+/* --- BUTTONS --- */
+.btn-default {
+    background-color: $Grey !important;
+    border-color: $Grey !important;
+
+    &:hover {
+        background-color: darken($Grey, 2%) !important;
+        border-color: darken($Grey, 2%) !important;
+    }
+}
+
+.close {
+    opacity: .8 !important;
+
+    &:hover {
+        opacity: .4 !important;
+    }
+}
