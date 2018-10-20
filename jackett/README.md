@@ -14,8 +14,8 @@
     proxy_set_header Accept-Encoding "";
     sub_filter
         '</head>'
-        '<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/iFelix18/Darkerr/develop/jackett/darkerr.css">
-        </head>';
+        '<link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/develop/jackett/darkerr.css">
+         </head>';
     sub_filter_once on;
     ```
   * Restart nginx.
@@ -25,21 +25,40 @@
     * Download this add-on for your browser
         * Stylus: [Firefox][6], [Chrome][7],  or [Opera][8].
     * Click [here][2] to install directly with Stylus.
-    * Done! From now on it will automatically update.</br></br>
+    * Done! From now on it will automatically update.
+
+    You do not use the default ports (9117 for Jackett)?
+    <details><summary>Answer</summary>
+    If so, just change this string via Stylus:
+    
+    ```diff
+        [...]
+        @updateURL      https://raw.githubusercontent.com/iFelix18/Darkerr/develop/jackett/darkerr.user.css
+        @license        CC-BY-SA-4.0
+        ==/UserStyle== */
+    -   @-moz-document regexp("((http(s?)):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(9117)+(.*)") {
+    +   @-moz-document regexp("((http(s?)):\\/\\/)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(your custom Jackett port)+(.*)") {
+        /* --- VERSION --- */
+        #footer:after {
+            white-space: pre !important;
+        [...]
+    ```
+    (Note: for each update of Darkerr for Jackett, this change must be done again)
+    </details>
 
 ## Screenshots
 <details><summary>Show</summary>
 </details>
 
-[version]: https://img.shields.io/badge/version-1.0.0--beta3-ED1C24.svg?longCache=true&style=flat-square
+[version]: https://flat.badgen.net/badge/version/1.0.0-beta3/ED1C24
 [1]: #
-[stylus]: https://img.shields.io/badge/install%20directly%20with-Stylus-00adad.svg?longCache=true&style=flat-square "Click here!"
+[stylus]: https://flat.badgen.net/badge/install%20directly%20with/Stylus/00ADAD "Click here!"
 [2]: https://raw.githubusercontent.com/iFelix18/Darkerr/develop/jackett/darkerr.user.css
-[stars]: https://img.shields.io/github/stars/iFelix18/Darkerr.svg?longCache=true&style=flat-square
+[stars]: https://flat.badgen.net/github/stars/iFelix18/Darkerr
 [3]: https://github.com/iFelix18/Darkerr/stargazers
-[issues]: https://img.shields.io/github/issues/iFelix18/Darkerr.svg?longCache=true&style=flat-square
+[issues]: https://flat.badgen.net/github/open-issues/iFelix18/Darkerr
 [4]: https://github.com/iFelix18/Darkerr/issues
-[license]: https://img.shields.io/github/license/iFelix18/Darkerr.svg?longCache=true&style=flat-square
+[license]: https://flat.badgen.net/github/license/iFelix18/Darkerr
 [5]: https://creativecommons.org/licenses/by-sa/4.0/
 
 [Jackett]: https://github.com/Jackett/Jackett

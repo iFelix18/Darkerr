@@ -1,84 +1,116 @@
-# Darkerr [![Version](https://img.shields.io/badge/version-2.6-ED1C24.svg?longCache=true&style=flat-square)](#) [![userstyles.org installations](https://img.shields.io/badge/dynamic/json.svg?label=userstyles.org%20installations&url=https%3A%2F%2Fwidget.userstyles.org%2Fstyles%2F142759%2Fdarkerr-a-darker-theme-for-sonarr-radarr.json&query=total_installs&colorB=e51ced&longCache=true&style=flat-square)](https://userstyles.org/styles/142759/darkerr-a-darker-theme-for-sonarr-radarr) [![GitHub stars](https://img.shields.io/github/stars/iFelix18/Darkerr.svg?longCache=true&style=flat-square)](https://github.com/iFelix18/Darkerr/stargazers) [![GitHub issues](https://img.shields.io/github/issues/iFelix18/Darkerr.svg?longCache=true&style=flat-square)](https://github.com/iFelix18/Darkerr/issues) [![GitHub license](https://img.shields.io/github/license/iFelix18/Darkerr.svg?longCache=true&style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
-**_A darker theme for Sonarr &amp; Radarr_**
-<p align="center">
- <a href="https://github.com/iFelix18/Darkerr/blob/master/README.md#screenshot">
-  <img src="https://i.imgur.com/sz99ZPq.jpg" title="Click to see more screenshots" alt="Darkerr"/>
- </a>
-</p>
+# Darkerr v2 [![Version][version]][1] [![GitHub stars][stars]][2] [![GitHub issues][issues]][3] [![GitHub license][license]][4]
+**_A darker theme for [Sonarr] v2 &amp; [Radarr] v0_**
+
+**UNMAINTAINED VERSION!!!**</br>
+Please, update to Sonarr v3 and to Radarr v1 and use [Darkerr v3]
+
+[![Preview][preview]][Screenshots]
 
 # Menu
-* [Installation](https://github.com/iFelix18/Darkerr/blob/master/README.md#installation)
-  * [Server-side installation (with nginx)](https://github.com/iFelix18/Darkerr/blob/master/README.md#server-side-installation)
-* [Optional additional themes:](https://github.com/iFelix18/Darkerr/blob/master/README.md#optional-additional-themes)
-  * [Hide the searchbar](https://github.com/iFelix18/Darkerr/blob/master/README.md#hide-the-searchbar)
-  * [Animate the logo](https://github.com/iFelix18/Darkerr/blob/master/README.md#animate-the-logo)
-* [Screenshot](https://github.com/iFelix18/Darkerr/blob/master/README.md#screenshot)
-# Installation
-* Download one of these add-ons for your browser
-  * Stylus (recommended): [Chrome](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne), [Firefox](https://addons.mozilla.org/firefox/addon/styl-us/), or [Opera](https://github.com/schomery/stylish-chrome/).
-  * Osprey: [Chrome](https://chrome.google.com/webstore/detail/osprey/ekjapccimkannnfgcnnoajhfdglobgak).
-  * Stylish: [Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/), and [Opera](https://addons.opera.com/en-gb/extensions/details/stylish/).
-* Go [userstyles.org](https://userstyles.org/styles/142759/darkerr-a-darker-theme-for-sonarr-radarr), and click on "Install Style" button.
-* Done! From now on it will automatically update.
+* [Installation]
+  * [Server-side installation] (for, eg,  _"http://<span></span>localhost/sonarr"_)
+  * [Browser-side installation] (for, eg,  _"http://<span></span>localhost/8989"_)
+* [Optional additional themes]
+  * [Hide the searchbar]
+  * [Animate the logo]
+* [Screenshots]
 
-You do not use the default ports (8989 for Sonarr and 7878 for Radarr)?
-If so, just change the string in the settings, from:
-```
-((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(8989|7878|sonarr|radarr)+(.*)
-```
-to:
-```
-((http(s?))://)?[-A-Za-z0-9+&@#/%?=~_|!:,.;]+(your sonarr port|your radarr port|sonarr|radarr)+(.*)
-```
-(Note: for each update, this change must be done again)
-
-* # Server-side installation (with nginx)
+## Installation
+* ### Server-side installation
   * Add these lines to your Sonarr/Radarr location blocks in nginx.conf:
-    ```
+    ```nginx		
     proxy_set_header Accept-Encoding "";
     sub_filter
-     '</head>'
-     '<link rel="stylesheet" type="text/css" href="//rawgit.com/iFelix18/Darkerr/master/darkerr.css">
-     </head>';
+      '</head>'
+      '<link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/darkerr.css">
+       </head>';
     sub_filter_once on;
     ```
-    or with optional additional themes:
-    ```
-    proxy_set_header Accept-Encoding "";
-    sub_filter
-     '</head>'
-     '<link rel="stylesheet" type="text/css" href="//rawgit.com/iFelix18/Darkerr/master/darkerr.css">
-      <link rel="stylesheet" type="text/css" href="//rawgit.com/iFelix18/Darkerr/master/logo_animation.css">
-      <link rel="stylesheet" type="text/css" href="//rawgit.com/iFelix18/Darkerr/master/hidden_searchbar.css">
-     </head>';
-    sub_filter_once on;
-    ```
-  * Restart nginx. Done!
+  * Restart nginx.
+  * Done! From now on it will automatically update.
+
+* ### Browser-side installation
+  * Download this add-on for your browser
+    * Stylus: [Firefox][5], [Chrome][6],  or [Opera][7].
+  * Go [userstyles.org][1], and click on "Install Style" button.
+  * Done! From now on it will automatically update.
   
-# Optional additional themes
-<details>
- 
-* # Hide the searchbar
-  <p align="center">
-    <img src="http://i.imgur.com/6sdDzxq.gif" alt="searchbar"/>
-  </p>
-  <p>Download <a href="https://userstyles.org/styles/142942/darkerr-searchbar-theme-for-sonarr-radarr">here</a>.</p>
+## Optional additional themes
+<details><summary>Show</summary>
 
-* # Animate the logo
+* ### Hide the searchbar
   <p align="center">
-    <img src="http://i.imgur.com/2Ie6BFm.gif" alt="logo"/>
+    <img src="https://i.imgur.com/6sdDzxq.gif" alt="searchbar"/>
   </p>
-  <p>Download <a href="https://userstyles.org/styles/142943/darkerr-logo-theme-for-sonarr-radarr">here</a>.</p>
+
+  Install it on server-side, by adding these line to your Sonarr/Radarr location blocks in nginx.conf:
+    ```diff
+    proxy_set_header Accept-Encoding "";
+      sub_filter
+        '</head>'
+        '<link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/darkerr.css">
+    +    <link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/logo_animation.css">
+         </head>';
+      sub_filter_once on;
+    ```
+
+    Or browser-side with Stylus by going [here][searchbar].
+
+* ### Animate the logo
+  <p align="center">
+    <img src="https://i.imgur.com/2Ie6BFm.gif" alt="logo"/>
+  </p>
+
+  Install it on server-side, by adding these line to your Sonarr/Radarr location blocks in nginx.conf:
+    ```diff
+    proxy_set_header Accept-Encoding "";
+      sub_filter
+        '</head>'
+        '<link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/darkerr.css">
+    +    <link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/iFelix18/Darkerr/master/v2/hidden_searchbar.css">
+         </head>';
+      sub_filter_once on;
+    ```
+    Or browser-side with Stylus by going [here][logo].
 </details>
 
-# Screenshot
-<details>
- <p align="center">
-  Detailed view:
-  <img src="https://i.imgur.com/aHxTA5c.jpg" alt="detailed view"/>
- </p>
- <p align="center">
-  Overview list:
-  <img src="https://i.imgur.com/DHDo6uS.jpg" alt="overview list"/>
- </p>
+## Screenshots
+<details><summary>Show</summary>
+
+  ![Detailed view][detailed view]
+  ![Overview list][overview list]
 </details>
+
+[version]: https://flat.badgen.net/badge/version/2.6/ED1C24
+[1]: https://userstyles.org/styles/142759/darkerr-a-darker-theme-for-sonarr-radarr
+[stars]: https://flat.badgen.net/github/stars/iFelix18/Darkerr
+[2]: https://github.com/iFelix18/Darkerr/stargazers
+[issues]: https://flat.badgen.net/github/open-issues/iFelix18/Darkerr
+[3]: https://github.com/iFelix18/Darkerr/issues
+[license]: https://flat.badgen.net/github/license/iFelix18/Darkerr
+[4]: https://creativecommons.org/licenses/by-sa/4.0/
+
+[Sonarr]: https://github.com/Sonarr/Sonarr
+[Radarr]: https://github.com/Radarr/Radarr
+
+[Darkerr v3]: /README.md
+
+[preview]: https://i.imgur.com/sz99ZPq.jpg "Click to see more screenshots"
+
+[Installation]: README.md#installation
+[Server-side installation]: README.md#server-side-installation
+[Browser-side installation]: README.md#browser-side-installation
+[Optional additional themes]: README.md#optional-additional-themes
+[Hide the searchbar]: README.md#hide-the-searchbar
+[Animate the logo]: README.md#animate-the-logo
+[Screenshots]: README.md#screenshots
+
+[5]: https://addons.mozilla.org/firefox/addon/styl-us/
+[6]: https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne
+[7]: https://addons.opera.com/extensions/details/stylus/
+
+[searchbar]: https://userstyles.org/styles/142942/darkerr-searchbar-theme-for-sonarr-radarr
+[logo]: https://userstyles.org/styles/142943/darkerr-logo-theme-for-sonarr-radarr
+
+[detailed view]: https://i.imgur.com/aHxTA5c.jpg
+[overview list]: https://i.imgur.com/DHDo6uS.jpg
