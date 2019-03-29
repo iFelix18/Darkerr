@@ -1,33 +1,24 @@
-/* --- TABLE --- */
-//text
-.SeriesIndexTable-tableContainer-9judv,
-.ArtistIndexTable-tableContainer-1ETSi {
-    color: $White !important;
-
-    .IconButton-button-20Niq {
-        &:hover {
-            color: darken($White, 33%) !important;
-        }
-    }
-
-    //progress
-    .ProgressBar-container-1VTgk {
-        background-color: $GreyBG !important;
-    }
-}
-
-//itwm hover
-.VirtualTableRow-row-2osBd {
+[class^='SeriesIndexTable-tableContainer'],
+[class^='ArtistIndexTable-tableContainer'] {
+  [class^='IconButton-button'] {
     &:hover {
-        background-color: $Grey !important;
+      color: darken($white, 25%);
     }
+  }
+
+  [class^='ProgressBar-container'] {
+    background-color: $grey;
+  }
 }
 
-//lidarr link hover
-.ArtistIndexRow-sortName-3b0ex {
-    .Link-to-1jNxQ {
-        &:hover {
-            color: darken($color: #0b8750, $amount: 5) !important;
-        }
-    }
+[class^='VirtualTableRow-row'] {
+  &:hover {
+    background-color: $greydark;
+  }
+}
+
+[class^='ArtistIndexRow-sortName'] [class*='Link-to'] {
+  &:hover {
+    color: darken($lidarr, 10%);
+  }
 }

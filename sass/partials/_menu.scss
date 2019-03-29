@@ -1,20 +1,15 @@
-/* --- MENU --- */
-//background
-.MenuContent-menuContent-e2UAN {
-    background-color: $Grey !important;
+[class^='MenuContent-menuContent'] {
+  background-color: $grey;
 }
 
-//items
-.MenuItem-menuItem-211VP {
-    background-color: transparent !important;
+[class^='MenuItem-menuItem'] {
+  background-color: transparent;
 
-    //item hover
-    &:hover {
-        background-color: darken($Grey, 5%) !important;
-    }
+  &:hover {
+    background-color: darken($grey, 3%);
+  }
 }
 
-//separator
-.MenuItemSeparator-separator-4jQHU {
-    background-color: darken($Grey, 5%) !important;
+[class^='MenuItemSeparator-separator'] {
+  background-color: darken($white, 75%);
 }

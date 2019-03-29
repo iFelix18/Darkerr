@@ -1,43 +1,18 @@
-/* --- ACTIVITY --- */
-.Table-table-2HwFb {
+[class^='Table-table'] {
+  [class^='IconButton-button'] {
+    &:hover {
+      color: darken($white, 25%);
+    }
+  }
 
-    //icons
-    .IconButton-button-20Niq {
-        &:hover {
-            color: darken($White, 33%) !important;
-        }
+  [class*='TableRowCell-cell'] {
+    [class*='ProgressBar-container'] {
+      background-color: $grey;
     }
 
-    .TableRowCell-cell-3hR4a {
-
-        //lidarr link
-        a[href*=album] {
-            &:hover {
-                color: darken($color: #0b8750, $amount: 5) !important;
-            }
-        }
-
-        //sonarr link
-        .EpisodeTitleLink-link-1ZCTO {
-            &:not(:hover) {
-                color: #5d9cec !important;
-            }
-        }
-
-        //progress
-        .ProgressBar-container-1VTgk {
-            background-color: $GreyBG !important;
-        }
-
-        //label
-        .Label-default-2zdw6 {
-            border-color: transparent !important;
-            background-color: transparent !important;
-        }
+    [class*='Label-default'] {
+      background-color: $grey;
+      border-color: $grey;
     }
-
-    //histoty table
-    .HistoryEventTypeCell-cell-9C96c {
-        border-top: 1px solid #eee !important;
-    }
+  }
 }

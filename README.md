@@ -3,7 +3,6 @@
 
 **NOTICES:**
 - Darkerr v3 works only on Sonarr v3 and Lidarr (soon also Radarr v1)
-- If you use Jackett, take a look at [Darkerr for Jackett]
 - If you use an old versions (Sonarr v2 and Radarr v0), take a look at [Darkerr v2]
 
 ## Menu
@@ -15,7 +14,7 @@
 ## Installation
 * ### Server-side installation
     * Add these lines to your Sonarr/Radarr/Lidarr location blocks in nginx.conf:
-        ```nginx		
+        ```nginx
         proxy_set_header Accept-Encoding "";
         sub_filter
             '</head>'
@@ -35,7 +34,7 @@
     You do not use the default ports (8989 for Sonarr, 7878 for Radarr and 8686 for Lidarr)?
     <details><summary>Answer</summary>
     If so, just change this string via Stylus:
-    
+
     ```diff
         [...]
         @updateURL      https://raw.githubusercontent.com/iFelix18/Darkerr/develop/darkerr.user.css
@@ -55,7 +54,7 @@
 <details><summary>Show</summary>
 </details>
 
-[version]: https://flat.badgen.net/badge/version/3.0.0-beta7/ED1C24
+[version]: https://flat.badgen.net/badge/version/3.0.0-beta8/ED1C24
 [1]: #
 [stylus]: https://flat.badgen.net/badge/install%20directly%20with/Stylus/00ADAD "Click here!"
 [2]: https://raw.githubusercontent.com/iFelix18/Darkerr/develop/darkerr.user.css
@@ -71,7 +70,6 @@
 [Lidarr]: https://github.com/Lidarr/Lidarr
 
 [Darkerr v2]: v2/README.md
-[Darkerr for Jackett]: jackett/README.md
 
 [Installation]: README.md#installation
 [Server-side installation]: README.md#server-side-installation

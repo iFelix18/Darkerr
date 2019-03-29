@@ -1,12 +1,28 @@
 {
   "name": "darkerr",
-  "version": "3.0.0-beta7",
+  "version": "3.0.0-beta8",
   "description": "A darker theme for Sonarr, Radarr & Lidarr",
   "license": "CC-BY-SA-4.0",
   "repository": "https://github.com/iFelix18/Darkerr/",
   "homepage": "https://git.io/Darkerr",
+  "scripts": {
+    "start": "gulp default",
+    "update": "updates -u & npm install"
+  },
+  "dependencies": {
+    "npm": "^6.9.0"
+  },
   "devDependencies": {
-    "stylelint": "^9.6.0",
-    "stylelint-config-standard": "^18.2.0"
+    "eslint": "^5.15.3",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-beautify": "^3.0.0",
+    "gulp-file-insert": "^2.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp": "^4.0.0",
+    "node-sass": "^4.11.0",
+    "sass-lint": "^1.12.1",
+    "standard": "^12.0.1",
+    "updates": "^8.0.0"
   }
 }

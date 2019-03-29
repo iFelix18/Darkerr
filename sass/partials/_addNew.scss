@@ -1,57 +1,46 @@
-/* --- ADD NEW --- */
-//icons
-.AddNewSeries-searchIconContainer-3iiEV,
-.AddNewArtist-searchIconContainer-3iE_u {
-    background-color: $Grey !important;
-    border-color: $Grey !important;
-    color: $White !important;
+[class^='AddNewSeries-searchIconContainer'],
+[class^='AddNewArtist-searchIconContainer'] {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
 }
 
-.AddNewSeries-clearLookupButton-2kg6j,
-.AddNewArtist-clearLookupButton-2ym1- {
-    background-color: $Grey !important;
-    border-color: $Grey !important;
-    color: $White !important;
+[class^='AddNewSeries-clearLookupButton'],
+[class^='AddNewArtist-clearLookupButton'] {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
 }
 
-//search
-.AddNewSeries-searchInput-xzOeA,
-.AddNewArtist-searchInput-1jwLQ {
-    background-color: $Grey !important;
-    border-color: $Grey !important;
-    color: $White !important;
+[class^='AddNewSeries-searchInput'],
+[class^='AddNewArtist-searchInput'] {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
 
-    &:focus {
-        box-shadow: none !important;
-    }
+  &:focus {
+    border-color: $white;
+    box-shadow: none;
+  }
 }
 
-//help text
-.AddNewSeries-message-1AIqn,
-.AddNewArtist-message-c33sh {
-    color: $White !important;
+[class^='AddNewArtist-message'] [class*='Link-to'] {
+  &:hover {
+    color: darken($lidarr, 10%);
+  }
 }
 
-.AddNewArtist-message-c33sh {
-    .Link-to-1jNxQ {
-        &:hover {
-            color: darken($color: #0b8750, $amount: 5) !important;
-        }
-    }
-}
+[class^='AddNewSeriesSearchResult-searchResult'],
+[class^='AddNewArtistSearchResult-searchResult'] {
+  background-color: transparent;
+  color: $white;
 
-//result
-.AddNewSeriesSearchResult-searchResult-30ozE,
-.AddNewArtistSearchResult-searchResult-3_U8e {
-    background-color: transparent !important;
-    color: $White !important;
+  &:hover {
+    background-color: $greydark;
+  }
 
-    &:hover {
-        background-color: $Grey !important;
-    }
-
-    .Label-default-2zdw6 {
-        border-color: transparent !important;
-        background-color: transparent !important;
-    }
+  [class*='Label-default'] {
+    background-color: $grey;
+    border-color: $grey;
+  }
 }

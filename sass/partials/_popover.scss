@@ -1,53 +1,48 @@
-/* --- POPOVER --- */
-.Tooltip-tooltipContainer-3agNf {
+[class^='Tooltip-tooltipContainer'] {
 
-    //background
-    .Tooltip-bottom-f-k_i.Tooltip-inverse-2afKH {
-        border-bottom-color: $GreyBG !important;
+  [class^='Tooltip-bottom'],
+  [class^='Tooltip-tooltip'] {
+    &[class^='Tooltip-inverse'] {
+      background-color: $greydark;
     }
+  }
 
-    .Tooltip-tooltip-1uk0d.Tooltip-inverse-2afKH {
-        background-color: $GreyBG !important;
+  [class^='Label-info'] {
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: normal;
+
+    &:hover {
+      background-color: $grey;
+      border-color: $grey;
     }
-
-    //links
-    .Label-info-1Wa42 {
-        border-color: transparent !important;
-        background-color: transparent !important;
-        font-weight: normal !important;
-
-        &:hover {
-            border-color: $Grey !important;
-            background-color: $Grey !important;
-        }
-    }
+  }
 }
 
-.Popover-popoverContainer-3ERD_ {
+[class^='Popover-popoverContainer'] {
 
-    //background
-    .Popover-popover-18SiF {
-        background-color: $DarkBG !important;
+  [class^='Popover-popover'] {
+    background-color: $dark;
 
-        .Popover-left-2cO3y {
-            border-left-color: $DarkBG !important;
+    [class^='Popover-left'] {
+      border-left-color: $dark;
 
-            &:after {
-                border-left-color: $DarkBG !important;
-            }
-        }
-
-        .Popover-right-1kWfR {
-            border-right-color: $DarkBG !important;
-
-            &:after {
-                border-right-color: $DarkBG !important;
-            }
-        }
-
-        .Popover-title-2t205 {
-            border-bottom-color: $Grey !important;
-            background-color: $DarkBG !important;
-        }
+      &::after {
+        border-left-color: $dark;
+      }
     }
+
+    [class^='Popover-right'] {
+      border-right-color: $dark;
+
+      &::after {
+        border-right-color: $dark;
+      }
+    }
+
+    [class^='Popover-title'] {
+      background-color: $dark;
+      border-bottom-color: $grey;
+    }
+  }
 }

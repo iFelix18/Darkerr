@@ -1,76 +1,43 @@
-/* --- VERSION --- */
-//sonarr
 @media (min-width: 768px) {
-    .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3>span:nth-child(1)> {
-        .DescriptionListItemTitle-title-EA460:after {
-            white-space: pre !important;
-            content: "\A Darkerr Version" !important;
+  [class^='About-descriptionList'] {
+    &[class*='DescriptionList-descriptionList']>span {
+      &:nth-child(1)> {
+        [class^='DescriptionListItemTitle-title'] {
+          &::after {
+            content: '\A Darkerr Version';
+            white-space: pre;
+          }
         }
 
-        .DescriptionListItemDescription-description-pR3_W:after {
-            white-space: pre !important;
-            content: "\A 3.0.0-beta7" !important;
+        [class^='DescriptionListItemDescription-description'] {
+          &::after {
+            content: '\A 3.0.0-beta8';
+            white-space: pre;
+          }
         }
+      }
     }
+  }
 }
 
 @media (max-width: 767px) {
-    .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3>span {
-        &:nth-child(1)>.DescriptionListItemDescription-description-pR3_W:after {
-            white-space: pre !important;
-            content: "\A Darkerr Version" !important;
-            font-weight: bold !important;
+  [class^='About-descriptionList'] {
+    &[class*='DescriptionList-descriptionList']>span {
+      &:nth-child(1)>[class^='DescriptionListItemDescription-description'] {
+        &::after {
+          content: '\A Darkerr Version';
+          font-weight: bold;
+          white-space: pre;
         }
+      }
 
-        &:nth-child(2)>.DescriptionListItemTitle-title-EA460:before {
-            white-space: pre !important;
-            content: "3.0.0-beta7 \A" !important;
-            font-weight: normal !important;
+      &:nth-child(2)>[class^='DescriptionListItemTitle-title'] {
+        &::before {
+          content: '3.0.0-beta8 \A';
+          font-weight: normal;
+          white-space: pre;
         }
+      }
     }
-}
-
-//lidarr
-@media (min-width: 768px) {
-    .PageContentBody-innerContentBody-2X99r> {
-        .FieldSet-fieldSet-8lin9:nth-child(3)>.DescriptionList-descriptionList-2MSh3>span:nth-child(1)> {
-            .DescriptionListItemTitle-title-EA460 {
-                &:after {
-                    white-space: pre !important;
-                    content: "\A Darkerr Version" !important;
-                }
-            }
-
-            .DescriptionListItemDescription-description-pR3_W {
-                &:after {
-                    white-space: pre !important;
-                    content: "\A 3.0.0-beta7" !important;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 767px) {
-    .PageContentBody-innerContentBody-2X99r> {
-        .FieldSet-fieldSet-8lin9:nth-child(3)>.DescriptionList-descriptionList-2MSh3>span:nth-child(1)> {
-            .DescriptionListItemDescription-description-pR3_W {
-                &:after {
-                    white-space: pre !important;
-                    content: "\A Darkerr Version" !important;
-                    font-weight: bold !important;
-                }
-            }
-        }
-
-        .FieldSet-fieldSet-8lin9:nth-child(3)>.DescriptionList-descriptionList-2MSh3>span:nth-child(2)> {
-            .DescriptionListItemTitle-title-EA460 {
-                &:before {
-                    white-space: pre !important;
-                    content: "3.0.0-beta7 \A" !important;
-                    font-weight: normal !important;
-                }
-            }
-        }
-    }
+  }
 }

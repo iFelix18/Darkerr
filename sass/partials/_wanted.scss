@@ -1,6 +1,11 @@
-/* --- WANTED --- */
-.Label-inverse-1-0Ah {
-    border-color: transparent !important;
-    background-color: transparent !important;
-    color: $White !important;
+[class^='EpisodeTitleLink-link'] {
+  &:hover {
+    color: $white;
+  }
+}
+
+[class*='Label-inverse'] {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
 }

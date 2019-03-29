@@ -1,37 +1,34 @@
-/*  Darkerr 3.0.0-beta7 by Felix
-
-        A darker theme for Sonarr, Radarr & Lidarr
-
-                homepageURL:    https://git.io/Darkerr
-                supportURL:     https://github.com/iFelix18/Darkerr/issues
-                license:        CC-BY-SA-4.0
-*/
-@import "partials/_variables.scss";
-@import "partials/_version.scss";
-@import "partials/_moreInfo.scss";
-@import "partials/_login.scss";
-@import "partials/_header.scss";
-@import "partials/_search.scss";
-@import "partials/_menu.scss";
-@import "partials/_sidebar.scss";
-@import "partials/_toolbar.scss";
-@import "partials/_content.scss";
-@import "partials/_table.scss";
-@import "partials/_posters.scss";
-@import "partials/_banners.scss";
-@import "partials/_overview.scss";
-@import "partials/_addNew.scss";
-@import "partials/_import.scss";
-@import "partials/_footer.scss";
-@import "partials/_massEditor.scss";
-@import "partials/_seasonPass.scss";
-@import "partials/_albumStudio.scss";
-@import "partials/_calendar.scss";
-@import "partials/_activity.scss";
-@import "partials/_wanted.scss";
-@import "partials/_settings.scss";
-@import "partials/_system.scss";
-@import "partials/_details.scss";
-@import "partials/_modals.scss";
-@import "partials/_popover.scss";
-@import "partials/_loading.scss";
+@import 'variables';
+//theme
+@import 'partials/activity';
+@import 'partials/addNew';
+@import 'partials/albumStudio';
+@import 'partials/banners';
+@import 'partials/body';
+@import 'partials/calendar';
+@import 'partials/card';
+@import 'partials/content';
+@import 'partials/details';
+@import 'partials/footer';
+@import 'partials/form-input';
+@import 'partials/header';
+@import 'partials/import';
+@import 'partials/input';
+@import 'partials/loading';
+@import 'partials/login';
+@import 'partials/massEditor';
+@import 'partials/menu';
+@import 'partials/modals';
+@import 'partials/moreInfo';
+@import 'partials/overview';
+@import 'partials/popover';
+@import 'partials/posters';
+@import 'partials/search';
+@import 'partials/seasonPass';
+@import 'partials/settings';
+@import 'partials/sidebar';
+@import 'partials/system';
+@import 'partials/table';
+@import 'partials/toolbar';
+@import 'partials/version';
+@import 'partials/wanted';

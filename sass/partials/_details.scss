@@ -1,47 +1,34 @@
-/* --- DETAILS --- */
-//label
-.SeriesDetails-detailsLabel-CSpGH,
-.ArtistDetails-detailsLabel-2jcHp {
-    background-color: transparent !important;
-    border-color: transparent !important;
+[class^='SeriesDetails-detailsLabel'],
+[class^='ArtistDetails-detailsLabel'] {
+  background-color: $grey;
+  border-color: $grey;
 }
 
-//details panel
-.SeriesDetailsSeason-season-1YnGm,
-.ArtistDetailsSeason-albumType-23-Z4 {
-    background-color: $DarkBG !important;
-    border-color: $DarkBG !important;
+[class^='SeriesDetailsSeason-season'],
+[class^='ArtistDetailsSeason-albumType'] {
+  background-color: $grey;
+  border-color: $grey;
 }
 
-.SeriesDetailsSeason-collapseButtonContainer-3XxzX,
-.ArtistDetailsSeason-collapseButtonContainer-3EuJ8 {
-    background-color: $DarkBG !important;
-    border-color: $DarkBG !important;
+[class^='SeriesDetailsSeason-collapseButtonContainer'],
+[class^='ArtistDetailsSeason-collapseButtonContainer'] {
+  background-color: $grey;
+  border-color: $grey;
 }
 
-//lidarr
-.AlbumDetails-detailsLabel-2WQ8W {
-    background-color: transparent !important;
-    border-color: transparent !important;
+[class^='AlbumDetails-detailsLabel'] {
+  background-color: $grey;
+  border-color: $grey;
 }
 
-.AlbumDetails-contentContainer-38dqq {
-    .AlbumDetailsMedium-medium-3pu-U {
-        background-color: $DarkBG !important;
-        border-color: $DarkBG !important;
+[class^='AlbumDetails-contentContainer'] {
+  [class^='AlbumDetailsMedium-medium'] {
+    background-color: $grey;
+    border-color: $grey;
 
-        //FIX
-        .Table-table-2HwFb {
-            tbody {
-                tr {
-                    border-top: solid 1px $White !important;
-                }
-            }
-        }
-
-        .AlbumDetailsMedium-collapseButtonContainer-2MSYO {
-            background-color: $DarkBG !important;
-            border-color: $DarkBG !important;
-        }
+    [class^='AlbumDetailsMedium-collapseButtonContainer'] {
+      background-color: $grey;
+      border-color: $grey;
     }
+  }
 }

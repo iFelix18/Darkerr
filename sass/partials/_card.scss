@@ -1,0 +1,15 @@
+[class*='Card-card'] {
+  background-color: $greydark;
+  box-shadow: none;
+  color: $white;
+
+  [class*='Label-default'] {
+    background-color: $grey;
+    border-color: $grey;
+  }
+
+  [class*='Profiles-center'] {
+    background-color: $grey;
+    border-color: $grey;
+  }
+}

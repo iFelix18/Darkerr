@@ -1,16 +1,8 @@
-/* --- BANNERS --- */
-//title
-.ArtistIndexBanner-title-3TKM6 {
-    background-color: transparent !important;
-    color: $White !important;
-}
-
-//actions
-.ArtistIndexBanner-content-lAM8B {
-    &:hover {
-        .Label-default-2zdw6 {
-            background-color: $Grey !important;
-            opacity: 1 !important;
-        }
+[class^='ArtistIndexBanner-content'] {
+  &:hover {
+    [class*='Label-default'] {
+      background-color: $grey;
+      opacity: 1;
     }
+  }
 }

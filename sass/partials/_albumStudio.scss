@@ -1,25 +1,9 @@
-/* --- ALBUM STUDIO --- */
-//table
-.AlbumStudioRow-seasons-fX5El div {
-    border-color: $White !important;
-    background-color: $GreyBG !important;
+[class^='AlbumStudioAlbum-season'] {
+  background-color: $grey;
+  border-color: $grey;
 }
 
-.AlbumStudioAlbum-tracks-2V7st {
-    background-color: $GreyBG !important;
-    color: $White !important;
-}
-
-//FIX
-.AlbumStudioRow-seasons-fX5El {
-    display: table-cell !important;
-    flex-wrap: wrap !important;
-
-    div {
-        display: inline-block !important;
-
-        div {
-            display: inline-block !important;
-        }
-    }
+[class^='AlbumStudioAlbum-tracks'] {
+  background-color: $grey;
+  color: $white;
 }

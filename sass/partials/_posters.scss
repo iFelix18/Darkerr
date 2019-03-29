@@ -1,24 +1,20 @@
-/* --- POSTERS --- */
-//title
-.SeriesIndexPoster-title-1LWvk,
-.ArtistIndexPoster-title-3bXfu {
-    background-color: transparent !important;
-    color: $White !important;
+[class^='SeriesIndexPoster-title'],
+[class^='ArtistIndexPoster-title'] {
+  background-color: $grey;
+  color: $white;
 }
 
-//next airing
-.SeriesIndexPoster-nextAiring-2dTrg {
-    background-color: transparent !important;
-    color: $White !important;
+[class^='SeriesIndexPoster-nextAiring'] {
+  background-color: $grey;
+  color: $white;
 }
 
-//actions
-.SeriesIndexPoster-content-9X0A1,
-.ArtistIndexPoster-content-1lHSG {
-    &:hover {
-        .Label-default-2zdw6 {
-            background-color: $Grey !important;
-            opacity: 1 !important;
-        }
+[class^='SeriesIndexPoster-content'],
+[class^='ArtistIndexPoster-content'] {
+  &:hover {
+    [class*='Label-default'] {
+      background-color: $grey;
+      opacity: 1;
     }
+  }
 }

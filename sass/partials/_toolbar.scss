@@ -1,15 +1,7 @@
-/* --- TOOLBAR --- */
-//background
-.PageToolbar-toolbar-1oL_w {
-    background-color: $GreyBG !important;
+[class^='PageToolbar-toolbar'] {
+  background-color: $dark;
 }
 
-//text
-.PageToolbarButton-label-13ZCD {
-    color: $White !important;
-}
-
-//separator
-.PageToolbarSeparator-separator-2a7j3 {
-    border-right-color: $White !important;
+[class*='PageToolbarButton-label'] {
+  color: $white;
 }

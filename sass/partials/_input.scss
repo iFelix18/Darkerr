@@ -1,0 +1,15 @@
+[class*='Input-input'] {
+  &:not([class*='CheckInput-primaryIsChecked']) {
+    &:not([class*='SearchInput-input']) {
+      background-color: $grey;
+      border: 1px solid $grey;
+      box-shadow: none;
+      color: $white;
+
+      &:focus {
+        border-color: $white;
+        box-shadow: none;
+      }
+    }
+  }
+}

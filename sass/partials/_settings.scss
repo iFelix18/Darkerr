@@ -1,88 +1,21 @@
-/* --- SETTINGS --- */
-//texts
-body {
-    color: $White !important;
+[class^='Settings-link'] {
+  border-bottom: 1px solid $grey;
+  color: $white;
+
+  &:hover {
+    border-bottom: 1px solid $white;
+    color: $white;
+  }
 }
 
-.Settings-link-1RTRp {
-    color: $White !important;
+[class^='Settings-summary'] {
+  color: $white;
 }
 
-.Settings-summary-1BIsi {
-    color: $White !important;
+[class^='FieldSet-legend'] {
+  color: $white;
 }
 
-.FieldSet-legend-3mbvV {
-    color: $White !important;
-}
-
-//input
-.CheckInput-input-3l3IR:not(.CheckInput-primaryIsChecked-1hv3I) {
-    background-color: $Grey !important;
-    border-color: $Grey !important;
-}
-
-.Input-input-dS7Oc {
-    background-color: $Grey !important;
-    border-color: $Grey !important;
-    color: $White !important;
-
-    &:focus {
-        border-color: $White !important;
-        box-shadow: none !important;
-    }
-}
-
-//cards
-.Card-card-SvrkG {
-    background-color: $Grey !important;
-    box-shadow: none !important;
-    color: $White !important;
-
-    //label
-    .Label-label-30GsL {
-        background-color: transparent !important;
-        border-color: transparent !important;
-        font-weight: normal !important;
-    }
-
-    .Label-label-30GsL[title=Cutoff] {
-        background-color: transparent !important;
-        border-color: $White !important;
-    }
-
-    .Label-success-1hLju {
-        color: #27c24c !important;
-    }
-
-    //add
-    [class*=-center-] {
-        background-color: transparent !important;
-        border-color: transparent !important;
-    }
-}
-
-//quality
-.QualityDefinition-sizeLimit-1xA14 {
-
-    //slider
-    .QualityDefinition-slider-y5Ye3 {
-        .QualityDefinition-bar-3g1st {
-            &:nth-child(2n+1) {
-                background-color: $Grey !important;
-            }
-        }
-
-        //handle
-        .QualityDefinition-handle-3HB1j {
-            background-color: $Grey !important;
-        }
-    }
-
-    //label
-    .QualityDefinition-sizes-2huSU {
-        .Label-label-30GsL {
-            font-weight: normal !important;
-        }
-    }
+[class^='FormLabel-label'] {
+  font-weight: normal;
 }

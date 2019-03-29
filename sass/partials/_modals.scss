@@ -1,150 +1,139 @@
-/* --- MODALS --- */
-//background
-.ModalContent-modalContent-1B9AX {
-    background-color: $GreyBG !important;
-
-    //borders
-    .ModalHeader-modalHeader-P3MTG {
-        border-bottom-color: $Grey !important;
-    }
-
-    .ModalFooter-modalFooter-3izCM {
-        border-top-color: $Grey !important;
-
-        //buttons
-        .Button-default-1X0nf {
-            background-color: $Grey !important;
-            border-color: $Grey !important;
-            color: $White !important;
-
-            //hover
-            &:hover {
-                background-color: lighten($Grey, 5%) !important;
-                border-color: lighten($Grey, 5%) !important;
-            }
-        }
-    }
-
-    //options
-    .TableOptionsColumn-column-2z0me {
-        background-color: $Grey !important;
-        border-color: $Grey !important;
-
-        .CheckInput-input-3l3IR {
-            &:not(.CheckInput-primaryIsChecked-1hv3I) {
-                background-color: $GreyBG !important;
-            }
-        }
-    }
-
-    //group
-    .QualityProfileItem-qualityProfileItem-2Xr42 {
-        background-color: $GreyBG !important;
-        border-color: $White !important;
-    }
-
-    .QualityProfileItemGroup-qualityProfileItemGroup-3SvgI {
-        background-color: $GreyBG !important;
-        border-color: $White !important;
-
-        //quality profile labels
-        .Label-default-2zdw6 {
-            background-color: $Grey !important;
-            border-color: $Grey !important;
-            font-weight: normal !important;
-        }
-    }
-
-    //tag
-    .TagInput-inputContainer-3dApq {
-        &.TagInput-isFocused-tZ4gk {
-            border-color: $White !important;
-            box-shadow: none !important;
-        }
-
-        .TagInputInput-inputContainer-1SHrF {
-            .TagInput-input-2UK6_ {
-                background-color: $Grey !important;
-                color: $White !important;
-            }
-        }
-
-        .TagInput-suggestionsContainer-1vjHY {
-            background-color: $Grey !important;
-            border-color: $Grey !important;
-
-            .TagInput-suggestion-3jRkQ {
-                &:hover {
-                    background-color: darken($Grey, 5%) !important;
-                }
-            }
-        }
-    }
-
-    //tab
-    .EpisodeDetailsModalContent-tab-3I6HD {
-        &:hover {
-            border-color: $Grey !important;
-            border-radius: 0 0 5px 5px !important;
-        }
-    }
-
-    .EpisodeDetailsModalContent-selectedTab-7Bu7j {
-        border-color: $Grey !important;
-        background-color: $Grey !important;
-        color: $White !important;
-    }
-
-    //lidarr link
-    .InteractiveAlbumSearchRow-title-gJxg0 {
-        .Link-to-1jNxQ {
-            &:hover {
-                color: darken($color: #0b8750, $amount: 5) !important;
-            }
-        }
-    }
-
-    //custom filters
-    .CustomFilter-customFilter-1oZ5p {
-        &:hover {
-            background-color: $Grey !important;
-        }
-    }
-
-    .FilterBuilderRow-filterRow-MAylC {
-        &:hover {
-            background-color: $GreyBG !important;
-        }
-    }
-
-    //file browser
-    .PathInput-pathInputContainerOpen-27B9M {
-        .PathInput-pathContainer-4ZpPW {
-            background-color: $Grey !important;
-            border-color: darken($Grey, 5%) !important;
-
-            .PathInput-pathListItem-2KzqS {
-                &:hover {
-                    background-color: darken($Grey, 5%) !important;
-                }
-            }
-        }
-    }
+[class^='Modal-modalBackdrop'] {
+  background-color: rgba($greydark, .7);
 }
 
-//dropdown menu
-.EnhancedSelectInput-options-rq1zN {
-    background-color: $Grey !important;
-    border-color: $Grey !important;
+[class^='ModalContent-modalContent'] {
+  background-color: $dark;
 
-    //hover
-    .EnhancedSelectInputOption-option-24eyb {
+  [class^='ModalHeader-modalHeader'] {
+    border-bottom-color: $dark;
+  }
+
+  [class^='ModalFooter-modalFooter'] {
+    border-top-color: $dark;
+
+    [class*='Button-default'] {
+      background-color: $grey;
+      border-color: $greydark;
+      color: $white;
+
+      &:hover {
+        background-color: lighten($grey, 5%);
+        border-color: lighten($greydark, 5%);
+      }
+    }
+  }
+
+  [class^='TableOptionsColumn-column'] {
+    background-color: $grey;
+    border-color: $grey;
+
+    [class^='CheckInput-input'] {
+      &:not([class^='CheckInput-primaryIsChecked']) {
+        background-color: $greydark;
+      }
+    }
+  }
+
+  [class^='QualityProfileItem-qualityProfileItem'] {
+    background-color: $greydark;
+    border-color: $white;
+  }
+
+  [class^='QualityProfileItemGroup-qualityProfileItemGroup'] {
+    background-color: $greydark;
+    border-color: $white;
+
+    [class^='Label-default'] {
+      background-color: $grey;
+      border-color: $grey;
+      font-weight: normal;
+    }
+  }
+
+  [class^='TagInput-inputContainer'] {
+    &[class^='TagInput-isFocused'] {
+      border-color: $white;
+      box-shadow: none;
+    }
+
+    [class^='TagInputInput-inputContainer'] {
+      [class^='TagInput-input'] {
+        background-color: $grey;
+        color: $white;
+      }
+    }
+
+    [class^='TagInput-suggestionsContainer'] {
+      background-color: $grey;
+      border-color: $grey;
+
+      [class^='TagInput-suggestion'] {
         &:hover {
-            background-color: darken($Grey, 5%) !important;
+          background-color: darken($grey, 5%);
         }
+      }
     }
+  }
 
-    .EnhancedSelectInputOption-isSelected-3Tobc {
-        background-color: darken($Grey, 5%) !important;
+  [class^='EpisodeDetailsModalContent-tab'] {
+    &:hover {
+      border-color: $grey;
+      border-radius: 0 0 5px 5px;
     }
+  }
+
+  [class^='EpisodeDetailsModalContent-selectedTab'] {
+    background-color: $grey;
+    border-color: $grey;
+    color: $white;
+  }
+
+  [class^='InteractiveAlbumSearchRow-title'] {
+    [class^='Link-to'] {
+      &:hover {
+        color: darken($lidarr, 5%);
+      }
+    }
+  }
+
+  [class^='CustomFilter-customFilter'] {
+    &:hover {
+      background-color: $grey;
+    }
+  }
+
+  [class^='FilterBuilderRow-filterRow'] {
+    &:hover {
+      background-color: $greydark;
+    }
+  }
+
+  [class^='PathInput-pathInputContainerOpen'] {
+    [class^='PathInput-pathContainer'] {
+      background-color: $grey;
+      border-color: darken($grey, 5%);
+
+      [class^='PathInput-pathListItem'] {
+        &:hover {
+          background-color: darken($grey, 5%);
+        }
+      }
+    }
+  }
+}
+
+[class^='EnhancedSelectInput-options'] {
+  background-color: $grey;
+  border-color: $grey;
+
+  [class^='EnhancedSelectInputOption-option'] {
+    &:hover {
+      background-color: darken($grey, 5%);
+    }
+  }
+
+  [class^='EnhancedSelectInputOption-isSelected'] {
+    background-color: darken($grey, 5%);
+  }
 }

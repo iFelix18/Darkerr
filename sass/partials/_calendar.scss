@@ -1,87 +1,62 @@
-/* --- CALENDAR --- */
-.CalendarPage-calendarInnerPageBody-Ac_g3 {
-    //text
-    color: $White !important;
+[class^='CalendarPage-calendarInnerPageBody'] {
+  [class^='CalendarHeader-header'] {
+    [class*='Button-default'] {
+      background-color: $grey;
+      border-color: $grey;
+      color: $white;
 
-    //buttons
-    .CalendarHeader-header-2LBmS {
-        .Button-default-1X0nf {
-            background-color: $Grey !important;
-            border-color: $Grey !important;
-            color: $White !important;
-
-            //hover
-            &:hover {
-                background-color: lighten($Grey, 5%) !important;
-                border-color: lighten($Grey, 5%) !important;
-            }
-        }
-
-        //active
-        .Button-button-3GUER.isDisabled {
-            background-color: lighten($Grey, 5%) !important;
-            border-color: lighten($Grey, 5%) !important;
-            opacity: 1 !important;
-        }
+      &:hover {
+        background-color: lighten($grey, 5%);
+        border-color: lighten($grey, 5%);
+      }
     }
 
-    //table
-    .DaysOfWeek-daysOfWeek-3iixl {
-        border: solid 1px $White !important;
+    [class*='Button-button'] {
+      &[class*='isDisabled'] {
+        background-color: lighten($grey, 5%);
+        border-color: lighten($grey, 5%);
+        opacity: 1;
+      }
+    }
+  }
 
-        .DayOfWeek-dayOfWeek--jS1P {
-            background-color: $Grey !important;
-        }
+  [class^='DaysOfWeek-daysOfWeek'] {
+    [class^='DayOfWeek-dayOfWeek'] {
+      background-color: $grey;
+      border: solid 1px $grey;
+    }
+  }
+
+  [class^='CalendarDays-days'] {
+    border-right-color: $grey;
+  }
+
+  [class^='CalendarDay-day'] {
+    border-bottom-color: $grey;
+    border-left-color: $grey;
+
+    [class*='CalendarDay-isDifferentMonth'] {
+      color: $grey;
     }
 
-    .CalendarDay-day-3WaqW {
-        border-bottom-color: $White !important;
-        border-left-color: $White !important;
-
-        //days
-        .CalendarDay-isDifferentMonth-92idG {
-            color: rgba($White, .5) !important;
-        }
-
-        .CalendarDay-isToday-1ZMWk {
-            background-color: $Grey !important;
-        }
-
-        //events title
-        .CalendarEvent-seriesTitle-1JEPE {
-            color: $White !important;
-        }
-
-        .CalendarEvent-artistName-2wrDa,
-        .CalendarEvent-albumTitle-3Eooo {
-            .Link-to-1jNxQ {
-                color: $White !important;
-
-                &:hover {
-                    text-decoration: none !important;
-                }
-            }
-        }
+    [class*='CalendarDay-isToday'] {
+      background-color: $grey;
     }
 
-    //agenda
-    .Agenda-agenda-1HdY0 {
-        .AgendaEvent-event-1-I4T {
-            &:hover {
-                background-color: $Grey !important;
-            }
-
-            //events title
-            .AgendaEvent-artistName-1JHMg,
-            .AgendaEvent-albumTitle-3D26Z {
-                .Link-to-1jNxQ {
-                    color: $White !important;
-
-                    &:hover {
-                        text-decoration: none !important;
-                    }
-                }
-            }
-        }
+    [class^='CalendarEvent-seriesTitle'] {
+      color: $white;
     }
+  }
+
+  [class^='Agenda-agenda'] {
+    [class^='AgendaEvent-event'] {
+      [class^='AgendaEvent-date'] {
+        font-weight: normal;
+      }
+
+      &:hover {
+        background-color: $greydark;
+      }
+    }
+  }
 }

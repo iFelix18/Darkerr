@@ -1,0 +1,16 @@
+.form-input {
+  background-color: $grey;
+  border-color: $grey;
+  caret-color: $white;
+  color: $white;
+
+  &:focus {
+    background-color: lighten($grey, 5%);
+    border-color: $white;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: $white;
+  }
+}

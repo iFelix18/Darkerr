@@ -1,24 +1,34 @@
-/* --- MASS EDITOR --- */
-.Table-table-2HwFb {
-    thead {
-        color: $White !important;
+[class^='Table-table'] {
+  [class*='CheckInput-input'] {
+    &:not([class*='CheckInput-primaryIsChecked']) {
+      background-color: $grey;
+      border-color: $grey;
+    }
+  }
+
+  thead {
+    color: $white;
+
+    [class*='TableHeaderCell-headerCell'] {
+      font-weight: normal;
+    }
+  }
+
+  tbody {
+    tr {
+      color: $white;
+
+      &:hover {
+        background-color: $greydark;
+      }
     }
 
-    tbody {
-        tr {
-            color: $White !important;
-
-            &:hover {
-                background-color: $Grey !important;
-            }
+    td {
+      [href*='artist'] {
+        &:hover {
+          color: darken($lidarr, 10%);
         }
-
-        td {
-            a[href*=artist] {
-                &:hover {
-                    color: darken($color: #0b8750, $amount: 5) !important;
-                }
-            }
-        }
+      }
     }
+  }
 }

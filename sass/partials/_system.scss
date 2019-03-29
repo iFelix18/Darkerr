@@ -1,43 +1,23 @@
-/* --- SYSTEM --- */
-.DescriptionList-descriptionList-2MSh3 {
-    .Link-to-1jNxQ {
-        color: $White !important;
-    }
+[class^='DescriptionList-descriptionList'] {
+  [class*='Link-to'] {
+    color: $white;
+  }
 }
 
-//lidarr backup link
-.Link-to-1jNxQ[href*=lidarr_backup] {
-    &:hover {
-        color: darken($color: #0b8750, $amount: 5) !important;
+[class^='Updates-info'] {
+
+  [class^='Updates-branch'],
+  [class^='Updates-label'] {
+    &:not([class*='Label-success']) {
+      background-color: $grey;
+      border-color: $grey;
+      font-weight: normal;
     }
+  }
 }
 
-//update info
-.Updates-info-2oxjl {
-    .Updates-branch-1zwSi {
-        border-color: $Grey !important;
-        background-color: $Grey !important;
-        font-weight: normal !important;
-    }
-}
-
-//log files
-.Alert-info-1XFI_ {
-    border-color: $Grey !important;
-    background-color: $Grey !important;
-    color: $White !important;
-
-    .Link-to-1jNxQ[href="/lidarr/settings/general"] {
-        &:hover {
-            color: darken($color: #0b8750, $amount: 5) !important;
-        }
-    }
-}
-
-.LogFilesTableRow-download-3d08K {
-    .Link-to-1jNxQ[href*="Lidarr.txt"] {
-        &:hover {
-            color: darken($color: #0b8750, $amount: 5) !important;
-        }
-    }
+[class*='Alert-info'] {
+  background-color: $grey;
+  border-color: $grey;
+  color: $white;
 }

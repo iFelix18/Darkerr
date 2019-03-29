@@ -1,71 +1,11 @@
-/* --- LOGIN --- */
-//background
-body {
-    background-color: $GreyBG !important;
-}
-
-//panel
 .panel {
-    color: $White !important;
+  color: $white;
 
-    //header
-    .panel-header {
-        background-color: $DarkBG !important;
-    }
+  .panel-header {
+    background-color: $dark;
+  }
 
-    //body
-    .panel-body {
-        background-color: $DarkBG !important;
-
-        //form input
-        .form-input {
-            background-color: $Grey !important;
-            border-color: $Grey !important;
-            color: $White !important;
-            caret-color: $White !important;
-
-            &:focus {
-                box-shadow: none !important;
-                background-color: lighten($Grey, 5%) !important;
-                border-color: $White !important;
-            }
-
-            //placehoder
-            &::placeholder {
-                color: $White !important;
-            }
-
-            //autofill
-            &:-webkit-autofill {
-                -webkit-box-shadow: 0 0 0 30px $Grey inset !important;
-                -webkit-text-fill-color: $White !important;
-            }
-        }
-
-        //forgot password
-        .forgot-password {
-            color: rgba($White, .5) !important;
-
-            &:hover {
-                color: rgba($White, .8) !important;
-            }
-        }
-
-        //button
-        .button {
-            border-color: $Grey !important;
-            background-color: $Grey !important;
-            color: $White !important;
-
-            &:hover {
-                border-color: $White !important;
-                background-color: lighten($Grey, 10%) !important;
-            }
-        }
-    }
-}
-
-//copyright
-.copy {
-    color: $White !important;
+  .panel-body {
+    background-color: $dark;
+  }
 }

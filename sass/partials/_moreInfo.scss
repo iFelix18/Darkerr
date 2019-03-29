@@ -1,50 +1,49 @@
-/* --- MORE INFO --- */
 @media (min-width: 768px) {
-    .FieldSet-fieldSet-8lin9:nth-child(4) {
-        .DescriptionList-descriptionList-2MSh3 {
-            .DescriptionListItemTitle-title-EA460:nth-child(1) {
-                &:after {
-                    white-space: pre !important;
-                    content: "\A Darkerr Home page" !important;
-                }
-            }
+  [class^='FieldSet-fieldSet'] {
+    &:nth-child(4) [class^='DescriptionList-descriptionList'] {
+      [class^='DescriptionListItemTitle-title'] {
+        &:nth-child(1) {
+          &::after {
+            content: '\A Home page Darkerr';
+            white-space: pre;
+          }
         }
-    }
+      }
 
-    .FieldSet-fieldSet-8lin9:nth-child(4) {
-        .DescriptionList-descriptionList-2MSh3 {
-            .DescriptionListItemDescription-description-pR3_W:nth-child(2) {
-                &:after {
-                    white-space: pre !important;
-                    content: "\A git.io/Darkerr" !important;
-                }
-            }
+      [class^='DescriptionListItemDescription-description'] {
+        &:nth-child(2) {
+          &::after {
+            content: '\A git.io/Darkerr';
+            white-space: pre;
+          }
         }
+      }
     }
+  }
 }
 
 @media (max-width: 767px) {
-    .FieldSet-fieldSet-8lin9:nth-child(4) {
-        .DescriptionList-descriptionList-2MSh3 {
-            .DescriptionListItemDescription-description-pR3_W:nth-child(2) {
-                &:after {
-                    white-space: pre !important;
-                    content: "\A Darkerr Home page" !important;
-                    font-weight: bold !important;
-                }
-            }
+  [class^='FieldSet-fieldSet'] {
+    &:nth-child(4) [class^='DescriptionList-descriptionList'] {
+      [class^='DescriptionListItemDescription-description'] {
+        &:nth-child(2) {
+          &::after {
+            content: '\A Home page Darkerr';
+            font-weight: bold;
+            white-space: pre;
+          }
         }
-    }
+      }
 
-    .FieldSet-fieldSet-8lin9:nth-child(4) {
-        .DescriptionList-descriptionList-2MSh3 {
-            .DescriptionListItemTitle-title-EA460:nth-child(3) {
-                &:before {
-                    white-space: pre !important;
-                    content: "git.io/Darkerr \A" !important;
-                    font-weight: normal !important;
-                }
-            }
+      [class^='DescriptionListItemTitle-title'] {
+        &:nth-child(3) {
+          &::before {
+            content: 'git.io/Darkerr \A';
+            font-weight: normal;
+            white-space: pre;
+          }
         }
+      }
     }
+  }
 }

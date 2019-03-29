@@ -1,48 +1,38 @@
-/* --- OVERVIEW --- */
-//text
-.SeriesIndexOverviews-grid-1T9n5 {
-    color: $White !important;
+[class^='SeriesIndexOverview-title'],
+[class^='SeriesIndexOverview-overview'],
+[class^='ArtistIndexOverview-title'],
+[class^='ArtistIndexOverview-overview'] {
+  color: $white;
 
-    .SeriesIndexOverview-link-1Qz39 {
-        color: $White !important;
-    }
+  &:hover {
+    color: $white;
+  }
 }
 
-.ArtistIndexOverviews-grid-3mMTX {
-    color: $White !important;
+[class^='SeriesIndexOverview-container'] {
+  &:hover {
+    [class^='SeriesIndexOverview-content'] {
+      background-color: $greydark;
 
-    .ArtistIndexOverview-link-2d_A3 {
-        color: $White !important;
-    }
-}
-
-//item hover
-.SeriesIndexOverview-container-2zNbo {
-    &:hover {
-        .SeriesIndexOverview-content-3ZT3A {
-            background-color: $Grey !important;
-
-            //icon
-            .IconButton-button-20Niq {
-                &:hover {
-                    color: darken($White, 33%) !important;
-                }
-            }
+      [class^='IconButton-button'] {
+        &:hover {
+          color: darken($white, 25%);
         }
+      }
     }
+  }
 }
 
-.ArtistIndexOverview-container-3_iEh {
-    &:hover {
-        .ArtistIndexOverview-content-3zZhb {
-            background-color: $Grey !important;
+[class^='ArtistIndexOverview-container'] {
+  &:hover {
+    [class^='ArtistIndexOverview-content'] {
+      background-color: $greydark;
 
-            //icon
-            .IconButton-button-20Niq {
-                &:hover {
-                    color: darken($White, 33%) !important;
-                }
-            }
+      [class^='IconButton-button'] {
+        &:hover {
+          color: darken($white, 25%);
         }
+      }
     }
+  }
 }
