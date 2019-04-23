@@ -54,7 +54,7 @@
 <details><summary>Show</summary>
 </details>
 
-[version]: https://flat.badgen.net/badge/version/3.0.0-beta8/ED1C24
+[version]: https://flat.badgen.net/badge/version/3.0.0-beta9/ED1C24
 [1]: #
 [stylus]: https://flat.badgen.net/badge/install%20directly%20with/Stylus/00ADAD "Click here!"
 [2]: https://raw.githubusercontent.com/iFelix18/Darkerr/develop/darkerr.user.css

@@ -220,6 +220,10 @@ body {
   color: #fff;
 }
 
+.form-input::-moz-placeholder {
+  color: #fff;
+}
+
 .form-input:-ms-input-placeholder {
   color: #fff;
 }
@@ -623,9 +627,14 @@ body {
   color: #bfbfbf;
 }
 
-[class^='Tooltip-tooltipContainer'] [class^='Tooltip-bottom'][class^='Tooltip-inverse'],
-[class^='Tooltip-tooltipContainer'] [class^='Tooltip-tooltip'][class^='Tooltip-inverse'] {
-  background-color: #252525;
+[class^='Tooltip-tooltipContainer'] [class^='Tooltip-bottom'][class^='Tooltip-inverse'], [class^='Tooltip-tooltipContainer'] [class^='Tooltip-bottom'][class*='Tooltip-default'],
+[class^='Tooltip-tooltipContainer'] [class^='Tooltip-tooltip'][class^='Tooltip-inverse'],
+[class^='Tooltip-tooltipContainer'] [class^='Tooltip-tooltip'][class*='Tooltip-default'] {
+  background-color: #353535;
+}
+
+[class^='Tooltip-tooltipContainer'] [class*='Tooltip-right'][class*='Tooltip-default'] {
+  border-right-color: #353535;
 }
 
 [class^='Tooltip-tooltipContainer'] [class^='Label-info'] {
@@ -637,6 +646,11 @@ body {
 [class^='Tooltip-tooltipContainer'] [class^='Label-info']:hover {
   background-color: #353535;
   border-color: #353535;
+}
+
+[class^='Tooltip-tooltipContainer'] [class^='Popover-title'] {
+  background-color: #353535;
+  border-bottom-color: #353535;
 }
 
 [class^='Popover-popoverContainer'] [class^='Popover-popover'] {
@@ -796,7 +810,7 @@ body {
     white-space: pre;
   }
   [class^='About-descriptionList'][class*='DescriptionList-descriptionList'] > span:nth-child(1) > [class^='DescriptionListItemDescription-description']::after {
-    content: '\A 3.0.0-beta8';
+    content: '\A 3.0.0-beta9';
     white-space: pre;
   }
 }
@@ -808,7 +822,7 @@ body {
     white-space: pre;
   }
   [class^='About-descriptionList'][class*='DescriptionList-descriptionList'] > span:nth-child(2) > [class^='DescriptionListItemTitle-title']::before {
-    content: '3.0.0-beta8 \A';
+    content: '3.0.0-beta9 \A';
     font-weight: normal;
     white-space: pre;
   }

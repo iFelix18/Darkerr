@@ -11,7 +11,7 @@
 
         [class^='DescriptionListItemDescription-description'] {
           &::after {
-            content: '\A 3.0.0-beta8';
+            content: '\A 3.0.0-beta9';
             white-space: pre;
           }
         }
@@ -33,7 +33,7 @@
 
       &:nth-child(2)>[class^='DescriptionListItemTitle-title'] {
         &::before {
-          content: '3.0.0-beta8 \A';
+          content: '3.0.0-beta9 \A';
           font-weight: normal;
           white-space: pre;
         }

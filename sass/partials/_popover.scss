@@ -2,8 +2,16 @@
 
   [class^='Tooltip-bottom'],
   [class^='Tooltip-tooltip'] {
-    &[class^='Tooltip-inverse'] {
-      background-color: $greydark;
+
+    &[class^='Tooltip-inverse'],
+    &[class*='Tooltip-default'] {
+      background-color: $grey;
+    }
+  }
+
+  [class*='Tooltip-right'] {
+    &[class*='Tooltip-default'] {
+      border-right-color: $grey;
     }
   }
 
@@ -16,6 +24,11 @@
       background-color: $grey;
       border-color: $grey;
     }
+  }
+
+  [class^='Popover-title'] {
+    background-color: $grey;
+    border-bottom-color: $grey;
   }
 }
 
