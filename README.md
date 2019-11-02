@@ -1,19 +1,31 @@
+**NOTICES:**<br>
+**I started this project years ago, to solve the "problem" of the Sonarr's blinding white interface. It was a pastime for me, but today it is no longer so, I am unmotivated to update it and keep up with the continuous changes of Sonarr, Radarr and Lidarr, so I decided to archive this project.<br><br>Over the years other excellent alternative themes have been born, take a look at:**<br>
+[gilbN/theme.park](https://github.com/gilbN/theme.park)<br>
+[Archmonger/Blackberry-Themes](https://github.com/Archmonger/Blackberry-Themes)
+
+---
+
 # Darkerr [![Version][version]][1] [![Install directly with Stylus][stylus]][2] [![GitHub stars][stars]][3] [![GitHub issues][issues]][4] [![GitHub license][license]][5]
+
 **_A darker theme for [Sonarr], [Radarr] &amp; [Lidarr]_**
 
-**NOTICES:**
-- Darkerr v3 works only on Sonarr v3 and Lidarr (soon also Radarr v1)
-- If you use an old versions (Sonarr v2 and Radarr v0), take a look at [Darkerr v2]
+Note:
+
+-   Darkerr v3 works only on Sonarr v3 and Lidarr (soon also Radarr v1)
+-   If you use an old versions (Sonarr v2 and Radarr v0), take a look at [Darkerr v2]
 
 ## Menu
-* [Installation]
-    * [Server-side installation] (for, eg,  _"http://<span></span>localhost/sonarr"_)
-    * [Browser-side installation] (for, eg,  _"http://<span></span>localhost/8989"_)
-* [Screenshots]
+
+-   [Installation]
+    -   [Server-side installation] (for, eg, _"http://<span></span>localhost/sonarr"_)
+    -   [Browser-side installation] (for, eg, _"http://<span></span>localhost/8989"_)
+-   [Screenshots]
 
 ## Installation
-* ### Server-side installation
-    * Add these lines to your Sonarr/Radarr/Lidarr location blocks in nginx.conf:
+
+-   ### Server-side installation
+
+    -   Add these lines to your Sonarr/Radarr/Lidarr location blocks in nginx.conf:
         ```nginx
         proxy_set_header Accept-Encoding "";
         sub_filter
@@ -22,18 +34,20 @@
              </head>';
         sub_filter_once on;
         ```
-  * Restart nginx.
-  * Done! From now on it will automatically update.
+    -   Restart nginx.
+    -   Done! From now on it will automatically update.
 
-* ### Browser-side installation
-    * Download this add-on for your browser
-        * Stylus: [Firefox][6], [Chrome][7],  or [Opera][8].
-    * Click [here][2] to install directly with Stylus.
-    * Done! From now on it will automatically update.
+-   ### Browser-side installation
+
+    -   Download this add-on for your browser
+        -   Stylus: [Firefox][6], [Chrome][7], or [Opera][8].
+    -   Click [here][2] to install directly with Stylus.
+    -   Done! From now on it will automatically update.
 
     You do not use the default ports (8989 for Sonarr, 7878 for Radarr and 8686 for Lidarr)?
-    <details><summary>Answer</summary>
-    If so, just change this string via Stylus:
+
+      <details><summary>Answer</summary>
+      If so, just change this string via Stylus:
 
     ```diff
         [...]
@@ -47,10 +61,13 @@
             .About-descriptionList-1_gea.DescriptionList-descriptionList-2MSh3 > span:nth-child(1) > .DescriptionListItemTitle-title-EA460:after {
         [...]
     ```
+
     (Note: for each update of Darkerr, this change must be done again)
-    </details>
+
+      </details>
 
 ## Screenshots
+
 <details><summary>Show</summary>
 </details>
 
@@ -64,18 +81,14 @@
 [4]: https://github.com/iFelix18/Darkerr/issues
 [license]: https://flat.badgen.net/github/license/iFelix18/Darkerr
 [5]: https://creativecommons.org/licenses/by-sa/4.0/
-
-[Sonarr]: https://github.com/Sonarr/Sonarr
-[Radarr]: https://github.com/Radarr/Radarr
-[Lidarr]: https://github.com/Lidarr/Lidarr
-
-[Darkerr v2]: v2/README.md
-
-[Installation]: README.md#installation
-[Server-side installation]: README.md#server-side-installation
-[Browser-side installation]: README.md#browser-side-installation
-[Screenshots]: README.md#screenshots
-
+[sonarr]: https://github.com/Sonarr/Sonarr
+[radarr]: https://github.com/Radarr/Radarr
+[lidarr]: https://github.com/Lidarr/Lidarr
+[darkerr v2]: v2/README.md
+[installation]: README.md#installation
+[server-side installation]: README.md#server-side-installation
+[browser-side installation]: README.md#browser-side-installation
+[screenshots]: README.md#screenshots
 [6]: https://addons.mozilla.org/firefox/addon/styl-us/
 [7]: https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne
 [8]: https://addons.opera.com/extensions/details/stylus/
